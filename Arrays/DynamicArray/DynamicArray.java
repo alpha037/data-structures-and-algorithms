@@ -9,10 +9,25 @@ public class DynamicArray {
   private int capacity;
   private int[] array;
 
+  /**
+   * Constructor to build an empty DynamicArray
+   */
   public DynamicArray() {
     super();
     this.n = 0;
     this.capacity = 1;
+    this.array = this.makeArray(this.capacity);
+  }
+
+  /**
+   * Constructor to build an empty DynamicArray with the specified capacity.
+   * 
+   * @param capacity : An integer denoting the specified capacity.
+   */
+  public DynamicArray(int capacity) {
+    super();
+    this.n = 0;
+    this.capacity = capacity;
     this.array = this.makeArray(this.capacity);
   }
 
