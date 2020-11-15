@@ -1,4 +1,4 @@
-package StacksAndQueues.Queues;
+package StacksAndQueues.Queue;
 
 public class QueueTest {
   public static void main(String[] args) {
