@@ -3,9 +3,9 @@ package StacksAndQueues.Stack;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Stack {
+public class Stack<T> {
 
-  private List<Integer> list;
+  private List<T> list;
 
   /**
    * Constructor for the Stack
@@ -19,26 +19,26 @@ public class Stack {
    * 
    * @param item : The element to be pushed into the stack
    */
-  public void push(int item) {
+  public void push(T item) {
     this.list.add(item);
   }
 
   /**
    * Returns and removes the topmost item from the stack
    * 
-   * @return An integer value containing the top most item from the stack after
-   *         removing it
+   * @return A T value containing the top most item from the stack after removing
+   *         it
    */
-  public int pop() {
+  public T pop() {
     return this.list.remove(this.list.size() - 1);
   }
 
   /**
    * Returns the topmost item from the stack
    * 
-   * @return An integer value containing the top most item from the stack
+   * @return A T value containing the top most item from the stack
    */
-  public int peek() {
+  public T peek() {
     return this.list.get(this.list.size() - 1);
   }
 
@@ -54,7 +54,7 @@ public class Stack {
   /**
    * The current size of the stack
    * 
-   * @return A boolean value containing the current size of the stack
+   * @return An integer value containing the current size of the stack
    */
   public int size() {
     return this.list.size();

@@ -3,7 +3,7 @@ package StacksAndQueues.Stack;
 public class StackTest {
   public static void main(String[] args) {
 
-    Stack stack = new Stack();
+    Stack<Integer> stack = new Stack<>();
     System.out.println("Stack created.");
 
     // should be 0
