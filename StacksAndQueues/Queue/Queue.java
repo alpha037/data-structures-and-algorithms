@@ -44,7 +44,7 @@ public class Queue<T> {
   /**
    * The current size of the queue
    * 
-   * @return A boolean value containing the current size of the queue
+   * @return An integer value containing the current size of the queue
    */
   public int size() {
     return this.list.size();
