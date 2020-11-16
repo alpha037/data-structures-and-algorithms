@@ -3,7 +3,7 @@ package StacksAndQueues.Queue;
 public class QueueTest {
   public static void main(String[] args) {
 
-    Queue queue = new Queue();
+    Queue<Integer> queue = new Queue<>();
     System.out.println("Queue created.");
 
     // should be 0

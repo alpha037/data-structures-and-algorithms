@@ -3,9 +3,9 @@ package StacksAndQueues.Queue;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Queue {
+public class Queue<T> {
 
-  private List<Integer> list;
+  private List<T> list;
 
   /**
    * Constructor for the Queue
@@ -19,17 +19,16 @@ public class Queue {
    * 
    * @param item : The element to be pushed into the queue
    */
-  public void enqueue(int item) {
+  public void enqueue(T item) {
     this.list.add(item);
   }
 
   /**
    * Returns and removes the first item from the queue
    * 
-   * @return An integer value containing the first item from the queue after
-   *         removing it
+   * @return A T value containing the first item from the queue after removing it
    */
-  public int dequeue() {
+  public T dequeue() {
     return this.list.remove(0);
   }
 
