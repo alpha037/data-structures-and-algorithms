@@ -35,8 +35,7 @@ public class Deque<T> {
   /**
    * Returns and removes the first item from the front of the deque
    * 
-   * @return An integer value containing the first item from the deque after
-   *         removing it
+   * @return A T value containing the first item from the deque after removing it
    */
   public T removeFront() {
     return this.list.remove(0);
@@ -45,8 +44,7 @@ public class Deque<T> {
   /**
    * Returns and removes the last item from the rear of the deque
    * 
-   * @return An integer value containing the last item from the deque after
-   *         removing it
+   * @return A T value containing the last item from the deque after removing it
    */
   public T removeRear() {
     return this.list.remove(this.list.size() - 1);
