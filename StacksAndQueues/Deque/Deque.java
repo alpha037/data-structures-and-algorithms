@@ -3,9 +3,9 @@ package StacksAndQueues.Deque;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Deque {
+public class Deque<T> {
 
-  private List<Integer> list;
+  private List<T> list;
 
   /**
    * Constructor for the Deque
@@ -19,7 +19,7 @@ public class Deque {
    * 
    * @param item : The element to be pushed into the deque
    */
-  public void addFront(int item) {
+  public void addFront(T item) {
     this.list.add(0, item);
   }
 
@@ -28,7 +28,7 @@ public class Deque {
    * 
    * @param item : The element to be pushed into the deque
    */
-  public void addRear(int item) {
+  public void addRear(T item) {
     this.list.add(item);
   }
 
@@ -38,7 +38,7 @@ public class Deque {
    * @return An integer value containing the first item from the deque after
    *         removing it
    */
-  public int removeFront() {
+  public T removeFront() {
     return this.list.remove(0);
   }
 
@@ -48,7 +48,7 @@ public class Deque {
    * @return An integer value containing the last item from the deque after
    *         removing it
    */
-  public int removeRear() {
+  public T removeRear() {
     return this.list.remove(this.list.size() - 1);
   }
 
@@ -64,7 +64,7 @@ public class Deque {
   /**
    * The current size of the deque
    * 
-   * @return A boolean value containing the current size of the deque
+   * @return An integer value containing the current size of the deque
    */
   public int size() {
     return this.list.size();

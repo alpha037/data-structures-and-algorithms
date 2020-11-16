@@ -3,7 +3,7 @@ package StacksAndQueues.Deque;
 public class DequeTest {
   public static void main(String[] args) {
 
-    Deque deque = new Deque();
+    Deque<Integer> deque = new Deque<>();
     System.out.println("Deque created.");
 
     // should be 0
