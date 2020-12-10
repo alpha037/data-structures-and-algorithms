@@ -12,8 +12,7 @@ public class ArrayPairSum {
   public static void getUniquePairs(int[] array, int k) {
 
     // Edge Case
-    if (array.length <= 2)
-      return;
+    if (array.length <= 2) return;
 
     // To change the integer array into an ArrayList
     List<Integer> list = Arrays.stream(array).boxed().collect(Collectors.toList());
@@ -23,8 +22,7 @@ public class ArrayPairSum {
 
     // Iterate over the hashmap and set false (not visited)
     // as a default value
-    for (Integer i : list)
-      map.put(i, false);
+    for (Integer i : list) map.put(i, false);
 
     for (int i = 0; i < list.size(); i++) {
       int temp = k - list.get(i);

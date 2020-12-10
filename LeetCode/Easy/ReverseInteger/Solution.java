@@ -30,8 +30,7 @@ package LeetCode.Easy.ReverseInteger;
 
 public class Solution {
   public int reverse(int x) {
-    if (x < 10 && x >= 0)
-      return x;
+    if (x < 10 && x >= 0) return x;
 
     boolean isNegative = false;
 
@@ -46,21 +45,19 @@ public class Solution {
       sum = (sum * 10) + digit;
 
       // Case to handle integer overflow
-      if ((sum - digit) / 10 != previousSum)
-        return 0;
+      if ((sum - digit) / 10 != previousSum) return 0;
 
       previousSum = sum;
       x /= 10;
     }
 
-    if (isNegative)
-      return -sum;
+    if (isNegative) return -sum;
 
     return sum;
   }
 
   public static void main(String[] args) {
-    
+
     Solution solution = new Solution();
 
     // should be 321

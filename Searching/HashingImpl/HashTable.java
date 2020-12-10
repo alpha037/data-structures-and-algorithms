@@ -30,11 +30,9 @@ public class HashTable {
     Arrays.fill(values, "");
   }
 
-
   private int hash(int key) {
     return key % size;
   }
-
 
   private int rehash(int oldHash) {
     return (oldHash + 1) % size;
@@ -50,15 +48,11 @@ public class HashTable {
     if (slots[hash] == 0) {
       slots[hash] = key;
       values[hash] = value;
-    }
-    else {
+    } else {
       int rehash = rehash(hash);
-      while (slots[rehash] != 0 && hash != rehash)
-        rehash = rehash(rehash);
+      while (slots[rehash] != 0 && hash != rehash) rehash = rehash(rehash);
 
-      if (slots[rehash] == key)
-        values[rehash] = value;
-
+      if (slots[rehash] == key) values[rehash] = value;
       else {
         slots[rehash] = key;
         values[rehash] = value;
@@ -66,20 +60,16 @@ public class HashTable {
     }
   }
 
-
   public String get(int key) {
     int hash = hash(key);
 
-    if (slots[hash] == key)
-      return values[hash];
+    if (slots[hash] == key) return values[hash];
 
     int rehash = rehash(hash);
-    while (rehash != hash && slots[rehash] != key)
-      rehash = rehash(rehash);
+    while (rehash != hash && slots[rehash] != key) rehash = rehash(rehash);
 
     return slots[rehash] == key ? values[rehash] : null;
   }
-
 
   public String remove(int key) {
     int hash = hash(key);
@@ -90,26 +80,21 @@ public class HashTable {
     }
 
     int rehash = rehash(hash);
-    while (rehash != hash && slots[rehash] != key)
-      rehash = rehash(rehash);
+    while (rehash != hash && slots[rehash] != key) rehash = rehash(rehash);
 
-    if (slots[rehash] != key)
-      return null;
+    if (slots[rehash] != key) return null;
 
     slots[rehash] = 0;
     return values[rehash];
   }
 
-
   public boolean containsKey(int key) {
     int hash = hash(key);
-    
-    if (slots[hash] == key)
-      return true;
+
+    if (slots[hash] == key) return true;
 
     int rehash = rehash(hash);
-    while (rehash != hash && slots[rehash] != key)
-      rehash = rehash(rehash);
+    while (rehash != hash && slots[rehash] != key) rehash = rehash(rehash);
 
     return slots[rehash] == key;
   }

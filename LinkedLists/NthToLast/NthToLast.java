@@ -4,8 +4,7 @@ public class NthToLast {
   public static Node getNode(Node head, int n) {
 
     // * Edge Case
-    if (head == null)
-      return null;
+    if (head == null) return null;
 
     int length = 0;
     Node curr = head;
@@ -16,15 +15,12 @@ public class NthToLast {
     }
 
     // * Edge Cases
-    if (length == n)
-      return head;
+    if (length == n) return head;
 
-    if (n > length)
-      return null;
+    if (n > length) return null;
 
     curr = head;
-    for (int i = 0; i < length - n; i++)
-      curr = curr.next;
+    for (int i = 0; i < length - n; i++) curr = curr.next;
 
     return curr;
   }

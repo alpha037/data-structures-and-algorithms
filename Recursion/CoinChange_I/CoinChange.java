@@ -13,13 +13,11 @@ public class CoinChange {
    * number of coins needed to make the change amount.
    */
 
-
-  // ? Efficient solution, as it uses DP 
+  // ? Efficient solution, as it uses DP
   // ? to store the previously calculated results
 
   private static int minCoinsRequired(
-    int target, List<Integer> coins, Map<Integer, Integer> results
-  ) {
+      int target, List<Integer> coins, Map<Integer, Integer> results) {
 
     int minimumCoins = target;
 
@@ -27,19 +25,11 @@ public class CoinChange {
     if (coins.contains(target)) {
       results.put(target, 1);
       return 1;
-    }
-
-    else if (
-      results.containsKey(target) &&
-      results.get(target) > 0
-    )
-      return results.get(target);
-
+    } else if (results.containsKey(target) && results.get(target) > 0) return results.get(target);
     else
       for (Integer coin : coins)
         if (coin <= target) {
-          int numberOfCoins = 1 + 
-            minCoinsRequired(target - coin, coins, results);
+          int numberOfCoins = 1 + minCoinsRequired(target - coin, coins, results);
 
           if (numberOfCoins < minimumCoins) {
             minimumCoins = numberOfCoins;
@@ -50,13 +40,12 @@ public class CoinChange {
     return minimumCoins;
   }
 
-
   public static int minCoinsRequired(int target, List<Integer> coins) {
 
     /**
      * ? Works only for American-Style coins.
      * ? WON'T work with odd/prime coin values.
-     * 
+     *
      * ! Inefficient, as it constantly makes a lot
      * ! of similar recursive calls.
      */

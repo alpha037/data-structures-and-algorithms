@@ -2,7 +2,7 @@ package Searching.HashingImpl;
 
 public class HashTableTest {
   public static void main(String[] args) {
-    
+
     HashTable map = new HashTable(10);
 
     map.put(1, "100");
@@ -24,7 +24,7 @@ public class HashTableTest {
 
     // should be false
     System.out.println("\nContains key 4: " + map.containsKey(4));
-    
+
     // should be true
     System.out.println("\nContains key 2: " + map.containsKey(2));
 

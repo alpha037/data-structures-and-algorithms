@@ -14,47 +14,17 @@ public class TreeTest {
 
     // root value -> 10
     System.out.println("Root -> " + root.getNodeValue());
-    
+
     // left subtree values
     System.out.println("\nLeft Subtree: ");
-    System.out.println(
-      root
-        .getLeftChild()
-        .getNodeValue()
-    );
-    System.out.println(
-      root
-        .getLeftChild()
-        .getLeftChild()
-        .getNodeValue()
-    );
-    System.out.println(
-      root
-        .getLeftChild()
-        .getLeftChild()
-        .getLeftChild()
-        .getNodeValue()
-    );
-    
+    System.out.println(root.getLeftChild().getNodeValue());
+    System.out.println(root.getLeftChild().getLeftChild().getNodeValue());
+    System.out.println(root.getLeftChild().getLeftChild().getLeftChild().getNodeValue());
+
     // right subtree values
     System.out.println("\nRight Subtree: ");
-    System.out.println(
-      root
-        .getRightChild()
-        .getNodeValue()
-    );
-    System.out.println(
-      root
-        .getRightChild()
-        .getRightChild()
-        .getNodeValue()
-    );
-    System.out.println(
-      root
-        .getRightChild()
-        .getRightChild()
-        .getRightChild()
-        .getNodeValue()
-    );
+    System.out.println(root.getRightChild().getNodeValue());
+    System.out.println(root.getRightChild().getRightChild().getNodeValue());
+    System.out.println(root.getRightChild().getRightChild().getRightChild().getNodeValue());
   }
 }

@@ -6,11 +6,9 @@ public class Heap {
     int right = 2 * i + 2;
     int largest = i;
 
-    if (left < length && arr[left] > arr[largest])
-      largest = left;
+    if (left < length && arr[left] > arr[largest]) largest = left;
 
-    if (right < length && arr[right] > arr[largest])
-      largest = right;
+    if (right < length && arr[right] > arr[largest]) largest = right;
 
     if (largest != i) {
       int temp = arr[i];
@@ -32,7 +30,7 @@ public class Heap {
   private void heapSort(int[] arr, int length) {
     buildHeap(arr, length);
 
-    for (int i = length-1; i > 0; --i) {
+    for (int i = length - 1; i > 0; --i) {
       int temp = arr[0];
       arr[0] = arr[i];
       arr[i] = temp;

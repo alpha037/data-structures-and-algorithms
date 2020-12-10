@@ -20,12 +20,8 @@ public class Graph {
     // Remove the vertex from all the values
     // of other vertices
     Vertex vertexToBeRemoved = new Vertex(key);
-    adjVertices
-      .values()
-      .forEach(
-        vertices -> vertices.remove(vertexToBeRemoved)
-      );
-    
+    adjVertices.values().forEach(vertices -> vertices.remove(vertexToBeRemoved));
+
     // Remove the vertex itself
     adjVertices.remove(vertexToBeRemoved);
 
@@ -52,11 +48,9 @@ public class Graph {
 
     // Remove the vertices
     // from each other's list
-    if (edges1 != null)
-      edges1.remove(v2);
+    if (edges1 != null) edges1.remove(v2);
 
-    if (edges2 != null)
-      edges2.remove(v1);
+    if (edges2 != null) edges2.remove(v1);
   }
 
   public List<Vertex> getVertices(String key) {
@@ -66,14 +60,11 @@ public class Graph {
   public void displayVertices(String key) {
     List<Vertex> vertices = getVertices(key);
 
-    if (vertices != null)
-      vertices.forEach(vertex -> System.out.print(vertex.getKey() + " "));
-    else
-      System.out.print("No vertices present.");
-      
+    if (vertices != null) vertices.forEach(vertex -> System.out.print(vertex.getKey() + " "));
+    else System.out.print("No vertices present.");
+
     System.out.println("\n");
   }
-
 
   class Vertex {
     private String key;
@@ -99,14 +90,11 @@ public class Graph {
      * Overriding hashCode() and equals()
      * is mandatory to work with collections
      */
-
     @Override
     public boolean equals(Object obj) {
-      if (this == obj)
-        return true;
+      if (this == obj) return true;
 
-      if (obj == null || obj.getClass() != this.getClass())
-        return false;
+      if (obj == null || obj.getClass() != this.getClass()) return false;
 
       Vertex vert = (Vertex) obj;
       return vert.key.equals(this.key);

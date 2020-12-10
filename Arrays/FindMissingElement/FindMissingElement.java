@@ -19,11 +19,9 @@ public class FindMissingElement {
     // * XOR-ing a number with 0 is -> the number itself
     int sum = 0;
 
-    for (int el : array)
-      sum ^= el;
+    for (int el : array) sum ^= el;
 
-    for (int el : shuffledArray)
-      sum ^= el;
+    for (int el : shuffledArray) sum ^= el;
 
     return sum;
   }

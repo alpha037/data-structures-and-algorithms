@@ -16,8 +16,7 @@ public class CycleChecker {
       fastPointer = fastPointer.next.next;
       slowPointer = slowPointer.next;
 
-      if (fastPointer == slowPointer)
-        return true;
+      if (fastPointer == slowPointer) return true;
     }
 
     return false;

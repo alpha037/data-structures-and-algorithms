@@ -7,8 +7,7 @@ public class SentenceReversal {
   public static String reverse(String sentence) {
 
     // * Edge Cases
-    if (sentence == null || sentence.equals(""))
-      return "";
+    if (sentence == null || sentence.equals("")) return "";
 
     // * Regex to take care of multiple consecutive spaces
     String[] words = sentence.trim().split("\\s+");
@@ -33,17 +32,13 @@ public class SentenceReversal {
     /**
      * ? Stack Implementation
      */
-
     Stack<String> stack = new Stack<>();
 
-    for (String word : words)
-      stack.push(word);
+    for (String word : words) stack.push(word);
 
     String reversedString = "";
-    for (int i = 0; i < words.length; i++)
-      reversedString += stack.pop() + " ";
+    for (int i = 0; i < words.length; i++) reversedString += stack.pop() + " ";
 
     return reversedString;
   }
-
 }

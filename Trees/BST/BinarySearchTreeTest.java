@@ -4,7 +4,7 @@ import Trees.BST.BinarySearchTree.TRAVERSE;
 
 public class BinarySearchTreeTest {
   public static void main(String[] args) {
-    
+
     BinarySearchTree tree = new BinarySearchTree();
 
     System.out.println("\nInserting items...");

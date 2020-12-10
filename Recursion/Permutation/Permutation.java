@@ -10,14 +10,10 @@ public class Permutation {
   private static List<String> permute(String string, String res) {
 
     // * Base Case
-    if (string.length() == 0)
-      permutations.add(res);
+    if (string.length() == 0) permutations.add(res);
 
-    for (int i=0; i<string.length(); i++)
-      permute(
-        string.substring(0, i) + string.substring(i + 1),
-        res + string.charAt(i)
-      );
+    for (int i = 0; i < string.length(); i++)
+      permute(string.substring(0, i) + string.substring(i + 1), res + string.charAt(i));
 
     return permutations;
   }

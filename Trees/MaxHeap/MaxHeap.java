@@ -3,7 +3,7 @@ package Trees.MaxHeap;
 import java.util.Arrays;
 
 public class MaxHeap {
-  
+
   private int capacity;
   private int size;
   private int[] arr;
@@ -18,7 +18,7 @@ public class MaxHeap {
     this.capacity = capacity;
     this.size = arr.length;
     this.arr = new int[capacity];
-    
+
     fillArray(arr);
     buildHeap();
   }
@@ -53,8 +53,7 @@ public class MaxHeap {
 
   private void fillArray(int[] arr) {
     Arrays.fill(this.arr, 0);
-    for (int i=0; i<arr.length; i++)
-      this.arr[i] = arr[i];
+    for (int i = 0; i < arr.length; i++) this.arr[i] = arr[i];
   }
 
   private void percolateUp(int i) {
@@ -70,11 +69,9 @@ public class MaxHeap {
     int right = right(i);
     int largest = i;
 
-    if (left < size && arr[i] < arr[left])
-      largest = left;
+    if (left < size && arr[i] < arr[left]) largest = left;
 
-    if (right < size && arr[largest] < arr[right])
-      largest = right;
+    if (right < size && arr[largest] < arr[right]) largest = right;
 
     if (largest != i) {
       swap(largest, i);
@@ -92,8 +89,7 @@ public class MaxHeap {
   // * ----- END -----
 
   public void insert(int value) {
-    if (size == capacity)
-      throw new IndexOutOfBoundsException("Overflow: cannot insert value");
+    if (size == capacity) throw new IndexOutOfBoundsException("Overflow: cannot insert value");
 
     ++size;
     int i = size - 1;
@@ -106,7 +102,7 @@ public class MaxHeap {
     arr[0] = arr[size - 1];
     arr[size - 1] = 0;
     --size;
-    
+
     heapify(0);
     return max;
   }
@@ -126,11 +122,9 @@ public class MaxHeap {
   }
 
   public int delete(int i) {
-    if (i >= size)
-      throw new IndexOutOfBoundsException("Overflow: Cannot delete key");
+    if (i >= size) throw new IndexOutOfBoundsException("Overflow: Cannot delete key");
 
-    if (i < 0)
-      throw new IndexOutOfBoundsException("Underflow: Cannot delete key");
+    if (i < 0) throw new IndexOutOfBoundsException("Underflow: Cannot delete key");
 
     int deletedKey = arr[i];
     increaseKey(i, Integer.MAX_VALUE);
@@ -140,8 +134,7 @@ public class MaxHeap {
 
   public void display() {
     System.out.print("\nHeap -> ");
-    for (int i=0; i<size; i++)
-        System.out.print(arr[i] + " ");
+    for (int i = 0; i < size; i++) System.out.print(arr[i] + " ");
 
     System.out.println();
   }

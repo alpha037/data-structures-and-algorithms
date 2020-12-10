@@ -3,19 +3,16 @@ package LeetCode.Easy.strStr;
 public class Solution {
   public int strStr(String haystack, String needle) {
 
-    if (haystack.equals(needle))
-      return 0;
+    if (haystack.equals(needle)) return 0;
 
     int len = needle.length();
     int i;
 
-    for (i=0; i<haystack.length()-len; i++)
-      if (haystack.substring(i, i + len).equals(needle))
-        return i;
+    for (i = 0; i < haystack.length() - len; i++)
+      if (haystack.substring(i, i + len).equals(needle)) return i;
 
     // Check for the last len characters
-    if (haystack.substring(i).equals(needle))
-      return i;
+    if (haystack.substring(i).equals(needle)) return i;
 
     return -1;
   }

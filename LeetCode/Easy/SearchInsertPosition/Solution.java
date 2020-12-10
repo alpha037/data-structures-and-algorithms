@@ -33,23 +33,18 @@ package LeetCode.Easy.SearchInsertPosition;
 */
 public class Solution {
   public int searchInsert(int[] nums, int target) {
-    
-    if (nums[0] > target)
-      return 0;
-    
-    if (nums[nums.length - 1] < target)
-      return nums.length;
+
+    if (nums[0] > target) return 0;
+
+    if (nums[nums.length - 1] < target) return nums.length;
 
     int i = 0;
     while (i < nums.length) {
-      if (target == nums[i])
-        break;
-      else if(target > nums[i])
-        i++;
-      else
-        break;
+      if (target == nums[i]) break;
+      else if (target > nums[i]) i++;
+      else break;
     }
-    
+
     return i;
   }
 

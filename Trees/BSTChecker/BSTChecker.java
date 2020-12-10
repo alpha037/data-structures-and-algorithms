@@ -17,13 +17,11 @@ class TreeNode {
 public class BSTChecker {
 
   private static boolean validateBST(
-    // TreeNode root, TreeNode left, TreeNode  right
-    TreeNode root, int min, int max
-  ) {
+      // TreeNode root, TreeNode left, TreeNode  right
+      TreeNode root, int min, int max) {
 
     // Base Case
-    if (root == null)
-      return true;
+    if (root == null) return true;
 
     // if (left != null && root.value <= left.value)
     //   return false;
@@ -31,12 +29,9 @@ public class BSTChecker {
     // if (right != null && root.value >= right.value)
     //   return false;
 
-    if (min > root.value || max < root.value)
-      return false;
+    if (min > root.value || max < root.value) return false;
 
-    return 
-      validateBST(root.left, min, root.value) &&
-      validateBST(root.right, root.value, max);
+    return validateBST(root.left, min, root.value) && validateBST(root.right, root.value, max);
   }
 
   public static boolean validateBST(TreeNode root) {

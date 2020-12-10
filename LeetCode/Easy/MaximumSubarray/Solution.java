@@ -36,13 +36,12 @@ package LeetCode.Easy.MaximumSubarray;
 
 public class Solution {
   public int maxSubArray(int[] nums) {
-    if (nums.length == 0)
-      return 0;
+    if (nums.length == 0) return 0;
 
     int maxSum = nums[0], currentSum = nums[0];
 
     // Kadane's Algorithm
-    for (int i=1; i<nums.length; ++i) {
+    for (int i = 1; i < nums.length; ++i) {
       currentSum = Math.max(nums[i], currentSum + nums[i]);
       maxSum = Math.max(maxSum, currentSum);
     }
@@ -54,6 +53,6 @@ public class Solution {
     Solution solution = new Solution();
 
     // should be 6
-    System.out.println(solution.maxSubArray(new int[] {-2,1,-3,4,-1,2,1,-5,4}));
+    System.out.println(solution.maxSubArray(new int[] {-2, 1, -3, 4, -1, 2, 1, -5, 4}));
   }
 }

@@ -15,7 +15,6 @@ public class Fibonacci {
 
   public static int fibo(int n, TYPE type) {
     switch (type) {
-
       case RECURSION:
         return fibonacciByRecursion(n);
 
@@ -31,38 +30,28 @@ public class Fibonacci {
     }
   }
 
-
   private static int fibonacciByRecursion(int n) {
-    
-    // * Base Case
-    if (n <= 1)
-      return n;
 
-    return 
-      fibonacciByRecursion(n - 1) + 
-      fibonacciByRecursion(n - 2);
+    // * Base Case
+    if (n <= 1) return n;
+
+    return fibonacciByRecursion(n - 1) + fibonacciByRecursion(n - 2);
   }
 
   private static int fibonacciByMemoization(int n) {
 
     // * Base Case
-    if (n <= 1)
-      return n;
+    if (n <= 1) return n;
 
-    if (!map.containsKey(n))  
-      map.put(
-        n,
-        fibonacciByMemoization(n - 1) +
-        fibonacciByMemoization(n - 2)
-      );
+    if (!map.containsKey(n))
+      map.put(n, fibonacciByMemoization(n - 1) + fibonacciByMemoization(n - 2));
 
     return map.get(n);
   }
 
   private static int fibonacciByIteration(int n) {
 
-    if (n <= 2)
-      return 1;
+    if (n <= 2) return 1;
 
     int n1 = 0, n2 = 1, sum = 0;
 
@@ -71,7 +60,7 @@ public class Fibonacci {
       n1 = n2;
       n2 = sum;
     }
-    
+
     return sum;
   }
 }

@@ -36,8 +36,7 @@ Constraints:
 
 public class Solution {
   public String countAndSay(int n) {
-    if (n == 1)
-      return "1";
+    if (n == 1) return "1";
 
     // String res = countAndSay(n - 1);
     // int i = 2;
@@ -60,19 +59,18 @@ public class Solution {
     // }
 
     String temp = countAndSay(n - 1);
-    
+
     String res = "";
     int count = 1;
 
-    for (int i=0; i<temp.length()-1; ++i)
-      if (temp.charAt(i) == temp.charAt(i+1))
-        ++count;
+    for (int i = 0; i < temp.length() - 1; ++i)
+      if (temp.charAt(i) == temp.charAt(i + 1)) ++count;
       else {
         res += count + "" + temp.charAt(i);
         count = 1;
       }
 
-    res += count + "" + temp.charAt(temp.length()-1);
+    res += count + "" + temp.charAt(temp.length() - 1);
 
     return res;
   }

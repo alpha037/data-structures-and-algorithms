@@ -44,24 +44,22 @@ package LeetCode.Easy.RemoveDuplicates;
 public class Solution {
   public int removeDuplicates(int[] nums) {
 
-    if (nums.length <= 1)
-      return nums.length;
+    if (nums.length <= 1) return nums.length;
 
     // To keep track of all the unique elements
     int j = 0;
     int n = nums.length;
 
-    for (int i=0; i<n-1; i++)
+    for (int i = 0; i < n - 1; i++)
       // If the current element is not equal
       // to the next element, then modify the
       // array in place to store the current
       // element in jth position
-      if (nums[i] != nums[i+1])
-        nums[j++] = nums[i];
+      if (nums[i] != nums[i + 1]) nums[j++] = nums[i];
 
     // Store the last element, whether it is
     // repeated or not as it hasn't been checked
-    nums[j++] = nums[n-1];
+    nums[j++] = nums[n - 1];
 
     return j;
   }
@@ -70,9 +68,9 @@ public class Solution {
     Solution solution = new Solution();
 
     // should be 5
-    System.out.println(solution.removeDuplicates(new int[] {0,0,1,1,1,2,2,3,3,4}));
+    System.out.println(solution.removeDuplicates(new int[] {0, 0, 1, 1, 1, 2, 2, 3, 3, 4}));
 
     // should be 2
-    System.out.println(solution.removeDuplicates(new int[] {1,1,2}));
+    System.out.println(solution.removeDuplicates(new int[] {1, 1, 2}));
   }
 }

@@ -2,12 +2,12 @@ package Trees.LevelOrderTraversal;
 
 public class TraverserTest {
   public static void main(String[] args) {
-    
-  //        50
-  //      /    \
-  //    30      70
-  //   /  \    /  \
-  // 20   40  60   80
+
+    //        50
+    //      /    \
+    //    30      70
+    //   /  \    /  \
+    // 20   40  60   80
 
     TreeNode root = new TreeNode(50);
 
@@ -20,11 +20,11 @@ public class TraverserTest {
     root.right.right = new TreeNode(80);
 
     /*
-      Should be:
-      50
-      30 70
-      20 40 60 80
-     */
+     Should be:
+     50
+     30 70
+     20 40 60 80
+    */
     Traverser.levelOrder(root);
   }
 }

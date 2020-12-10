@@ -26,8 +26,7 @@ public class Graph<T> {
   }
 
   private void BFSRecursive(Queue<T> queue, Map<T, Boolean> visited) {
-    if (queue.isEmpty())
-      return;
+    if (queue.isEmpty()) return;
 
     T current = queue.poll();
     // visited[current] = true;
@@ -38,7 +37,7 @@ public class Graph<T> {
     Iterator<T> iter = adjVertices.get(current).listIterator();
     while (iter.hasNext()) {
       T v = iter.next();
-      
+
       if (visited.get(v) == null || !visited.get(v)) {
         visited.put(v, true);
         queue.add(v);

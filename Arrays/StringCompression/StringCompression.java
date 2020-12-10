@@ -4,11 +4,9 @@ public class StringCompression {
   public static String compress(String string) {
 
     // * Edge cases
-    if (string == null || string.length() == 0)
-      return "";
+    if (string == null || string.length() == 0) return "";
 
-    if (string.length() == 1)
-      return string + 1;
+    if (string.length() == 1) return string + 1;
 
     String compressedString = "";
 
@@ -36,9 +34,7 @@ public class StringCompression {
      * ? Optimized Solution (Run Length Encoding)
      */
     while (i < length) {
-      if (string.charAt(i) == string.charAt(i + 1))
-        ++count;
-
+      if (string.charAt(i) == string.charAt(i + 1)) ++count;
       else {
         compressedString += String.valueOf(string.charAt(i)) + count;
         count = 1;

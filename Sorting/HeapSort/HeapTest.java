@@ -7,8 +7,7 @@ public class HeapTest {
     int[] arr = {10, -12, 56, -147, 0, 21, 45, 65, 788};
     heap.sort(arr);
 
-    for (int el : arr)
-      System.out.print(el + " ");
+    for (int el : arr) System.out.print(el + " ");
 
     System.out.println();
   }

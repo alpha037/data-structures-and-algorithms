@@ -33,8 +33,7 @@ public class Graph<T> {
     while (iter.hasNext()) {
       T v = iter.next();
 
-      if (visited.get(v) == null || !visited.get(v))
-        DFSRecursive(v, visited);
+      if (visited.get(v) == null || !visited.get(v)) DFSRecursive(v, visited);
     }
   }
 
@@ -50,8 +49,7 @@ public class Graph<T> {
       Iterator<T> iter = adjVertices.get(current).listIterator();
       while (iter.hasNext()) {
         T v = iter.next();
-        if (visited.get(v) == null || !visited.get(v))
-          stack.push(v);
+        if (visited.get(v) == null || !visited.get(v)) stack.push(v);
       }
     }
   }

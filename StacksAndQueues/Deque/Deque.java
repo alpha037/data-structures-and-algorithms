@@ -16,7 +16,7 @@ public class Deque<T> {
 
   /**
    * Pushes an item into the front of the deque
-   * 
+   *
    * @param item : The element to be pushed into the deque
    */
   public void addFront(T item) {
@@ -25,7 +25,7 @@ public class Deque<T> {
 
   /**
    * Pushes an item into the rear of the deque
-   * 
+   *
    * @param item : The element to be pushed into the deque
    */
   public void addRear(T item) {
@@ -34,7 +34,7 @@ public class Deque<T> {
 
   /**
    * Returns and removes the first item from the front of the deque
-   * 
+   *
    * @return A T value containing the first item from the deque after removing it
    */
   public T removeFront() {
@@ -43,7 +43,7 @@ public class Deque<T> {
 
   /**
    * Returns and removes the last item from the rear of the deque
-   * 
+   *
    * @return A T value containing the last item from the deque after removing it
    */
   public T removeRear() {
@@ -52,7 +52,7 @@ public class Deque<T> {
 
   /**
    * Returns true if the deque is empty, otherwise false
-   * 
+   *
    * @return A boolean value determining if the deque is empty or not
    */
   public boolean isEmpty() {
@@ -61,7 +61,7 @@ public class Deque<T> {
 
   /**
    * The current size of the deque
-   * 
+   *
    * @return An integer value containing the current size of the deque
    */
   public int size() {

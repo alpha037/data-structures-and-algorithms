@@ -13,8 +13,7 @@ public class Tree {
   }
 
   public void insertLeft(Tree newNode) {
-    if (this.left == null)
-      this.left = newNode;
+    if (this.left == null) this.left = newNode;
     else {
       newNode.left = this.left;
       this.left = newNode;
@@ -22,8 +21,7 @@ public class Tree {
   }
 
   public void insertRight(Tree newNode) {
-    if (this.right == null)
-      this.right = newNode;
+    if (this.right == null) this.right = newNode;
     else {
       newNode.right = this.right;
       this.right = newNode;

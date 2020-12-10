@@ -13,13 +13,11 @@ public class QueueWithTwoStacks<T> {
   }
 
   private void reverseOrder() {
-    if (!this.outStack.isEmpty())
-      return;
+    if (!this.outStack.isEmpty()) return;
 
     System.out.println("\nReversing the order...");
 
-    for (int i = 0; i < inStack.size();)
-      this.outStack.push(this.inStack.pop());
+    for (int i = 0; i < inStack.size(); ) this.outStack.push(this.inStack.pop());
   }
 
   public void enqueue(T item) {

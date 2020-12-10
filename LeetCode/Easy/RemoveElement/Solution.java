@@ -46,17 +46,14 @@ package LeetCode.Easy.RemoveElement;
 */
 
 public class Solution {
-  
+
   public int removeElement(int[] nums, int val) {
-    if (nums.length == 0)
-      return nums.length;
+    if (nums.length == 0) return nums.length;
 
     int n = nums.length;
     int j = 0;
 
-    for (int i=0; i<n; i++)
-      if (nums[i] != val)
-        nums[j++] = nums[i];
+    for (int i = 0; i < n; i++) if (nums[i] != val) nums[j++] = nums[i];
 
     return j;
   }
@@ -65,9 +62,9 @@ public class Solution {
     Solution solution = new Solution();
 
     // should be 5
-    System.out.println(solution.removeElement(new int[] {0,1,2,2,3,0,4,2}, 2));
+    System.out.println(solution.removeElement(new int[] {0, 1, 2, 2, 3, 0, 4, 2}, 2));
 
     // should be 2
-    System.out.println(solution.removeElement(new int[] {3,2,2,3}, 3));
+    System.out.println(solution.removeElement(new int[] {3, 2, 2, 3}, 3));
   }
 }

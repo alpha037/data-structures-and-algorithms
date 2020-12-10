@@ -16,7 +16,7 @@ public class Stack<T> {
 
   /**
    * Pushes an item into the stack
-   * 
+   *
    * @param item : The element to be pushed into the stack
    */
   public void push(T item) {
@@ -25,7 +25,7 @@ public class Stack<T> {
 
   /**
    * Returns and removes the topmost item from the stack
-   * 
+   *
    * @return A T value containing the top most item from the stack after removing
    *         it
    */
@@ -35,7 +35,7 @@ public class Stack<T> {
 
   /**
    * Returns the topmost item from the stack
-   * 
+   *
    * @return A T value containing the top most item from the stack
    */
   public T peek() {
@@ -44,7 +44,7 @@ public class Stack<T> {
 
   /**
    * Returns true if the stack is empty, otherwise false
-   * 
+   *
    * @return A boolean value determining if the stack is empty or not
    */
   public boolean isEmpty() {
@@ -53,7 +53,7 @@ public class Stack<T> {
 
   /**
    * The current size of the stack
-   * 
+   *
    * @return An integer value containing the current size of the stack
    */
   public int size() {

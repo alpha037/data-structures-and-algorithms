@@ -4,12 +4,11 @@ public class Insertion {
 
   public static int[] sort(int[] arr) {
 
-    if (arr.length <= 1)
-      return arr;
+    if (arr.length <= 1) return arr;
 
     int n = arr.length;
 
-    for (int i=1; i<n; i++) {
+    for (int i = 1; i < n; i++) {
       int currentKey = arr[i];
       int j = i - 1;
 

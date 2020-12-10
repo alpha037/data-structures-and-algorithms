@@ -45,8 +45,7 @@ public class MinHeap {
 
   private void fillArray(int[] arr) {
     Arrays.fill(this.arr, 0);
-    for (int i=0; i<arr.length; i++)
-      this.arr[i] = arr[i];
+    for (int i = 0; i < arr.length; i++) this.arr[i] = arr[i];
   }
 
   private void swap(int index1, int index2) {
@@ -61,11 +60,9 @@ public class MinHeap {
     int right = right(i);
     int smallest = i;
 
-    if (left < size && arr[left] < arr[i])
-      smallest = left;
+    if (left < size && arr[left] < arr[i]) smallest = left;
 
-    if (right < size && arr[right] < arr[smallest])
-      smallest = right;
+    if (right < size && arr[right] < arr[smallest]) smallest = right;
 
     if (smallest != i) {
       swap(i, smallest);
@@ -91,13 +88,13 @@ public class MinHeap {
   // * ----- END -----
 
   public void insert(int value) {
-    if (size == capacity)
-      throw new IndexOutOfBoundsException("Overflow: Cannot insert key");
+    if (size == capacity) throw new IndexOutOfBoundsException("Overflow: Cannot insert key");
 
     ++size;
     int i = size - 1;
     arr[i] = value;
-    percolateUp(i);;
+    percolateUp(i);
+    ;
   }
 
   public int extractMin() {
@@ -124,23 +121,20 @@ public class MinHeap {
   }
 
   public int delete(int i) {
-    if (i >= size)
-      throw new IndexOutOfBoundsException("Overflow: Cannot delete key");
+    if (i >= size) throw new IndexOutOfBoundsException("Overflow: Cannot delete key");
 
-    if (i < 0)
-      throw new IndexOutOfBoundsException("Underflow: Cannot delete key");
+    if (i < 0) throw new IndexOutOfBoundsException("Underflow: Cannot delete key");
 
     int deletedKey = arr[i];
     decreaseKey(i, Integer.MIN_VALUE);
     extractMin();
     return deletedKey;
   }
-  
+
   public void display() {
     System.out.print("\nHeap -> ");
-    for (int i=0; i<size; i++)
-      System.out.print(arr[i] + " ");
-    
+    for (int i = 0; i < size; i++) System.out.print(arr[i] + " ");
+
     System.out.println("\n");
   }
 }

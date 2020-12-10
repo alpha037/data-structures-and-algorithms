@@ -16,7 +16,7 @@ public class Queue<T> {
 
   /**
    * Pushes an item into the queue
-   * 
+   *
    * @param item : The element to be pushed into the queue
    */
   public void enqueue(T item) {
@@ -25,7 +25,7 @@ public class Queue<T> {
 
   /**
    * Returns and removes the first item from the queue
-   * 
+   *
    * @return A T value containing the first item from the queue after removing it
    */
   public T dequeue() {
@@ -34,7 +34,7 @@ public class Queue<T> {
 
   /**
    * Returns true if the queue is empty, otherwise false
-   * 
+   *
    * @return A boolean value determining if the queue is empty or not
    */
   public boolean isEmpty() {
@@ -43,7 +43,7 @@ public class Queue<T> {
 
   /**
    * The current size of the queue
-   * 
+   *
    * @return An integer value containing the current size of the queue
    */
   public int size() {

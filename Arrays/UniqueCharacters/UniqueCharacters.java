@@ -9,8 +9,7 @@ public class UniqueCharacters {
   public static boolean isUnique(String string) {
 
     // * Edge Cases
-    if (string == null || string.length() < 1)
-      return true;
+    if (string == null || string.length() < 1) return true;
 
     /**
      * ? HashSet Solution
@@ -18,10 +17,8 @@ public class UniqueCharacters {
     Set<Character> set = new HashSet<>();
 
     for (int i = 0; i < string.length(); i++)
-      if (set.contains(string.charAt(i)))
-        return false;
-      else
-        set.add(string.charAt(i));
+      if (set.contains(string.charAt(i))) return false;
+      else set.add(string.charAt(i));
 
     return true;
 
