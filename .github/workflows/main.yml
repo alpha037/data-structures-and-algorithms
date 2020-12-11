@@ -5,10 +5,11 @@ on:
     paths:
       - "**/*.java"
   pull_request:
-    branches: [main]
+    paths:
+      - "**/*.java"
 
 jobs:
-  formatting:
+  format:
     runs-on: ubuntu-latest
 
     steps:
