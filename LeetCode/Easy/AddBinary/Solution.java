@@ -28,8 +28,8 @@ public class Solution {
 
     while (i >= 0 || j >= 0) {
 
-      sum += (i >= 0) ? a.charAt(i) - '0': 0;
-      sum += (j >= 0) ? b.charAt(j) - '0': 0;
+      sum += (i >= 0) ? a.charAt(i) - '0' : 0;
+      sum += (j >= 0) ? b.charAt(j) - '0' : 0;
 
       // If the sum is 1 or 3, then add 0
       // and move 1 to carry
@@ -38,13 +38,12 @@ public class Solution {
       // Compute the carry
       sum /= 2;
 
-      --i; 
+      --i;
       --j;
     }
 
-    if (sum != 0)
-      return res.append(sum).reverse().toString();
-    
+    if (sum != 0) return res.append(sum).reverse().toString();
+
     return res.reverse().toString();
   }
 
