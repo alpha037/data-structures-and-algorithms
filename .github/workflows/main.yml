@@ -2,7 +2,8 @@ name: Google java formatter
 
 on:
   push:
-    branches: [main]
+    paths:
+      - "**/*.java"
   pull_request:
     branches: [main]
 
@@ -13,12 +14,12 @@ jobs:
     steps:
       - name: Checkout codebase
         uses: actions/checkout@v2
-      
+
       - name: Setup java environment
         uses: actions/setup-java@v1
         with:
           java-version: "11"
-      
+
       - name: Setup code formatter
         uses: axel-op/googlejavaformat-action@v3
         with:
