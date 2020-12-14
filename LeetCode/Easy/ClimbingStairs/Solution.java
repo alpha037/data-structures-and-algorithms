@@ -41,19 +41,18 @@ public class Solution {
     // Therefore, we can further optimize
     // this to constant space of O(1) by
     // using just three variables
-    int[] dp = new int[n+1];
+    int[] dp = new int[n + 1];
     dp[0] = dp[1] = 1;
-    
-    for (int i=2; i<=n; i++)
-      dp[i] = dp[i-1] + dp[i-2];
-    
+
+    for (int i = 2; i <= n; i++) dp[i] = dp[i - 1] + dp[i - 2];
+
     return dp[n];
 
     /**
      * * O(1) space approach
      */
     // if (n == 1) return 1;
-    
+
     // int first = 1, second = 2;
     // for (int i=3; i<=n; i++) {
     //   int third = first + second;
