@@ -35,19 +35,15 @@ class ListNode {
 public class Solution {
   public ListNode deleteDuplicates(ListNode head) {
 
-    if (head == null)
-      return null;
+    if (head == null) return null;
 
-    if (head.next == null)
-      return head;
+    if (head.next == null) return head;
 
     ListNode tracker = head;
 
     while (tracker.next != null) {
-      if (tracker.val == tracker.next.val)
-        tracker.next = tracker.next.next;
-      else
-        tracker = tracker.next;
+      if (tracker.val == tracker.next.val) tracker.next = tracker.next.next;
+      else tracker = tracker.next;
     }
 
     return head;
