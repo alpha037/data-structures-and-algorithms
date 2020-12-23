@@ -27,21 +27,15 @@ import java.util.List;
 
 public class Solution {
   public List<List<Integer>> generate(int numRows) {
-    if (numRows == 0)
-      return List.of(List.of(1));
+    if (numRows == 0) return List.of(List.of(1));
 
     List<List<Integer>> lists = new ArrayList<>();
     lists.add(Arrays.asList(1));
-    for (int i=1; i<=numRows; ++i) {
+    for (int i = 1; i <= numRows; ++i) {
       lists.add(new ArrayList<>());
-      for (int j=0; j<=i; ++j)
-        if (j == 0 || j == i)
-          lists.get(i).add(1);
-        else
-          lists.get(i).add(
-            lists.get(i-1).get(j-1) +
-            lists.get(i-1).get(j)
-          );
+      for (int j = 0; j <= i; ++j)
+        if (j == 0 || j == i) lists.get(i).add(1);
+        else lists.get(i).add(lists.get(i - 1).get(j - 1) + lists.get(i - 1).get(j));
     }
 
     return lists;
