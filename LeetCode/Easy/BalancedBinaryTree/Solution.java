@@ -34,12 +34,17 @@ class TreeNode {
   int val;
   TreeNode left;
   TreeNode right;
+
   TreeNode() {}
-  TreeNode(int val) { this.val = val; }
+
+  TreeNode(int val) {
+    this.val = val;
+  }
+
   TreeNode(int val, TreeNode left, TreeNode right) {
-      this.val = val;
-      this.left = left;
-      this.right = right;
+    this.val = val;
+    this.left = left;
+    this.right = right;
   }
 }
 
@@ -70,22 +75,19 @@ public class Solution {
   //     && isBalanced(root.left) && isBalanced(root.right);
   // }
 
-
   /**
    * * Optimized solution, using
    * * DFS and bottom up approach
    * * to compute the height of
    * * the lower nodes first and
    * * then bubbling up the result
-   * 
+   *
    * * TC: O(n)
    */
-
   private boolean isBalanced = true;
 
   private int dfs(TreeNode root) {
-    if (root == null)
-      return -1;
+    if (root == null) return -1;
 
     int lDepth = dfs(root.left);
     int rDepth = dfs(root.right);
@@ -97,10 +99,9 @@ public class Solution {
 
     return Math.max(lDepth, rDepth) + 1;
   }
-  
+
   public boolean isBalanced(TreeNode root) {
-    if (root == null)
-      return true;
+    if (root == null) return true;
 
     dfs(root);
 
@@ -110,7 +111,8 @@ public class Solution {
   public static void main(String[] args) {
     Solution solution = new Solution();
 
-    TreeNode root = new TreeNode(3, new TreeNode(9), new TreeNode(20, new TreeNode(15), new TreeNode(7)));
+    TreeNode root =
+        new TreeNode(3, new TreeNode(9), new TreeNode(20, new TreeNode(15), new TreeNode(7)));
 
     // should be true
     System.out.println(solution.isBalanced(root));
