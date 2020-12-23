@@ -20,16 +20,13 @@ package LeetCode.Easy.BestTimeToBuyAndSellStock;
   Explanation: In this case, no transaction is done, i.e. max profit = 0.
 */
 
-
 public class Solution {
   public int maxProfit(int[] prices) {
     int profit = 0, min = Integer.MAX_VALUE;
 
     for (int price : prices)
-      if (price < min)
-        min = price;
-      else
-        profit = Math.max(profit, price - min);
+      if (price < min) min = price;
+      else profit = Math.max(profit, price - min);
 
     return profit;
   }
