@@ -31,7 +31,7 @@ public class Solution {
 
     List<List<Integer>> lists = new ArrayList<>();
     lists.add(Arrays.asList(1));
-    for (int i = 1; i <= numRows; ++i) {
+    for (int i = 1; i < numRows; ++i) {
       lists.add(new ArrayList<>());
       for (int j = 0; j <= i; ++j)
         if (j == 0 || j == i) lists.get(i).add(1);
