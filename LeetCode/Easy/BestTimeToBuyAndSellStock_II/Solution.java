@@ -37,12 +37,11 @@ public class Solution {
   public int maxProfit(int[] prices) {
     int profit = 0;
 
-    for (int i=0; i<prices.length - 1; ++i)
+    for (int i = 0; i < prices.length - 1; ++i)
       // If the selling price is greater
       // than cost price, keep on adding
-      // the profit 
-      if (prices[i] < prices[i+1])
-        profit += prices[i+1] - prices[i];
+      // the profit
+      if (prices[i] < prices[i + 1]) profit += prices[i + 1] - prices[i];
 
     return profit;
   }
