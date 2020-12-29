@@ -13,7 +13,7 @@ package LeetCode.Easy.ExcelSheetColumnTitle;
     ...
     26 -> Z
     27 -> AA
-    28 -> AB 
+    28 -> AB
     ...
 
   Example 1:
@@ -31,15 +31,15 @@ package LeetCode.Easy.ExcelSheetColumnTitle;
 
 public class Solution {
   public String convertToTitle(int n) {
-    if (n == 0)
-      return "";
+    if (n == 0) return "";
 
     StringBuilder res = new StringBuilder("");
 
     /**
      * * Lookup approach
      */
-    // final char[] ALPHABETS  = {'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
+    // final char[] ALPHABETS  =
+    // {'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
 
     // while (n > 0) {
     //   int r = n % 26;
@@ -50,7 +50,7 @@ public class Solution {
     //   // as we are considering
     //   // 26 to be 'Z', whereas
     //   // it's actually the 25th
-    //   // alphabet w.r.t 'A' 
+    //   // alphabet w.r.t 'A'
 
     //   if (r == 0) {
     //     n = (n /26) - 1;

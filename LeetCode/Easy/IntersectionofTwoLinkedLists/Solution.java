@@ -49,8 +49,7 @@ class ListNode {
 
 public class Solution {
   public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
-    if (headA == null || headB == null)
-      return null;
+    if (headA == null || headB == null) return null;
 
     ListNode p = headA, q = headB;
 
@@ -58,14 +57,11 @@ public class Solution {
       p = p.next;
       q = q.next;
 
-      if (p == q)
-        return p;
+      if (p == q) return p;
 
-      if (p == null)
-        p = headB;
+      if (p == null) p = headB;
 
-      if (q == null)
-        q = headA;
+      if (q == null) q = headA;
     }
 
     return p;

@@ -36,8 +36,7 @@ import java.util.HashMap;
 
 public class Solution {
   public int lengthOfLongestSubstring(String s) {
-    if (s.length() <= 1)
-      return s.length();
+    if (s.length() <= 1) return s.length();
 
     int maxLength = 0, i = 0, j = 0;
     HashMap<Character, Boolean> visited = new HashMap<>();
@@ -46,9 +45,7 @@ public class Solution {
       if (!visited.containsKey(s.charAt(j)) || !visited.get(s.charAt(j))) {
         visited.put(s.charAt(j++), true);
         maxLength = Math.max(maxLength, visited.keySet().size());
-      }
-      else
-        visited.remove(s.charAt(i++));
+      } else visited.remove(s.charAt(i++));
 
     return maxLength;
   }

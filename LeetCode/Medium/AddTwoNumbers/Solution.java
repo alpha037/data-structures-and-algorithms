@@ -47,11 +47,9 @@ class ListNode {
 
 public class Solution {
   public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-    if (l1 == null && l2 == null)
-      return null;
+    if (l1 == null && l2 == null) return null;
 
-    if (l1 == null || l2 == null)
-      return l1 == null ? l2 : l1;
+    if (l1 == null || l2 == null) return l1 == null ? l2 : l1;
 
     ListNode head = new ListNode(-1);
     ListNode l3 = head;
@@ -70,8 +68,7 @@ public class Solution {
       l3 = l3.next;
     }
 
-    if (carry != 0)
-      l3.next = new ListNode(carry);
+    if (carry != 0) l3.next = new ListNode(carry);
 
     return head.next;
   }
