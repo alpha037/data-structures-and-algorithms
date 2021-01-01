@@ -29,7 +29,6 @@ package LeetCode.Easy.ReverseBits;
   The input must be a binary string of length 32
 */
 
-
 public class Solution {
   // you need treat n as an unsigned value
   public int reverseBits(int n) {
@@ -37,12 +36,12 @@ public class Solution {
     while (t-- > 0) {
       // Left shift the result by 1
       res <<= 1;
-      
+
       // Reverse the last bit of
       // n by &-ing 1 and add it
       // to the res variable
       res |= (n & 1);
-      
+
       // Right shift n by 1
       n >>>= 1;
     }

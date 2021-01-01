@@ -51,14 +51,13 @@ public class Solution {
      */
     int majorityIndex = 0, count = 1;
 
-    for (int i=1; i<nums.length; i++)
+    for (int i = 1; i < nums.length; i++)
       // If the element at majorityIndex
       // is equal to the current element
       // increment the count
-      if (nums[majorityIndex] == nums[i])
-        ++count;
+      if (nums[majorityIndex] == nums[i]) ++count;
       else {
-        
+
         // Otherwise, decrement the
         // count
         --count;
@@ -82,9 +81,9 @@ public class Solution {
     Solution solution = new Solution();
 
     // should be 3
-    System.out.println(solution.majorityElement(new int[] {3,2,3}));
+    System.out.println(solution.majorityElement(new int[] {3, 2, 3}));
 
     // should be 2
-    System.out.println(solution.majorityElement(new int[] {2,2,1,1,1,2,2}));
+    System.out.println(solution.majorityElement(new int[] {2, 2, 1, 1, 1, 2, 2}));
   }
 }

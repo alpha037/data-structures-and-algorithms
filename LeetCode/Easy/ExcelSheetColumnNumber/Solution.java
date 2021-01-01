@@ -13,7 +13,7 @@ package LeetCode.Easy.ExcelSheetColumnNumber;
     ...
     Z -> 26
     AA -> 27
-    AB -> 28 
+    AB -> 28
     ...
 
   Example 1:
@@ -35,13 +35,11 @@ package LeetCode.Easy.ExcelSheetColumnNumber;
   s is between "A" and "FXSHRXW".
 */
 
-
 public class Solution {
   public int titleToNumber(String s) {
     int res = 0;
 
-    for (int i=0; i<s.length(); i++)
-      res = (res * 26) + (s.charAt(i) - 'A' + 1);
+    for (int i = 0; i < s.length(); i++) res = (res * 26) + (s.charAt(i) - 'A' + 1);
 
     return res;
   }
