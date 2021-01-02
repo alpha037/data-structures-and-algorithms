@@ -75,13 +75,17 @@ public class Solution {
     //   visited.add(n);
     // }
 
+    
     /**
      * * Floyd's Cycle-Finding approach
      */
     int fastTracker = n;
     int slowTracker = n;
 
-    //
+    // The fastTracker and the
+    // slowTracker are bound to
+    // meet at 1, if and only if
+    // n is a happy number.
     do {
       slowTracker = squareOfDigits(slowTracker);
       fastTracker = squareOfDigits(squareOfDigits(fastTracker));
