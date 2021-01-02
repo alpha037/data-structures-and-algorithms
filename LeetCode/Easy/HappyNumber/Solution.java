@@ -48,18 +48,17 @@ public class Solution {
   public boolean isHappy(int n) {
     // Since, 1 and 7 are the
     // only happy numbers
-    if (n == 1 || n == 7)
-      return true;
+    if (n == 1 || n == 7) return true;
 
     /**
      * * HashSet approach
      */
-    
+
     // We can use a set to keep
     // track of all the computed
-    // values, because, if a 
+    // values, because, if a
     // computed value is not 1,
-    // then it's bound to have the 
+    // then it's bound to have the
     // same value as a previously
     // computed value.
 
@@ -69,7 +68,7 @@ public class Solution {
 
     //   if (n == 1)
     //     return true;
-      
+
     //   if (visited.contains(n))
     //     return false;
 
@@ -82,7 +81,7 @@ public class Solution {
     int fastTracker = n;
     int slowTracker = n;
 
-    // 
+    //
     do {
       slowTracker = squareOfDigits(slowTracker);
       fastTracker = squareOfDigits(squareOfDigits(fastTracker));
