@@ -30,17 +30,14 @@ class ListNode {
 
 public class Solution {
   public ListNode removeElements(ListNode head, int val) {
-    if (head == null)
-      return null;
+    if (head == null) return null;
 
     ListNode dummy = new ListNode(), p = dummy;
     dummy.next = head;
 
     while (head != null) {
-      if (head.val == val)
-        p.next = head.next;
-      else
-        p = head;
+      if (head.val == val) p.next = head.next;
+      else p = head;
 
       head = head.next;
     }

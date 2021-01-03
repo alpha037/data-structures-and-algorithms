@@ -24,23 +24,21 @@ import java.util.HashSet;
   Output: true
 */
 
-
 public class Solution {
   public boolean containsDuplicate(int[] nums) {
-    if (nums.length <= 1)
-      return false;
+    if (nums.length <= 1) return false;
 
-      /**
-       * * Sorting approach
-       * * TC: O(n * log(n)), SC: O(1)
-       */
-      // Arrays.sort(nums);
+    /**
+     * * Sorting approach
+     * * TC: O(n * log(n)), SC: O(1)
+     */
+    // Arrays.sort(nums);
 
-      // for (int i=0; i<nums.length-1; i++)
-      //   if (nums[i] == nums[i+1])
-      //     return true;
+    // for (int i=0; i<nums.length-1; i++)
+    //   if (nums[i] == nums[i+1])
+    //     return true;
 
-      // return false;
+    // return false;
 
     /**
      * * Hashmap approach
@@ -56,14 +54,12 @@ public class Solution {
 
     // return false;
 
-
     /**
      * * HashSet approach
      * * TC: O(n), SC: O(n)
      */
     HashSet<Integer> set = new HashSet<>();
-    for (int num : nums)
-      set.add(num);
+    for (int num : nums) set.add(num);
 
     return set.size() != nums.length;
   }
@@ -78,6 +74,6 @@ public class Solution {
     System.out.println(solution.containsDuplicate(new int[] {1, 2, 3, 4}));
 
     // should be true
-    System.out.println(solution.containsDuplicate(new int[] {1,1,1,3,3,4,3,2,4,2}));
+    System.out.println(solution.containsDuplicate(new int[] {1, 1, 1, 3, 3, 4, 3, 2, 4, 2}));
   }
 }

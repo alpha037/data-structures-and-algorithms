@@ -20,21 +20,18 @@ import java.util.HashMap;
   Output: false
 */
 
-
 public class Solution {
   public boolean containsNearbyDuplicate(int[] nums, int k) {
-    if (nums.length <= 1)
-      return false;
+    if (nums.length <= 1) return false;
 
     /**
-   * * Hashmap approach
-   * * TC: O(n), SC: O(n)
-   */
+     * * Hashmap approach
+     * * TC: O(n), SC: O(n)
+     */
     HashMap<Integer, Integer> visited = new HashMap<>();
 
-    for (int i=0; i<nums.length; i++) {
-      if (visited.containsKey(nums[i]) && Math.abs(i - visited.get(nums[i])) <= k)
-        return true;
+    for (int i = 0; i < nums.length; i++) {
+      if (visited.containsKey(nums[i]) && Math.abs(i - visited.get(nums[i])) <= k) return true;
 
       visited.put(nums[i], i);
     }
@@ -52,6 +49,6 @@ public class Solution {
     System.out.println(solution.containsNearbyDuplicate(new int[] {1, 0, 1, 1}, 1));
 
     // should be false
-    System.out.println(solution.containsNearbyDuplicate(new int[] {1,2,3,1,2,3}, 2));
+    System.out.println(solution.containsNearbyDuplicate(new int[] {1, 2, 3, 1, 2, 3}, 2));
   }
 }

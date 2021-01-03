@@ -1,6 +1,5 @@
 package LeetCode.Easy.IsomorphicStrings;
 
-
 /*
   205. Isomorphic Strings
 
@@ -28,8 +27,7 @@ package LeetCode.Easy.IsomorphicStrings;
 
 public class Solution {
   public boolean isIsomorphic(String s, String t) {
-    if (s.length() != t.length())
-      return false;
+    if (s.length() != t.length()) return false;
 
     // Since, there are total
     // 256 characters in ASCII
@@ -39,9 +37,8 @@ public class Solution {
     // If they are supposed to
     // be isomorphic, then their
     // positions must be same
-    for (int i=0; i<s.length(); i++) {
-      if (sMap[s.charAt(i)] != tMap[t.charAt(i)])
-        return false;
+    for (int i = 0; i < s.length(); i++) {
+      if (sMap[s.charAt(i)] != tMap[t.charAt(i)]) return false;
 
       sMap[s.charAt(i)] = i + 1;
       tMap[t.charAt(i)] = i + 1;

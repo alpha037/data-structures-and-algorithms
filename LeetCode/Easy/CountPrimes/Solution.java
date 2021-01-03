@@ -26,8 +26,6 @@ import java.util.Arrays;
   0 <= n <= 5 * 106
 */
 
-
-
 public class Solution {
   /**
    * * Naive approach
@@ -60,33 +58,26 @@ public class Solution {
   //   return count;
   // }
 
-
   /**
    * * Sieve of Eratosthenes
    * * TC: O(n * log(log(n)))
    */
   public int countPrimes(int n) {
-    if (n <= 1)
-      return 0;
+    if (n <= 1) return 0;
 
     int count = 0;
-    
-    boolean[] primes = new boolean[n+1];
+
+    boolean[] primes = new boolean[n + 1];
     Arrays.fill(primes, true);
 
-    for (int p=2; p*p<=n; p++) {
-      if (primes[p])
-        for (int i=p*p; i<=n; i+=p )
-          primes[i] = false;
+    for (int p = 2; p * p <= n; p++) {
+      if (primes[p]) for (int i = p * p; i <= n; i += p) primes[i] = false;
     }
 
-    for (int i=2; i<n; i++)
-      if (primes[i])
-        ++count;
+    for (int i = 2; i < n; i++) if (primes[i]) ++count;
 
     return count;
   }
-
 
   public static void main(String[] args) {
     Solution solution = new Solution();

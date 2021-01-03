@@ -33,8 +33,7 @@ class ListNode {
 
 public class Solution {
   public ListNode reverseList(ListNode head) {
-    if (head == null || head.next == null)
-      return head;
+    if (head == null || head.next == null) return head;
 
     /**
      * * Recursive approach
@@ -47,11 +46,9 @@ public class Solution {
 
     // return rest;
 
-
     /**
      * * Iterative approach
      */
-
     ListNode curr = head, prev = null, next = null;
 
     while (curr != null) {
