@@ -52,32 +52,24 @@ import java.util.List;
   nums is sorted in ascending order.
 */
 
-
 public class Solution {
   public List<String> summaryRanges(int[] nums) {
-    if (nums.length == 0)
-      return List.of();
+    if (nums.length == 0) return List.of();
 
     List<String> list = new ArrayList<>();
     int i = 0, start = nums[0];
 
     while (i < nums.length - 1)
-      if (nums[i+1] - nums[i] == 1)
-        ++i;
+      if (nums[i + 1] - nums[i] == 1) ++i;
       else {
-        if (start != nums[i])
-          list.add(start + "->" + nums[i]);
-        else
-          list.add(String.valueOf(start));
-        
+        if (start != nums[i]) list.add(start + "->" + nums[i]);
+        else list.add(String.valueOf(start));
+
         start = nums[++i];
       }
 
-
-    if (start != nums[i])
-      list.add(start + "->" + nums[i]);
-    else
-      list.add(String.valueOf(start));
+    if (start != nums[i]) list.add(start + "->" + nums[i]);
+    else list.add(String.valueOf(start));
 
     return list;
   }
@@ -86,10 +78,10 @@ public class Solution {
     Solution solution = new Solution();
 
     // should be ["0->2","4->5","7"]
-    System.out.println(solution.summaryRanges(new int[] {0,1,2,4,5,7}).toString());
+    System.out.println(solution.summaryRanges(new int[] {0, 1, 2, 4, 5, 7}).toString());
 
     // should be ["0","2->4","6","8->9"]
-    System.out.println(solution.summaryRanges(new int[] {0,2,3,4,6,8,9}).toString());
+    System.out.println(solution.summaryRanges(new int[] {0, 2, 3, 4, 6, 8, 9}).toString());
 
     // should be []
     System.out.println(solution.summaryRanges(new int[] {}).toString());

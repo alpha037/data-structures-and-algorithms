@@ -45,7 +45,6 @@ All the calls to pop and top are valid.
 Follow-up: Can you implement the stack such that each operation is amortized O(1) time complexity? In other words, performing n operations will take overall O(n) time even if one of those operations may take longer. You can use more than two queues.
 */
 
-
 public class Solution {
   class MyStack {
 
@@ -57,29 +56,28 @@ public class Solution {
       this.q1 = new LinkedList<>();
       this.q2 = new LinkedList<>();
     }
-    
+
     /** Push element x onto stack. */
     public void push(int x) {
       q2.add(x);
 
-      while (!q1.isEmpty())
-        q2.add(q1.poll());
+      while (!q1.isEmpty()) q2.add(q1.poll());
 
       Queue<Integer> temp = q1;
       q1 = q2;
       q2 = temp;
     }
-    
+
     /** Removes the element on top of the stack and returns that element. */
     public int pop() {
       return q2.remove();
     }
-    
+
     /** Get the top element. */
     public int top() {
       return q2.peek();
     }
-    
+
     /** Returns whether the stack is empty. */
     public boolean empty() {
       return q2.isEmpty();

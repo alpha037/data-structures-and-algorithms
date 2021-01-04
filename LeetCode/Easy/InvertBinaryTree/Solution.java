@@ -46,8 +46,7 @@ class TreeNode {
 
 public class Solution {
   public TreeNode invertTree(TreeNode root) {
-    if (root == null)
-      return null;
+    if (root == null) return null;
 
     // Recursively call the left and
     // right subtrees
@@ -64,8 +63,7 @@ public class Solution {
   }
 
   public void display(TreeNode root) {
-    if (root == null)
-      return;
+    if (root == null) return;
 
     display(root.left);
     System.out.print(root.val + " ");
