@@ -35,7 +35,6 @@ package LeetCode.Easy.PowerofTwo;
   -231 <= n <= 231 - 1
 */
 
-
 public class Solution {
   public boolean isPowerOfTwo(int n) {
     /**
@@ -54,11 +53,10 @@ public class Solution {
 
     // return true;
 
-
     /**
      * * Bit Manipulation
      */
-    return (n > 0) && (n & (n-1)) == 0;
+    return (n > 0) && (n & (n - 1)) == 0;
   }
 
   public static void main(String[] args) {

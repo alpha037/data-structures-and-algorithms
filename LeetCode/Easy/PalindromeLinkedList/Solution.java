@@ -19,7 +19,6 @@ package LeetCode.Easy.PalindromeLinkedList;
   Could you do it in O(n) time and O(1) space?
 */
 
-
 // Definition for singly-linked list.
 // Not needed in the actual code.
 class ListNode {
@@ -40,11 +39,9 @@ class ListNode {
 
 public class Solution {
   public boolean isPalindrome(ListNode head) {
-    if (head == null)
-      return false;
+    if (head == null) return false;
 
-    if (head.next == null)
-      return true;
+    if (head.next == null) return true;
 
     /**
      * * Stack approach
@@ -68,7 +65,6 @@ public class Solution {
     // }
 
     // return true;
-
 
     /**
      * * Two-pointer approach
@@ -105,8 +101,7 @@ public class Solution {
     // pointers contain the
     // same value of not
     while (slow != null) {
-      if (slow.val != fast.val)
-        return false;
+      if (slow.val != fast.val) return false;
 
       slow = slow.next;
       fast = fast.next;
