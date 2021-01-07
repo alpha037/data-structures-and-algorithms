@@ -29,11 +29,9 @@ package LeetCode.Medium.LongestPalindromicSubstring;
   s consist of only digits and English letters (lower-case and/or upper-case),
 */
 
-
 public class Solution {
   public String longestPalindrome(String s) {
-    if (s.length() <= 1)
-      return s;
+    if (s.length() <= 1) return s;
 
     /**
      * * Dynamic Programming approach
@@ -59,7 +57,7 @@ public class Solution {
 
     //     if (s.charAt(i) == s.charAt(j) && dp[i+1][j-1]) {
     //       dp[i][j] = true;
-          
+
     //       if (k > maxLength) {
     //         start = i;
     //         maxLength = k;
@@ -71,10 +69,9 @@ public class Solution {
      * * Optimized space approach
      * * TC: O(n^2), SC: O(1)
      */
-
     int maxLength = 0, start = 0;
 
-    for (int i=0; i<s.length(); i++) {
+    for (int i = 0; i < s.length(); i++) {
       int length = Math.max(expand(s, i, i), expand(s, i, i + 1));
       if (length > maxLength) {
         maxLength = length;
