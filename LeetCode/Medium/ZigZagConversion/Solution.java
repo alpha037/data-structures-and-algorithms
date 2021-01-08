@@ -1,6 +1,5 @@
 package LeetCode.Medium.ZigZagConversion;
 
-
 /*
   6. ZigZag Conversion
 
@@ -39,15 +38,12 @@ package LeetCode.Medium.ZigZagConversion;
   1 <= numRows <= 1000
 */
 
-
 public class Solution {
   /**
-   * * TC: O(n), SC: O(1) 
+   * * TC: O(n), SC: O(1)
    */
-
   public String convert(String s, int numRows) {
-    if (numRows <= 1 || numRows > s.length())
-      return s;
+    if (numRows <= 1 || numRows > s.length()) return s;
 
     StringBuilder res = new StringBuilder();
     int currentRow = 1, idx = 0;
@@ -58,24 +54,21 @@ public class Solution {
 
       // If we're going in the downward
       // direction, then the index would
-      // jump at every 2 * (numRows 
+      // jump at every 2 * (numRows
       // - currentRow) step
-      if (down)
-        idx += (numRows - currentRow) * 2;
-      
+      if (down) idx += (numRows - currentRow) * 2;
+
       // Otherwise, if we're going up,
       // then the index would jump at
       // every 2 * (currentRow - 1)
       // step
-      else
-        idx += (currentRow - 1) * 2;
+      else idx += (currentRow - 1) * 2;
 
       // If the currentRow is not the
       // first row or the last last row,
       // then we can toggle down every
       // time
-      if (currentRow != 1 && currentRow != numRows)
-        down = !down;
+      if (currentRow != 1 && currentRow != numRows) down = !down;
 
       // If we're down with the
       // currentRow, then we
@@ -90,12 +83,10 @@ public class Solution {
         // less than the numRows,
         // then we're going in
         // the downward direction
-        if (currentRow < numRows)
-          down = true;
-        
+        if (currentRow < numRows) down = true;
+
         // Otherwise, we're going up
-        else
-          down = false;
+        else down = false;
       }
     }
 

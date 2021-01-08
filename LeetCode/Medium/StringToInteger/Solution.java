@@ -48,26 +48,20 @@ package LeetCode.Medium.StringToInteger;
   s consists of English letters (lower-case and upper-case), digits, ' ', '+', '-' and '.'.
 */
 
-
 public class Solution {
   public int myAtoi(String s) {
-    if (s == null || s.length() == 0)
-      return 0;
+    if (s == null || s.length() == 0) return 0;
 
     int res = 0, i = 0;
     boolean minus = false;
 
-    while (i < s.length() && s.charAt(i) == ' ')
-      ++i;
+    while (i < s.length() && s.charAt(i) == ' ') ++i;
 
-    if (i == s.length())
-      return 0;
+    if (i == s.length()) return 0;
 
-    if (s.charAt(i) == '+' || s.charAt(i) == '-')
-      minus = s.charAt(i++) == '-';
+    if (s.charAt(i) == '+' || s.charAt(i) == '-') minus = s.charAt(i++) == '-';
 
-    if (i == s.length())
-      return 0;
+    if (i == s.length()) return 0;
 
     while (i < s.length() && Character.isDigit(s.charAt(i))) {
       int temp = s.charAt(i++) - '0';

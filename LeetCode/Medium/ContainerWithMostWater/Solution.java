@@ -33,21 +33,17 @@ package LeetCode.Medium.ContainerWithMostWater;
   0 <= height[i] <= 3 * 104
 */
 
-
 public class Solution {
   public int maxArea(int[] height) {
-    if (height.length <= 1)
-      return height[0];
+    if (height.length <= 1) return height[0];
 
     int i = 0, j = height.length - 1, maxArea = 0;
 
     while (i < j) {
       maxArea = Math.max(maxArea, Math.min(height[i], height[j]) * (j - i));
 
-      if (height[i] < height[j])
-        ++i;
-      else 
-        --j;
+      if (height[i] < height[j]) ++i;
+      else --j;
     }
 
     return maxArea;
@@ -57,18 +53,18 @@ public class Solution {
     Solution solution = new Solution();
 
     // should be 49
-    System.out.println(solution.maxArea(new int [] {1,8,6,2,5,4,8,3,7}));
+    System.out.println(solution.maxArea(new int[] {1, 8, 6, 2, 5, 4, 8, 3, 7}));
 
     // should be 1
-    System.out.println(solution.maxArea(new int [] {1,1}));
+    System.out.println(solution.maxArea(new int[] {1, 1}));
 
     // should be 16
-    System.out.println(solution.maxArea(new int [] {4,3,2,1,4}));
+    System.out.println(solution.maxArea(new int[] {4, 3, 2, 1, 4}));
 
     // should be 2
-    System.out.println(solution.maxArea(new int [] {1,2,1}));
+    System.out.println(solution.maxArea(new int[] {1, 2, 1}));
 
     // should be 36
-    System.out.println(solution.maxArea(new int [] {2,3,10,5,7,8,9}));
+    System.out.println(solution.maxArea(new int[] {2, 3, 10, 5, 7, 8, 9}));
   }
 }

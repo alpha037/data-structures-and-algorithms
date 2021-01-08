@@ -17,8 +17,8 @@ package LeetCode.Medium.IntToRoman;
 
   Roman numerals are usually written largest to smallest from left to right. However, the numeral for four is not IIII. Instead, the number four is written as IV. Because the one is before the five we subtract it making four. The same principle applies to the number nine, which is written as IX. There are six instances where subtraction is used:
 
-  I can be placed before V (5) and X (10) to make 4 and 9. 
-  X can be placed before L (50) and C (100) to make 40 and 90. 
+  I can be placed before V (5) and X (10) to make 4 and 9.
+  X can be placed before L (50) and C (100) to make 40 and 90.
   C can be placed before D (500) and M (1000) to make 400 and 900.
   Given an integer, convert it to a roman numeral.
 
@@ -50,7 +50,6 @@ package LeetCode.Medium.IntToRoman;
   1 <= num <= 3999
 */
 
-
 public class Solution {
   public String intToRoman(int num) {
     /**
@@ -61,21 +60,20 @@ public class Solution {
     // String[] hundreds = {"", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"};
     // String[] thousands = {"", "M", "MM", "MMM"};
 
-    // return 
+    // return
     //   thousands[num / 1000] +
     //   hundreds[(num % 1000) / 100] +
-    //   tens[(num % 100) / 10] + 
+    //   tens[(num % 100) / 10] +
     //   units[num % 10];
 
-
     /**
-     * * MSB subtraction approach 
+     * * MSB subtraction approach
      */
     String[] romans = {"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
     int[] digits = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
     String res = "";
 
-    for (int i=0; i<digits.length; ++i)
+    for (int i = 0; i < digits.length; ++i)
       while (num - digits[i] >= 0) {
         num -= digits[i];
         res += romans[i];
