@@ -30,37 +30,31 @@ import java.util.List;
   -105 <= nums[i] <= 105
 */
 
-
 public class Solution {
   public List<List<Integer>> threeSum(int[] nums) {
-    if (nums.length <= 2)
-      return List.of();
+    if (nums.length <= 2) return List.of();
 
     List<List<Integer>> lists = new ArrayList<>();
     Arrays.sort(nums);
 
-    for (int i=0; i<nums.length-2; i++)
+    for (int i = 0; i < nums.length - 2; i++)
       // Only unique elements
-      if (i == 0 || (i > 0 && nums[i] != nums[i-1])) {
+      if (i == 0 || (i > 0 && nums[i] != nums[i - 1])) {
         int j = i + 1, k = nums.length - 1;
-        
+
         // Since el1 + el2 + (-el3) = 0
         int sum = -nums[i];
 
         while (j < k) {
-          if (nums[j] + nums[k] > sum)
-            --k;
-          else if (nums[j] + nums[k] < sum)
-            ++j;
+          if (nums[j] + nums[k] > sum) --k;
+          else if (nums[j] + nums[k] < sum) ++j;
           else {
             lists.add(List.of(nums[i], nums[j++], nums[k--]));
 
             // Check for unique elements
-            while (j < k && nums[j] == nums[j-1])
-              ++j;
+            while (j < k && nums[j] == nums[j - 1]) ++j;
 
-            while (j < k && nums[k] == nums[k+1])
-              --k;
+            while (j < k && nums[k] == nums[k + 1]) --k;
           }
         }
       }
@@ -72,7 +66,7 @@ public class Solution {
     Solution solution = new Solution();
 
     // should be [[-1,-1,2],[-1,0,1]]
-    System.out.println(solution.threeSum(new int[] {-1,0,1,2,-1,-4}).toString());
+    System.out.println(solution.threeSum(new int[] {-1, 0, 1, 2, -1, -4}).toString());
 
     // should be []
     System.out.println(solution.threeSum(new int[] {}).toString());
