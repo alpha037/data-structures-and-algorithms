@@ -30,15 +30,22 @@ package LeetCode.Medium.RemoveNthNodeFromEndOfList;
 class ListNode {
   int val;
   ListNode next;
+
   ListNode() {}
-  ListNode(int val) { this.val = val; }
-  ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+
+  ListNode(int val) {
+    this.val = val;
+  }
+
+  ListNode(int val, ListNode next) {
+    this.val = val;
+    this.next = next;
+  }
 }
 
 public class Solution {
   public ListNode removeNthFromEnd(ListNode head, int n) {
-    if (head == null)
-      return null;
+    if (head == null) return null;
 
     /**
      * * Two pass approach
@@ -74,16 +81,14 @@ public class Solution {
     /**
      * * Single pass approach
      */
-
     ListNode dummy = new ListNode(-1);
     ListNode fast = dummy, slow = dummy;
     dummy.next = head;
 
     // Since, fast pointer has
     // to be n distance apart
-    // from the slow pointer 
-    for (int i=0; i<n; i++)
-      fast = fast.next;
+    // from the slow pointer
+    for (int i = 0; i < n; i++) fast = fast.next;
 
     while (fast.next != null) {
       fast = fast.next;
