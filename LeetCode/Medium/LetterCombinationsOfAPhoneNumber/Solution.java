@@ -29,7 +29,6 @@ import java.util.List;
   digits[i] is a digit in the range ['2', '9'].
 */
 
-
 public class Solution {
   private final String[] MAP = {"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
 
@@ -50,11 +49,9 @@ public class Solution {
   }
 
   public List<String> letterCombinations(String digits) {
-    if (digits == null || digits.length() == 0)
-      return List.of();
+    if (digits == null || digits.length() == 0) return List.of();
 
-    if (digits.length() == 1)
-      return List.of(MAP[digits.charAt(0) - '0'].split(""));
+    if (digits.length() == 1) return List.of(MAP[digits.charAt(0) - '0'].split(""));
 
     List<String> res = new ArrayList<>();
     StringBuilder curr = new StringBuilder();
