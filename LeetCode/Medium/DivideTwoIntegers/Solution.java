@@ -37,7 +37,6 @@ package LeetCode.Medium.DivideTwoIntegers;
   divisor != 0
 */
 
-
 public class Solution {
   public int divide(int dividend, int divisor) {
 
@@ -46,17 +45,13 @@ public class Solution {
     boolean isDividendMin = false;
 
     if (dividend == Integer.MIN_VALUE)
-      if (divisor == -1)
-        return Integer.MAX_VALUE;
-      else if (divisor == 1)
-        return Integer.MIN_VALUE;
-      else
-        isDividendMin = true;
+      if (divisor == -1) return Integer.MAX_VALUE;
+      else if (divisor == 1) return Integer.MIN_VALUE;
+      else isDividendMin = true;
 
     // If the divisor is also equal
     // to INT_MIN, return 1 / 0
-    if (divisor == Integer.MIN_VALUE)
-      return isDividendMin ? 1 : 0;
+    if (divisor == Integer.MIN_VALUE) return isDividendMin ? 1 : 0;
 
     // Check if any of the numbers are negative
     boolean isNegative = dividend < 0 ^ divisor < 0;
@@ -93,7 +88,6 @@ public class Solution {
         quotient += 1 << n;
       }
     }
-
 
     return isNegative ? -quotient : quotient;
   }

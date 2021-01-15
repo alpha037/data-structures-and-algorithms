@@ -27,7 +27,6 @@ package LeetCode.Medium.SwapNodesInPairs;
   Follow up: Can you solve the problem without modifying the values in the list's nodes? (i.e., Only nodes themselves may be changed.)
 */
 
-
 class ListNode {
   int val;
   ListNode next;
@@ -46,8 +45,7 @@ class ListNode {
 
 public class Solution {
   public ListNode swapPairs(ListNode head) {
-    if (head == null || head.next == null)
-      return head;
+    if (head == null || head.next == null) return head;
 
     /**
      * * Swapping values only
@@ -67,11 +65,9 @@ public class Solution {
 
     // return head;
 
-
     /**
      * * Swapping actual nodes - Recursive approach
      */
-
     ListNode current = head;
     ListNode next = head.next;
     ListNode farNext = next.next;

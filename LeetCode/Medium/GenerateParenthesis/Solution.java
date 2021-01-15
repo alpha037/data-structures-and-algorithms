@@ -1,7 +1,7 @@
 package LeetCode.Medium.GenerateParenthesis;
 
-import java.util.List;
 import java.util.ArrayList;
+import java.util.List;
 
 /*
   22. Generate Parentheses
@@ -21,9 +21,9 @@ import java.util.ArrayList;
   1 <= n <= 8
 */
 
-
 public class Solution {
-  private List<String> generateParenthesis(List<String> res, StringBuilder current, int open, int close, int len) {
+  private List<String> generateParenthesis(
+      List<String> res, StringBuilder current, int open, int close, int len) {
     // If the current string length
     // is equal to 2 * len, then we
     // can add the string to our list
@@ -40,7 +40,7 @@ public class Solution {
     // opening parenthesis
     if (open < len) {
       generateParenthesis(res, current.append("("), open + 1, close, len);
-      
+
       // Remove the last character to
       // get back the previous string
       current.deleteCharAt(current.length() - 1);
@@ -52,7 +52,7 @@ public class Solution {
     // closing parenthesis
     if (close < open) {
       generateParenthesis(res, current.append(")"), open, close + 1, len);
-      
+
       // Remove the last character to
       // get back the previous string
       current.deleteCharAt(current.length() - 1);
@@ -62,9 +62,8 @@ public class Solution {
   }
 
   public List<String> generateParenthesis(int n) {
-    if (n == 0)
-      List.of();
-    
+    if (n == 0) List.of();
+
     return generateParenthesis(new ArrayList<>(), new StringBuilder(), 0, 0, n);
   }
 
