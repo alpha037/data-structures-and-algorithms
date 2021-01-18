@@ -32,22 +32,19 @@ package LeetCode.Medium.NextPermutation;
   0 <= nums[i] <= 100
 */
 
-
 public class Solution {
   private void swap(int[] nums, int i, int j) {
     int temp = nums[i];
     nums[i] = nums[j];
     nums[j] = temp;
-  } 
+  }
 
   private void reverse(int[] nums, int start, int end) {
-    while (start < end)
-      swap(nums, start++, end--);
+    while (start < end) swap(nums, start++, end--);
   }
 
   public void nextPermutation(int[] nums) {
-    if (nums == null ||  nums.length == 0)
-      return;
+    if (nums == null || nums.length == 0) return;
 
     /**
      * * Brute force
@@ -55,30 +52,25 @@ public class Solution {
      * all the possible permutations
      * and then sort them and find out
      * the next greater permutation
-     * 
+     *
      * * TC: O(n!)
      */
-
-
 
     /**
      * * Intuitive approach using Case Analysis
      * * TC: O(n), SC: O(1)
      */
-
     int i = nums.length - 2, j = nums.length - 1;
 
     // Find the first minimum element
     // from the last
-    while (i >= 0 && nums[i] >= nums[i + 1])
-      --i;
+    while (i >= 0 && nums[i] >= nums[i + 1]) --i;
 
     if (i >= 0) {
       // Find the second minimum element
       // from the last upto the first
       // minimum element
-      while (nums[j] <= nums[i])
-        --j;
+      while (nums[j] <= nums[i]) --j;
 
       // Swap the first
       // and second min
@@ -89,7 +81,7 @@ public class Solution {
     // Reverse the sub-array from i
     // to the rest of the array and
     // now the array contains the next
-    // permutation 
+    // permutation
     reverse(nums, i + 1, nums.length - 1);
   }
 
@@ -100,7 +92,6 @@ public class Solution {
 
     solution.nextPermutation(nums);
 
-    for (int num : nums)
-      System.out.print(num + " ");
+    for (int num : nums) System.out.print(num + " ");
   }
 }
