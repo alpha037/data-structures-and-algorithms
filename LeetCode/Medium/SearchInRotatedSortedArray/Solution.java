@@ -31,26 +31,21 @@ package LeetCode.Medium.SearchInRotatedSortedArray;
   -104 <= target <= 104
 */
 
-
 public class Solution {
   private int search(int[] nums, int target, int low, int high) {
-    if (low > high)
-      return -1;
+    if (low > high) return -1;
 
     int mid = low + (high - low) / 2;
 
-    if (nums[mid] == target)
-      return mid;
+    if (nums[mid] == target) return mid;
 
     if (nums[low] <= nums[mid]) {
-      if (target >= nums[low] && target <= nums[mid])
-        return search(nums, target, low, mid - 1);
+      if (target >= nums[low] && target <= nums[mid]) return search(nums, target, low, mid - 1);
 
       return search(nums, target, mid + 1, high);
     }
 
-    if (target >= nums[mid] && target <= nums[high])
-      return search(nums, target, mid + 1, high);
+    if (target >= nums[mid] && target <= nums[high]) return search(nums, target, mid + 1, high);
 
     return search(nums, target, low, mid - 1);
   }
@@ -63,10 +58,10 @@ public class Solution {
     Solution solution = new Solution();
 
     // should be 4
-    System.out.println(solution.search(new int[] {4,5,6,7,0,1,2}, 0));
+    System.out.println(solution.search(new int[] {4, 5, 6, 7, 0, 1, 2}, 0));
 
     // should be -1
-    System.out.println(solution.search(new int[] {4,5,6,7,0,1,2}, 3));
+    System.out.println(solution.search(new int[] {4, 5, 6, 7, 0, 1, 2}, 3));
 
     // should be -1
     System.out.println(solution.search(new int[] {1}, 0));
