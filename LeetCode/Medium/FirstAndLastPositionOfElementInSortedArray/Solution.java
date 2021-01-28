@@ -30,7 +30,6 @@ package LeetCode.Medium.FirstAndLastPositionOfElementInSortedArray;
   -109 <= target <= 109
 */
 
-
 public class Solution {
   private int searchFirst(int[] nums, int target) {
     int index = -1, low = 0, high = nums.length - 1;
@@ -41,11 +40,8 @@ public class Solution {
       if (target == nums[mid]) {
         index = mid;
         high = mid - 1;
-      }
-      else if (target < nums[mid])
-        high = mid - 1;
-      else
-        low = mid + 1;
+      } else if (target < nums[mid]) high = mid - 1;
+      else low = mid + 1;
     }
 
     return index;
@@ -60,21 +56,15 @@ public class Solution {
       if (target == nums[mid]) {
         index = mid;
         low = mid + 1;
-      }
-      else if (target < nums[mid])
-        high = mid - 1;
-      else
-        low = mid + 1;
+      } else if (target < nums[mid]) high = mid - 1;
+      else low = mid + 1;
     }
 
     return index;
   }
 
   public int[] searchRange(int[] nums, int target) {
-    return new int[] {
-      searchFirst(nums, target),
-      searchLast(nums, target)
-    };
+    return new int[] {searchFirst(nums, target), searchLast(nums, target)};
   }
 
   public static void main(String[] args) {
@@ -82,11 +72,11 @@ public class Solution {
     int[] res;
 
     // should be [3, 4]
-    res = solution.searchRange(new int[] {5,7,7,8,8,10}, 8);
+    res = solution.searchRange(new int[] {5, 7, 7, 8, 8, 10}, 8);
     System.out.println(res[0] + ", " + res[1]);
 
     // should be [-1, -1]
-    res = solution.searchRange(new int[] {5,7,7,8,8,10}, 6);
+    res = solution.searchRange(new int[] {5, 7, 7, 8, 8, 10}, 6);
     System.out.println(res[0] + ", " + res[1]);
 
     // should be [-1, -1]
