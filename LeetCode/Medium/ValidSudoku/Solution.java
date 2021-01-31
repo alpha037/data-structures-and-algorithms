@@ -14,7 +14,7 @@ package LeetCode.Medium.ValidSudoku;
 
 
   Example 1:
-  Input: board = 
+  Input: board =
   [["5","3",".",".","7",".",".",".","."]
   ,["6",".",".","1","9","5",".",".","."]
   ,[".","9","8",".",".",".",".","6","."]
@@ -28,7 +28,7 @@ package LeetCode.Medium.ValidSudoku;
 
 
   Example 2:
-  Input: board = 
+  Input: board =
   [["8","3",".",".","7",".",".",".","."]
   ,["6",".",".","1","9","5",".",".","."]
   ,[".","9","8",".",".",".",".","6","."]
@@ -56,20 +56,16 @@ public class Solution {
   private boolean isValidSudoku(char[][] board, int row, int col, char target) {
     // Check the current row
     for (int i = 0; i < 9; i++) {
-      if (i == row)
-        continue;
+      if (i == row) continue;
 
-      if (board[i][col] == target)
-        return false;
+      if (board[i][col] == target) return false;
     }
 
     // Check the current column
     for (int j = 0; j < 9; j++) {
-      if (j == col)
-        continue;
+      if (j == col) continue;
 
-      if (board[row][j] == target)
-        return false;
+      if (board[row][j] == target) return false;
     }
 
     int startRow = row - (row % 3);
@@ -78,11 +74,9 @@ public class Solution {
     // Check the current box
     for (int i = 0; i < 3; i++)
       for (int j = 0; j < 3; j++) {
-        if (i + startRow == row && j + startCol == col)
-          continue;
+        if (i + startRow == row && j + startCol == col) continue;
 
-        if (board[i + startRow][j + startCol] == target)
-          return false;
+        if (board[i + startRow][j + startCol] == target) return false;
       }
 
     return true;
@@ -91,11 +85,9 @@ public class Solution {
   public boolean isValidSudoku(char[][] board) {
     for (int row = 0; row < 9; row++)
       for (int col = 0; col < 9; col++) {
-        if (board[row][col] == '.')
-          continue;
+        if (board[row][col] == '.') continue;
 
-        if (!isValidSudoku(board, row, col, board[row][col]))
-          return false;
+        if (!isValidSudoku(board, row, col, board[row][col])) return false;
       }
 
     return true;
@@ -105,27 +97,33 @@ public class Solution {
     Solution solution = new Solution();
 
     // should be true
-    System.out.println(solution.isValidSudoku(new char[][] {
-      {'5','3','.','.','7','.','.','.','.'}
-    ,{'6','.','.','1','9','5','.','.','.'}
-    ,{'.','9','8','.','.','.','.','6','.'}
-    ,{'8','.','.','.','6','.','.','.','3'}
-    ,{'4','.','.','8','.','3','.','.','1'}
-    ,{'7','.','.','.','2','.','.','.','6'}
-    ,{'.','6','.','.','.','.','2','8','.'}
-    ,{'.','.','.','4','1','9','.','.','5'}
-    ,{'.','.','.','.','8','.','.','7','9'}}));
+    System.out.println(
+        solution.isValidSudoku(
+            new char[][] {
+              {'5', '3', '.', '.', '7', '.', '.', '.', '.'},
+              {'6', '.', '.', '1', '9', '5', '.', '.', '.'},
+              {'.', '9', '8', '.', '.', '.', '.', '6', '.'},
+              {'8', '.', '.', '.', '6', '.', '.', '.', '3'},
+              {'4', '.', '.', '8', '.', '3', '.', '.', '1'},
+              {'7', '.', '.', '.', '2', '.', '.', '.', '6'},
+              {'.', '6', '.', '.', '.', '.', '2', '8', '.'},
+              {'.', '.', '.', '4', '1', '9', '.', '.', '5'},
+              {'.', '.', '.', '.', '8', '.', '.', '7', '9'}
+            }));
 
     // should be false
-    System.out.println(solution.isValidSudoku(new char[][] {
-      {'8','3','.','.','7','.','.','.','.'}
-    ,{'6','.','.','1','9','5','.','.','.'}
-    ,{'.','9','8','.','.','.','.','6','.'}
-    ,{'8','.','.','.','6','.','.','.','3'}
-    ,{'4','.','.','8','.','3','.','.','1'}
-    ,{'7','.','.','.','2','.','.','.','6'}
-    ,{'.','6','.','.','.','.','2','8','.'}
-    ,{'.','.','.','4','1','9','.','.','5'}
-    ,{'.','.','.','.','8','.','.','7','9'}}));
+    System.out.println(
+        solution.isValidSudoku(
+            new char[][] {
+              {'8', '3', '.', '.', '7', '.', '.', '.', '.'},
+              {'6', '.', '.', '1', '9', '5', '.', '.', '.'},
+              {'.', '9', '8', '.', '.', '.', '.', '6', '.'},
+              {'8', '.', '.', '.', '6', '.', '.', '.', '3'},
+              {'4', '.', '.', '8', '.', '3', '.', '.', '1'},
+              {'7', '.', '.', '.', '2', '.', '.', '.', '6'},
+              {'.', '6', '.', '.', '.', '.', '2', '8', '.'},
+              {'.', '.', '.', '4', '1', '9', '.', '.', '5'},
+              {'.', '.', '.', '.', '8', '.', '.', '7', '9'}
+            }));
   }
 }
