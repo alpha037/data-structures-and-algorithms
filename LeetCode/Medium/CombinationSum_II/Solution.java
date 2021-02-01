@@ -16,7 +16,7 @@ import java.util.List;
 
   Example 1:
   Input: candidates = [10,1,2,7,6,1,5], target = 8
-  Output: 
+  Output:
   [
   [1,1,6],
   [1,2,5],
@@ -26,7 +26,7 @@ import java.util.List;
 
   Example 2:
   Input: candidates = [2,5,2,1,2], target = 5
-  Output: 
+  Output:
   [
   [1,2,2],
   [5]
@@ -39,24 +39,23 @@ import java.util.List;
   1 <= target <= 30
 */
 
-
 public class Solution {
-  private void generateCombinations(int[] candidates, int startIdx, int target, List<Integer> current, List<List<Integer>> res) {
+  private void generateCombinations(
+      int[] candidates, int startIdx, int target, List<Integer> current, List<List<Integer>> res) {
     if (target == 0) {
       res.add(new ArrayList<>(current));
       return;
     }
 
     for (int i = startIdx; i < candidates.length; i++) {
-      if (target - candidates[i] < 0)
-        continue;
+      if (target - candidates[i] < 0) continue;
 
       // This block will only be executed
       // if the current index is the current
       // starting index of the array or if
       // the current element is not equal to
       // the previous element in the array
-      if (i == startIdx || candidates[i] != candidates[i-1]) {
+      if (i == startIdx || candidates[i] != candidates[i - 1]) {
         current.add(candidates[i]);
         generateCombinations(candidates, i + 1, target - candidates[i], current, res);
         current.remove(current.size() - 1);
@@ -79,9 +78,9 @@ public class Solution {
     Solution solution = new Solution();
 
     // should be [[1,1,6], [1,2,5], [1,7], [2,6]]
-    System.out.println(solution.combinationSum2(new int[] {10,1,2,7,6,1,5}, 8).toString());
+    System.out.println(solution.combinationSum2(new int[] {10, 1, 2, 7, 6, 1, 5}, 8).toString());
 
     // should be [[1,2,2], [5]]
-    System.out.println(solution.combinationSum2(new int[] {2,5,2,1,2}, 5).toString());
+    System.out.println(solution.combinationSum2(new int[] {2, 5, 2, 1, 2}, 5).toString());
   }
 }

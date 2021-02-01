@@ -45,9 +45,13 @@ import java.util.List;
   1 <= target <= 500
 */
 
-
 public class Solution {
-  private void generateCombinations(int[] candidates, int startIdx, int target, List<Integer> currentCombination, List<List<Integer>> res) {
+  private void generateCombinations(
+      int[] candidates,
+      int startIdx,
+      int target,
+      List<Integer> currentCombination,
+      List<List<Integer>> res) {
     // If the target becomes 0,
     // then we can add this
     // combination
@@ -66,8 +70,7 @@ public class Solution {
       // from the current candidate
       // reaches -ve, then we won't
       // consider the current candidate
-      if (target - candidates[i] < 0)
-        continue;
+      if (target - candidates[i] < 0) continue;
 
       currentCombination.add(candidates[i]);
       generateCombinations(candidates, i, target - candidates[i], currentCombination, res);
@@ -77,9 +80,9 @@ public class Solution {
 
   public List<List<Integer>> combinationSum(int[] candidates, int target) {
     List<List<Integer>> res = new ArrayList<>();
-    
+
     generateCombinations(candidates, 0, target, new ArrayList<>(), res);
-    
+
     return res;
   }
 
@@ -87,10 +90,10 @@ public class Solution {
     Solution solution = new Solution();
 
     // should be [[2,2,3], [7]]
-    System.out.println(solution.combinationSum(new int[] {2,3,6,7}, 7).toString());
+    System.out.println(solution.combinationSum(new int[] {2, 3, 6, 7}, 7).toString());
 
     // should be [[2,2,2,2], [2,3,3], [3,5]]
-    System.out.println(solution.combinationSum(new int[] {2,3,5}, 8).toString());
+    System.out.println(solution.combinationSum(new int[] {2, 3, 5}, 8).toString());
 
     // should be []
     System.out.println(solution.combinationSum(new int[] {2}, 1).toString());
