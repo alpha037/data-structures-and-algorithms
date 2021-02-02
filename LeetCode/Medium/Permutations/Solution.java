@@ -28,19 +28,18 @@ import java.util.List;
   All the integers of nums are unique.
 */
 
-
 public class Solution {
-  private void generatePermutations(int[] nums,int len, List<Integer> current, boolean[] visited, List<List<Integer>> res) {
+  private void generatePermutations(
+      int[] nums, int len, List<Integer> current, boolean[] visited, List<List<Integer>> res) {
     if (current.size() == len) {
       res.add(new ArrayList<>(current));
       return;
     }
 
     for (int i = 0; i < nums.length; i++) {
-      if (visited[i])
-        continue;
+      if (visited[i]) continue;
 
-      // Simulate taking the 
+      // Simulate taking the
       // current digit
       current.add(nums[i]);
       visited[i] = true;
