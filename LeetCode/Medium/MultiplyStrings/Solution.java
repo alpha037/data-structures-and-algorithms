@@ -23,14 +23,12 @@ package LeetCode.Medium.MultiplyStrings;
   Both num1 and num2 do not contain any leading zero, except the number 0 itself.
 */
 
-
 public class Solution {
   public String multiply(String num1, String num2) {
     int len1 = num1.length();
     int len2 = num2.length();
 
-    if (len1 == 0 || len2 == 0)
-      return "0";
+    if (len1 == 0 || len2 == 0) return "0";
 
     int[] result = new int[len1 + len2 + 1];
     int pos1 = 0, pos2 = 0;
@@ -48,8 +46,7 @@ public class Solution {
         pos2++;
       }
 
-      if (carry > 0)
-        result[pos1 + pos2] += carry;
+      if (carry > 0) result[pos1 + pos2] += carry;
 
       pos1++;
     }
@@ -57,18 +54,15 @@ public class Solution {
     // Ignore trailing zeroes
     // from the right
     int i = result.length - 1;
-    while (i >= 0 && result[i] == 0)
-      --i;
+    while (i >= 0 && result[i] == 0) --i;
 
     // This means that
     // the result is 0
-    if (i < 0)
-      return "0";
+    if (i < 0) return "0";
 
     StringBuilder sb = new StringBuilder();
 
-    while (i >= 0)
-      sb.append(result[i--]);
+    while (i >= 0) sb.append(result[i--]);
 
     return sb.toString();
   }
