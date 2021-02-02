@@ -66,10 +66,10 @@ public class Solution {
     Solution solution = new Solution();
 
     // should be [[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]
-    System.out.println(solution.permute(new int[] {1,2,3}).toString());
+    System.out.println(solution.permute(new int[] {1, 2, 3}).toString());
 
     // should be [[0,1],[1,0]]
-    System.out.println(solution.permute(new int[] {0,1}).toString());
+    System.out.println(solution.permute(new int[] {0, 1}).toString());
 
     // should be [[1]]
     System.out.println(solution.permute(new int[] {1}).toString());
