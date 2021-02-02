@@ -29,17 +29,16 @@ import java.util.List;
   -10 <= nums[i] <= 10
 */
 
-
 public class Solution {
-  private void generatePermutations(int[] nums, List<Integer> current, boolean[] visited, List<List<Integer>> res) {
+  private void generatePermutations(
+      int[] nums, List<Integer> current, boolean[] visited, List<List<Integer>> res) {
     if (current.size() == nums.length) {
       res.add(new ArrayList<>(current));
       return;
     }
 
     for (int i = 0; i < nums.length; i++) {
-      if (visited[i])
-        continue;
+      if (visited[i]) continue;
 
       // Simulate taking the
       // current element
@@ -54,8 +53,7 @@ public class Solution {
       visited[i] = false;
 
       // Ignore duplicate elements
-      while (i + 1 < nums.length && nums[i] == nums[i + 1])
-        ++i;
+      while (i + 1 < nums.length && nums[i] == nums[i + 1]) ++i;
     }
   }
 
@@ -73,9 +71,9 @@ public class Solution {
     Solution solution = new Solution();
 
     // should be [[1,1,2], [1,2,1], [2,1,1]]
-    System.out.println(solution.permuteUnique(new int[] {1,1,2}).toString());
+    System.out.println(solution.permuteUnique(new int[] {1, 1, 2}).toString());
 
     // should be [[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]
-    System.out.println(solution.permuteUnique(new int[] {1,2,3}).toString());
+    System.out.println(solution.permuteUnique(new int[] {1, 2, 3}).toString());
   }
 }
