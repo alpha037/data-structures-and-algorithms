@@ -33,7 +33,6 @@ import java.util.Map;
   strs[i] consists of lower-case English letters.
 */
 
-
 public class Solution {
   public List<List<String>> groupAnagrams(String[] strs) {
     List<List<String>> res = new ArrayList<>();
@@ -44,8 +43,7 @@ public class Solution {
       Arrays.sort(chars);
       String sortedWord = new String(chars);
 
-      if (!map.containsKey(sortedWord))
-        map.put(sortedWord, new ArrayList<>());
+      if (!map.containsKey(sortedWord)) map.put(sortedWord, new ArrayList<>());
 
       map.get(sortedWord).add(word);
     }
@@ -57,7 +55,8 @@ public class Solution {
   public static void main(String[] args) {
     Solution solution = new Solution();
 
-    System.out.println(solution.groupAnagrams(new String[] {"eat","tea","tan","ate","nat","bat"}).toString());
+    System.out.println(
+        solution.groupAnagrams(new String[] {"eat", "tea", "tan", "ate", "nat", "bat"}).toString());
 
     System.out.println(solution.groupAnagrams(new String[] {""}).toString());
 

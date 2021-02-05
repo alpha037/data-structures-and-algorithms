@@ -32,7 +32,6 @@ package LeetCode.Medium.RotateImage;
   -1000 <= matrix[i][j] <= 1000
 */
 
-
 public class Solution {
   public void rotate(int[][] matrix) {
     int n = matrix.length;
@@ -58,18 +57,18 @@ public class Solution {
   public static void main(String[] args) {
     Solution solution = new Solution();
 
-    int[][] matrix = new int[][] {
-      {5,1,9,11},
-      {2,4,8,10},
-      {13,3,6,7},
-      {15,14,12,16}
-    };
+    int[][] matrix =
+        new int[][] {
+          {5, 1, 9, 11},
+          {2, 4, 8, 10},
+          {13, 3, 6, 7},
+          {15, 14, 12, 16}
+        };
 
     solution.rotate(matrix);
 
     for (int i = 0; i < matrix.length; i++) {
-      for (int j = 0; j < matrix[i].length; j++)
-        System.out.print(matrix[i][j] + " ");
+      for (int j = 0; j < matrix[i].length; j++) System.out.print(matrix[i][j] + " ");
 
       System.out.println();
     }

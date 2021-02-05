@@ -26,27 +26,22 @@ package LeetCode.Medium.Pow_X_N;
   -104 <= xn <= 104
 */
 
-
 public class Solution {
   public double myPow(double x, int n) {
-    if (x == 0)
-      return 0;
+    if (x == 0) return 0;
 
-    if (n == 0)
-      return 1;
+    if (n == 0) return 1;
 
     double res = 1.0d;
     long N = n;
 
-    if (n < 0)
-      N *= -1;
+    if (n < 0) N *= -1;
 
     while (N > 0) {
       if (N % 2 == 0) {
         x *= x;
         N /= 2;
-      }
-      else {
+      } else {
         res *= x;
         N--;
       }
