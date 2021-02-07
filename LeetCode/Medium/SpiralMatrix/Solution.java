@@ -30,34 +30,30 @@ public class Solution {
     int startRow = 0, startCol = 0;
     int endRow = matrix.length - 1, endCol = matrix[0].length - 1;
     List<Integer> res = new ArrayList<>();
-    
+
     while (startRow <= endRow && startCol <= endCol) {
-      for (int col = startCol; col <= endCol; col++)
-        res.add(matrix[startRow][col]);
-      
-      for (int row = startRow + 1; row <= endRow; row++)
-        res.add(matrix[row][endCol]);
-      
+      for (int col = startCol; col <= endCol; col++) res.add(matrix[startRow][col]);
+
+      for (int row = startRow + 1; row <= endRow; row++) res.add(matrix[row][endCol]);
+
       for (int col = endCol - 1; col >= startCol; col--) {
-        if (startRow == endRow)
-          break;
-        
+        if (startRow == endRow) break;
+
         res.add(matrix[endRow][col]);
       }
-      
+
       for (int row = endRow - 1; row > startRow; row--) {
-        if (startCol == endCol)
-          break;
-        
+        if (startCol == endCol) break;
+
         res.add(matrix[row][startCol]);
       }
-      
+
       ++startRow;
       ++startCol;
       --endRow;
       --endCol;
     }
-    
+
     return res;
   }
 
@@ -65,9 +61,11 @@ public class Solution {
     Solution solution = new Solution();
 
     // should be [1,2,3,6,9,8,7,4,5]
-    System.out.println(solution.spiralOrder(new int[][] {{1,2,3},{4,5,6},{7,8,9}}).toString());
+    System.out.println(
+        solution.spiralOrder(new int[][] {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}).toString());
 
     // should be [1,2,3,4,8,12,11,10,9,5,6,7]
-    System.out.println(solution.spiralOrder(new int[][] {{1,2,3,4},{5,6,7,8},{9,10,11,12}}).toString());
+    System.out.println(
+        solution.spiralOrder(new int[][] {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}}).toString());
   }
 }
