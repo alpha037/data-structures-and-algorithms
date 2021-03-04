@@ -26,20 +26,16 @@ package LeetCode.Medium.JumpGame;
   0 <= nums[i] <= 105
 */
 
-
 public class Solution {
   public boolean canJump(int[] nums) {
-    if (nums == null || nums.length <= 1)
-      return true;
+    if (nums == null || nums.length <= 1) return true;
 
-    if (nums[0] == 0)
-      return false;
+    if (nums[0] == 0) return false;
 
     int reachable = 0, lastIdx = nums.length - 1;
 
     for (int i = 0; i <= lastIdx; i++) {
-      if (i > reachable)
-        return false;
+      if (i > reachable) return false;
 
       reachable = Math.max(reachable, i + nums[i]);
     }
@@ -51,9 +47,9 @@ public class Solution {
     Solution solution = new Solution();
 
     // should be true
-    System.out.println(solution.canJump(new int[] {2,3,1,1,4}));
+    System.out.println(solution.canJump(new int[] {2, 3, 1, 1, 4}));
 
     // should be false
-    System.out.println(solution.canJump(new int[] {3,2,1,0,4}));
+    System.out.println(solution.canJump(new int[] {3, 2, 1, 0, 4}));
   }
 }

@@ -5,26 +5,22 @@ package AlgoExSolutions.Easy.FindClosestValueInBST;
 /**
  * * Find Closest Value In BST
  */
-
 class Program {
-	public static int findClosestValueInBstHelper(BST tree, int target, int closest) {
-		if (tree == null)
-			return closest;
-		
-		if (Math.abs(target - closest) > Math.abs(target - tree.value))
-			closest = tree.value;
-		
-		if (tree.value > target && tree.left != null)
-			return findClosestValueInBstHelper(tree.left, target, closest);
-		
-		else if (tree.value < target && tree.right != null)
-			return findClosestValueInBstHelper(tree.right, target, closest);
-		
-		return closest;
-	}
-	
+  public static int findClosestValueInBstHelper(BST tree, int target, int closest) {
+    if (tree == null) return closest;
+
+    if (Math.abs(target - closest) > Math.abs(target - tree.value)) closest = tree.value;
+
+    if (tree.value > target && tree.left != null)
+      return findClosestValueInBstHelper(tree.left, target, closest);
+    else if (tree.value < target && tree.right != null)
+      return findClosestValueInBstHelper(tree.right, target, closest);
+
+    return closest;
+  }
+
   public static int findClosestValueInBst(BST tree, int target) {
-		return findClosestValueInBstHelper(tree, target, tree.value);
+    return findClosestValueInBstHelper(tree, target, tree.value);
   }
 
   static class BST {

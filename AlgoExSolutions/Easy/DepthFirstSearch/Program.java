@@ -5,7 +5,6 @@ import java.util.*;
 /**
  * * Depth-First Search
  */
-
 class Program {
   // Do not edit the class below except
   // for the depthFirstSearch method.
@@ -21,10 +20,9 @@ class Program {
 
     public List<String> depthFirstSearch(List<String> array) {
       // Write your code here.
-			array.add(this.name);
-			for (int i = 0; i < children.size(); i++)
-				children.get(i).depthFirstSearch(array);
-			
+      array.add(this.name);
+      for (int i = 0; i < children.size(); i++) children.get(i).depthFirstSearch(array);
+
       return array;
     }
 
