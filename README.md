@@ -2,6 +2,8 @@
 
   <p align="center">
     Some basic implementations of important data structures and algorithms in Java, along with a few <strong>LeetCode</strong> questions. I'll keep on adding more solutions of LeetCode problems and if you want, you can add them too!
+    <br />
+    Also, I've started adding solutions to <strong><a href="https://algoexpert.io">AlgoExpert</a></strong> problems. You can find them in the Contents section.
     <br /><br />
     <a href="https://github.com/alpha037/Data-Structures-and-Algorithms#readme"><strong>Explore the docs »</strong></a>
     <br />
@@ -21,6 +23,7 @@
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
 - [Roadmap](#roadmap)
+- [Leetcode Solutions](https://github.com/alpha037/Data-Structures-and-Algorithms/tree/main/LeetCode)
 - [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
