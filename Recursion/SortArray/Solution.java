@@ -7,7 +7,6 @@ import java.util.List;
 /**
  * * Sort an Array using Recursion
  */
-
 public class Solution {
   private void insert(List<Integer> array, int element) {
     /**
@@ -29,15 +28,14 @@ public class Solution {
   public void sort(List<Integer> array) {
     /**
      * Base Case.
-     * 
+     *
      * This means that the array
      * is already sorted.
      */
-    if (array.size() == 1)
-      return;
+    if (array.size() == 1) return;
 
     int lastValue = array.get(array.size() - 1);
-    
+
     array.remove(array.size() - 1);
     sort(array);
 
@@ -51,7 +49,6 @@ public class Solution {
 
     solution.sort(array);
 
-    for (int value : array)
-      System.out.print(value + " ");
+    for (int value : array) System.out.print(value + " ");
   }
 }
