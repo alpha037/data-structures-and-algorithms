@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="">
+</p>
+
 # AlgoExpert Solutions
 
 This folder contains solutions to the [AlgoExpert](https://algoexpert.io) problems.

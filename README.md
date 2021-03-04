@@ -24,6 +24,7 @@
   - [Prerequisites](#prerequisites)
 - [Roadmap](#roadmap)
 - [Leetcode Solutions](https://github.com/alpha037/Data-Structures-and-Algorithms/tree/main/LeetCode)
+- [AlgoExpert Solutions](https://github.com/alpha037/Data-Structures-and-Algorithms/tree/main/AlgoExSolutions)
 - [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
