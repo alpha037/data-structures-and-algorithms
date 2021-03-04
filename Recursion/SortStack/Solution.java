@@ -6,7 +6,6 @@ import java.util.Stack;
 /**
  * * Sort a Stack using Recursion
  */
-
 public class Solution {
   private void insert(Stack<Integer> stack, int item) {
     /**
@@ -27,12 +26,11 @@ public class Solution {
   public void sort(Stack<Integer> stack) {
     /**
      * Base Case
-     * 
+     *
      * This means that the
      * stack is already sorted.
      */
-    if (stack.size() == 1)
-      return;
+    if (stack.size() == 1) return;
 
     int topValue = stack.pop();
 
@@ -42,8 +40,7 @@ public class Solution {
   }
 
   public void print(Stack<Integer> stack) {
-    if (stack.isEmpty())
-      return;
+    if (stack.isEmpty()) return;
 
     int item = stack.pop();
 
