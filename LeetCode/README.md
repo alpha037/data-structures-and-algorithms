@@ -1,4 +1,6 @@
-![leetcode](https://raw.githubusercontent.com/alpha037/Data-Structures-and-Algorithms/main/LeetCode/img/leetcode.png)
+<p align="center>
+    <img src="https://raw.githubusercontent.com/alpha037/Data-Structures-and-Algorithms/main/LeetCode/img/leetcode.png">
+</p>
 
 # LeetCode Solutions
 
