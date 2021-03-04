@@ -8,6 +8,7 @@ import java.util.*;
 class Program {
   // Tip: You can use `element instanceof ArrayList` to check whether an item
   // is an array or an integer.
+  @SuppressWarnings("unchecked")
   public static int productSum(List<Object> array, int depth) {
     if (array == null || array.size() == 0) return 0;
 
