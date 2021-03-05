@@ -5,24 +5,22 @@ package AlgoExSolutions.Medium.InvertBinaryTree;
 /**
  * * Invert Binary Tree
  */
-
 class Program {
-	private static BinaryTree invertBinaryTreeHelper(BinaryTree root) {
-		if (root == null)
-			return null;
-		
-		BinaryTree left = invertBinaryTreeHelper(root.left);
-		BinaryTree right = invertBinaryTreeHelper(root.right);
-		
-		root.left = right;
-		root.right = left;
-		
-		return root;
-	}
-	
+  private static BinaryTree invertBinaryTreeHelper(BinaryTree root) {
+    if (root == null) return null;
+
+    BinaryTree left = invertBinaryTreeHelper(root.left);
+    BinaryTree right = invertBinaryTreeHelper(root.right);
+
+    root.left = right;
+    root.right = left;
+
+    return root;
+  }
+
   public static void invertBinaryTree(BinaryTree tree) {
     // Write your code here.
-		tree = invertBinaryTreeHelper(tree);
+    tree = invertBinaryTreeHelper(tree);
   }
 
   static class BinaryTree {
