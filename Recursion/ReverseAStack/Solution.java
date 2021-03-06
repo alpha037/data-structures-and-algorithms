@@ -6,12 +6,11 @@ import java.util.Stack;
 /**
  * * Reverse A Stack Using Recursion
  */
-
 public class Solution {
   private void insert(Stack<Integer> stack, int element) {
     /**
      * Base Case.
-     * 
+     *
      * If the stack is empty,
      * then we can just insert
      * the element right away
@@ -32,14 +31,13 @@ public class Solution {
   public void reverse(Stack<Integer> stack) {
     /**
      * Base Case.
-     * 
+     *
      * If the stack has only
      * 1 element, this means
      * that the stack is already
      * reversed.
      */
-    if (stack.size() == 1)
-      return;
+    if (stack.size() == 1) return;
 
     int top = stack.pop();
 
