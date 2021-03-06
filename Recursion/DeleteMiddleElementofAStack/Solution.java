@@ -6,7 +6,6 @@ import java.util.Stack;
 /**
  * * Remove Kth (Middle, in this case) Element From Stack
  */
-
 public class Solution {
   public void remove(Stack<Integer> stack, int k) {
     /**
@@ -16,7 +15,7 @@ public class Solution {
 
     /**
      * Base Case.
-     * 
+     *
      * This means that we've
      * found out the element
      * that needs to be deleted.
