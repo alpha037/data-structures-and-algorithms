@@ -4,7 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * * Power Set Of A String
+ * * Power Set Of A String,
+ * ? OR
+ * * All Subsets Of A String,
+ * ? OR
+ * * All Subsequences Of A String 
  */
 
 public class Solution {
