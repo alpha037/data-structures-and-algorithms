@@ -10,12 +10,11 @@ import java.util.List;
  * ? OR
  * * All Subsequences Of A String 
  */
-
 public class Solution {
   private void generatePowerSet(String input, String output, List<String> powerSet) {
     /**
      * Base Case.
-     * 
+     *
      * If the input string is
      * empty, then we've found
      * a potential result
