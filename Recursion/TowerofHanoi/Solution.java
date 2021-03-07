@@ -3,7 +3,6 @@ package Recursion.TowerofHanoi;
 /**
  * * Tower Of Hanoi problem using Recursion
  */
-
 public class Solution {
   int numberOfMovements;
 
@@ -23,7 +22,7 @@ public class Solution {
 
     /**
      * Base Case.
-     * 
+     *
      * If the number of disc
      * is 1, then just move it
      * from the source rod to
