@@ -8,7 +8,7 @@ import java.util.List;
  * ? OR
  * * All Subsets Of A String,
  * ? OR
- * * All Subsequences Of A String 
+ * * All Subsequences Of A String
  */
 public class Solution {
   private void generatePowerSet(String input, String output, List<String> powerSet) {

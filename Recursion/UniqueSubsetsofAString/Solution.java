@@ -12,12 +12,12 @@ import java.util.List;
  * ? OR
  * * Distinct Subsets of A String In Lexicographical Order
  */
-
 public class Solution {
-  private void generateUniqueSubsets(String input, StringBuilder output, int index, List<String> subsets) {
+  private void generateUniqueSubsets(
+      String input, StringBuilder output, int index, List<String> subsets) {
     /**
      * Base Case.
-     * 
+     *
      * If the current index
      * is less than 0, then we
      * have found a potential
@@ -56,8 +56,7 @@ public class Solution {
     Arrays.sort(characters);
 
     generateUniqueSubsets(
-      new String(characters), new StringBuilder(""), string.length() - 1, uniqueSubsets
-    );
+        new String(characters), new StringBuilder(""), string.length() - 1, uniqueSubsets);
 
     // For lexicographically sorted
     // subsets, we need to reverse
