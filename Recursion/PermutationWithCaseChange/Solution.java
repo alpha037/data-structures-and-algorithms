@@ -3,6 +3,10 @@ package Recursion.PermutationWithCaseChange;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * * Permutation With Case Change
+ */
+
 public class Solution {
   private void getPermutationsWithCaseChange(
       String input, int index, String output, List<String> perms) {
