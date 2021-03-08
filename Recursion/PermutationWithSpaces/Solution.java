@@ -6,22 +6,19 @@ import java.util.List;
 /**
  * * Permutations With Spaces
  */
-
 public class Solution {
   private void getPermutationsWithSpaces(
-    String input, int index, String output, List<String> perms
-  ) {
+      String input, int index, String output, List<String> perms) {
     /**
      * * TC: Since the number of spaces is n - 1,
      * * there are total 2^(n-1) patterns each having
      * * length ranging from n to 2n-1. Thus, overall
-     * * complexity would be O(n*(2^n)). 
+     * * complexity would be O(n*(2^n)).
      */
-
 
     /**
      * Base Case.
-     * 
+     *
      * If the current index is
      * equal to the input string
      * length, then we've found
@@ -36,17 +33,13 @@ public class Solution {
     // before the current character and
     // then we try out all the possibilities
     // in that scenario
-    getPermutationsWithSpaces(
-      input, index + 1, output + " " + input.charAt(index), perms
-    );
+    getPermutationsWithSpaces(input, index + 1, output + " " + input.charAt(index), perms);
 
     // Second, we don't consider placing a space
     // before the current character and
     // then we try out all the possibilities
     // in that scenario
-    getPermutationsWithSpaces(
-      input, index + 1, output + input.charAt(index), perms
-    );
+    getPermutationsWithSpaces(input, index + 1, output + input.charAt(index), perms);
   }
 
   public List<String> getPermutationsWithSpaces(String string) {
