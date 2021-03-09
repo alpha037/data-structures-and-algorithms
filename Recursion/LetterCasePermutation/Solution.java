@@ -6,7 +6,6 @@ import java.util.List;
 /**
  * * Letter Case Permutation
  */
-
 public class Solution {
   /**
    * Helper function to check if
@@ -18,20 +17,17 @@ public class Solution {
 
   /**
    * Helper function to toggle
-   * the case of a character. 
+   * the case of a character.
    */
   private char toggleCharacterCase(char ch) {
-    return Character.isLowerCase(ch) ?
-      Character.toUpperCase(ch) :
-      Character.toLowerCase(ch);
+    return Character.isLowerCase(ch) ? Character.toUpperCase(ch) : Character.toLowerCase(ch);
   }
 
   private void getPermutationsWithLetterCaseChange(
-    String input, int index, String output, List<String> perms
-  ) {
+      String input, int index, String output, List<String> perms) {
     /**
      * Base Case.
-     * 
+     *
      * If index is equal to the
      * input length, then we've
      * found a potential output.
@@ -50,13 +46,13 @@ public class Solution {
     // the output string.
     if (isDigit(currentChar)) {
       getPermutationsWithLetterCaseChange(input, index + 1, output + currentChar, perms);
-    }
-    else {
+    } else {
       // First, we first toggle the
       // case of the current character
       // and consider all possible
       // scenarios.
-      getPermutationsWithLetterCaseChange(input, index + 1, output + toggleCharacterCase(currentChar), perms);
+      getPermutationsWithLetterCaseChange(
+          input, index + 1, output + toggleCharacterCase(currentChar), perms);
 
       // Second, we don't first toggle the
       // case of the current character
