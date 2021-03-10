@@ -3,14 +3,12 @@ package Recursion.KthSymbolInGrammar;
 /**
  * * Kth Symbol In Grammar
  */
-
 public class Solution {
   public int kthGrammar(int N, int K) {
     /**
      * Base Case.
      */
-    if (N == 1 && K == 1)
-      return 0;
+    if (N == 1 && K == 1) return 0;
 
     // Calculate the mid position
     int mid = (int) Math.pow(2, N - 1) / 2;
@@ -22,8 +20,7 @@ public class Solution {
     // in (N - 1)th row and therefore
     // we return the value computed
     // in the (N - 1)th row.
-    if (K <= mid)
-      return kthGrammar(N - 1, K);
+    if (K <= mid) return kthGrammar(N - 1, K);
 
     // Otherwise, if K's current value
     // is greater than mid, then we return
