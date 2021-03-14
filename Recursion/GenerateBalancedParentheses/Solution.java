@@ -6,11 +6,9 @@ import java.util.List;
 /**
  * * Generate Valid Parentheses
  */
-
 public class Solution {
   private void generateValidParentheses(
-    int open, int close, StringBuilder current, List<String> parentheses
-  ) {
+      int open, int close, StringBuilder current, List<String> parentheses) {
     if (open == 0 && close == 0) {
       parentheses.add(current.toString());
       return;
