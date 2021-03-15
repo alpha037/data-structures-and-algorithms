@@ -6,11 +6,9 @@ import java.util.List;
 /**
  * * Generate N-bit Binary Numbers Having More 1's Than 0's In All Prefixes
  */
-
 public class Solution {
   private void generateNBitBinaryNumbers(
-    int ones, int zeroes, int n, StringBuilder current, List<String> numbers
-  ) {
+      int ones, int zeroes, int n, StringBuilder current, List<String> numbers) {
     /**
      * Base Case.
      */
@@ -37,8 +35,8 @@ public class Solution {
       current.append("0");
       generateNBitBinaryNumbers(ones, zeroes + 1, n, current, numbers);
 
-    // Then, we remove the "0" we added
-    current.deleteCharAt(current.length() - 1);
+      // Then, we remove the "0" we added
+      current.deleteCharAt(current.length() - 1);
     }
   }
 
