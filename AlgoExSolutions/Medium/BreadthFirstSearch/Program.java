@@ -5,7 +5,6 @@ import java.util.*;
 /**
  * * Breadth First Search
  */
-
 class Program {
   // Do not edit the class below except
   // for the breadthFirstSearch method.
@@ -21,15 +20,15 @@ class Program {
 
     public List<String> breadthFirstSearch(List<String> array) {
       // Write your code here.
-			Queue<Node> queue = new LinkedList<>();
-			queue.add(this);
-			
-			while (!queue.isEmpty()) {
-				Node current = queue.poll();
-				array.add(current.name);
-				queue.addAll(current.children);
-			}
-			
+      Queue<Node> queue = new LinkedList<>();
+      queue.add(this);
+
+      while (!queue.isEmpty()) {
+        Node current = queue.poll();
+        array.add(current.name);
+        queue.addAll(current.children);
+      }
+
       return array;
     }
 
