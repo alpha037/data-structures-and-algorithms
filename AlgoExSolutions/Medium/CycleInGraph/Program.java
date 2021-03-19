@@ -5,7 +5,6 @@ import java.util.*;
 /**
  * * Cycle In Graph
  */
-
 class Program {
   public final int WHITE = 0;
   public final int GRAY = 1;
@@ -27,7 +26,7 @@ class Program {
   private boolean hasCycle(int[][] edges, int vertex, int[] colors) {
     colors[vertex] = GRAY;
 
-    for (int neighbor: edges[vertex]) {
+    for (int neighbor : edges[vertex]) {
       if (colors[neighbor] == GRAY) return true;
 
       if (colors[neighbor] == BLACK) continue;
