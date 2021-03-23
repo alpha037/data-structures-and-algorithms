@@ -5,25 +5,24 @@ package AlgoExSolutions.Hard.FindLoop;
 /**
  * * Find Loop
  */
-
 class Program {
   public static LinkedList findLoop(LinkedList head) {
     // Write your code here.
-		LinkedList fastTracker = head, slowTracker = head;
-		
-		do {
-			slowTracker = slowTracker.next;
-			fastTracker = fastTracker.next.next;
-			
-		} while (fastTracker != slowTracker);
-		
-		slowTracker = head;
-		
-		while (fastTracker != slowTracker) {
-			slowTracker = slowTracker.next;
-			fastTracker = fastTracker.next;
-		}
-		
+    LinkedList fastTracker = head, slowTracker = head;
+
+    do {
+      slowTracker = slowTracker.next;
+      fastTracker = fastTracker.next.next;
+
+    } while (fastTracker != slowTracker);
+
+    slowTracker = head;
+
+    while (fastTracker != slowTracker) {
+      slowTracker = slowTracker.next;
+      fastTracker = fastTracker.next;
+    }
+
     return slowTracker;
   }
 
