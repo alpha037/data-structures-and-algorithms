@@ -35,17 +35,17 @@ class Program {
 	}
 	
 	private static int partition(int[] array, int low, int high) {
-		int pivotIdx = high, i = low - 1;
+		int pivotIdx = high, leftIdx = low - 1;
 		
-		for (int j = low; j < high; j++) {
-			if (array[j] <= array[pivotIdx]) {
-				i++;
-				swap(array, i, j);
+		for (int rightIdx = low; rightIdx < high; rightIdx++) {
+			if (array[rightIdx] < array[pivotIdx]) {
+				leftIdx++;
+				swap(array, leftIdx, rightIdx);
 			}
 		}
 		
-		swap(array, i + 1, pivotIdx);
-		return i + 1;
+		swap(array, leftIdx + 1, pivotIdx);
+		return leftIdx + 1;
 	}
 	
 	private static void swap(int[] array, int index1, int index2) {
