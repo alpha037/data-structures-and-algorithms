@@ -5,7 +5,6 @@ package AlgoExSolutions.Hard.QuickSort;
 /**
  * * Quick Sort
  */
-
 class Program {
   /**
    * * Best: O(n log(n)) time | O(log(n)) space
@@ -14,8 +13,8 @@ class Program {
    */
   public static int[] quickSort(int[] array) {
     // Write your code here.
-		quickSort(array, 0, array.length - 1);
-		return array;
+    quickSort(array, 0, array.length - 1);
+    return array;
   }
 	
 	private static void quickSort(int[] array, int low, int high) {
