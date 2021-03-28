@@ -16,8 +16,7 @@ class Program {
     // return range;
 
     return new int[] {
-      searchForRangeHelper(array, target, true),
-      searchForRangeHelper(array, target, false)
+      searchForRangeHelper(array, target, true), searchForRangeHelper(array, target, false)
     };
   }
 
@@ -25,9 +24,7 @@ class Program {
    * * TC: O(log n)
    * * SC: O(1)
    */
-  private static int searchForRangeHelper(
-    int[] array, int target, boolean startRange
-  ) {
+  private static int searchForRangeHelper(int[] array, int target, boolean startRange) {
     int index = -1, low = 0, high = array.length - 1;
 
     while (low <= high) {
@@ -59,7 +56,7 @@ class Program {
 
   //   if (array[mid] < target)
   //     searchForRangeHelper(array, target, mid + 1, high, range, startRange);
-    
+
   //   else if (array[mid] > target)
   //     searchForRangeHelper(array, target, low, mid - 1, range, startRange);
 
