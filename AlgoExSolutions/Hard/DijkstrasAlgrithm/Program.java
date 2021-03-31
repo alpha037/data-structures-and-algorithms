@@ -6,6 +6,9 @@ import java.util.*;
  * * Dijkstra's Algorithm
  */
 class Program {
+  /**
+   * * O((v + e) * log v) time | O(v) space
+   */
   public int[] dijkstrasAlgorithm(int start, int[][][] edges) {
     // Write your code here.
     int len = edges.length;
@@ -42,6 +45,54 @@ class Program {
 
     return minDistances;
   }
+
+    /**
+   * * O(v^2) time | O(v) space
+   */
+  // public int[] dijkstrasAlgorithm(int start, int[][][] edges) {
+	// 	int[] minDistances = new int[edges.length];
+	// 	Arrays.fill(minDistances, Integer.MAX_VALUE);
+	// 	minDistances[start] = 0;
+		
+	// 	Set<Integer> visited = new HashSet<>();
+		
+	// 	while (visited.size() != edges.length) {
+	// 		int[] vertexInfo = getVertexWithMinDistance(minDistances, visited);
+	// 		int srcVertex = vertexInfo[0], currentMinDistance = vertexInfo[1];
+			
+	// 		if (currentMinDistance == Integer.MAX_VALUE) break;
+			
+	// 		visited.add(srcVertex);
+			
+	// 		for (int[] edge : edges[srcVertex]) {
+	// 			int destVertex = edge[0], newPathDistance = edge[1] + currentMinDistance;
+				
+	// 			if (visited.contains(destVertex)) continue;
+				
+	// 			if (newPathDistance < minDistances[destVertex])
+	// 				minDistances[destVertex] = newPathDistance;
+	// 		}
+	// 	}
+		
+	// 	replaceInfinities(minDistances);
+		
+  //   return minDistances;
+  // }
+	
+	// private int[] getVertexWithMinDistance(int[] distances, Set<Integer> visited) {
+	// 	int minVertex = -1, minDistance = Integer.MAX_VALUE;
+		
+	// 	for (int vertex = 0; vertex < distances.length; vertex++) {
+	// 		if (visited.contains(vertex)) continue;
+			
+	// 		if (distances[vertex] <= minDistance) {
+	// 			minDistance = distances[vertex];
+	// 			minVertex = vertex;
+	// 		}
+	// 	}
+		
+	// 	return new int[] {minVertex, minDistance};
+	// }
 
   private void replaceInfinities(int[] distances) {
     for (int idx = 0; idx < distances.length; idx++) {
