@@ -8,6 +8,10 @@ import java.util.*;
 
 class Program {
 
+	/**
+	 * * TC: O(n log(n))
+	 * * SC: O(n)
+	 */
   public int[][] mergeOverlappingIntervals(int[][] intervals) {
     // Write your code here.
 		Arrays.sort(intervals, (a, b) -> a[0] - b[0]);
