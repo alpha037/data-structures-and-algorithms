@@ -55,7 +55,7 @@ class Program {
       }
     }
   }
-	
+
 	static class OrgInfo {
 		OrgChart lowestCommonManager;
 		int numberOfImpReports;
