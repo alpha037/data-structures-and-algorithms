@@ -35,7 +35,7 @@ class Program {
 		numberOfImpReports +=
 			currentManager == reportOne || currentManager == reportTwo ? 1 : 0;
 		OrgChart lowestCommonManager = numberOfImpReports == 2 ? currentManager : null;
-		
+
 		return new OrgInfo(lowestCommonManager, numberOfImpReports);
 	}
 
