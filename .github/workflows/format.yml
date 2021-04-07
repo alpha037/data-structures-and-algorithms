@@ -25,4 +25,4 @@ jobs:
         uses: axel-op/googlejavaformat-action@v3
         with:
           args: "--skip-javadoc-formatting --replace"
-          commitMessage: "Format - Google java formatter"
+          commitMessage: "Format: Google java formatter"
