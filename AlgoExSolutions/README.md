@@ -12,7 +12,7 @@ Let's create free resources for anyone who wants to solve problems!
 
 ## Contents
 
-Topics include: [Arrays](https://www.geeksforgeeks.org/arrays-in-java/) (19), [Strings](https://www.geeksforgeeks.org/strings-in-java/) (12), [Linked Lists](https://www.geeksforgeeks.org/implementing-a-linked-list-in-java-using-class/) (8), [Stacks](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/) (5).
+Topics include: [Arrays](https://www.geeksforgeeks.org/arrays-in-java/) (19), [Strings](https://www.geeksforgeeks.org/strings-in-java/) (12), [Linked Lists](https://www.geeksforgeeks.org/implementing-a-linked-list-in-java-using-class/) (8), [Stacks](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/) (5), [Searching (Binary Search mostly)](https://www.geeksforgeeks.org/binary-search/) (7).
 
 | Problem Statement                     | Difficulty Level | Category     | Solution Link                                                        |
 | ------------------------------------- | ---------------- | ------------ | -------------------------------------------------------------------- |
@@ -60,6 +60,13 @@ Topics include: [Arrays](https://www.geeksforgeeks.org/arrays-in-java/) (19), [S
 | Sunset Views                          | Medium           | Stacks       | [Program.java](Medium/SunsetViews/Program.java)                      |
 | Shorten Path                          | Hard             | Stacks       | [Program.java](Hard/ShortenPath/Program.java)                        |
 | Largest Rectangle Under Skyline       | Hard             | Stacks       | [Program.java](Hard/LargestRectangleUnderSkyline/Program.java)       |
+| Binary Search                         | Easy             | Searching    | [Program.java](Easy/BinarySearch/Program.java)                       |
+| Find Three Largest Numbers            | Easy             | Searching    | [Program.java](Easy/FindThreeLargestNumbers/Program.java)            |
+| Search In Sorted Matrix               | Medium           | Searching    | [Program.java](Medium/SearchInSortedMatrix/Program.java)             |
+| Shifted Binary Search                 | Hard             | Searching    | [Program.java](Hard/ShiftedBinarySearch/Program.java)                |
+| Search For Range                      | Hard             | Searching    | [Program.java](Hard/SearchForRange/Program.java)                     |
+| Quickselect                           | Hard             | Searching    | [Program.java](Hard/Quickselect/Program.java)                        |
+| Index Equals Value                    | Hard             | Searching    | [Program.java](Hard/IndexEqualsValue/Program.java)                   |
 
 ## Please Note
 
