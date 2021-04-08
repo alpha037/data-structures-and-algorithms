@@ -1,4 +1,4 @@
-package AlgoExSolutions.Hard.DijkstrasAlgrithm;
+package AlgoExSolutions.Hard.DijkstrasAlgorithm;
 
 import java.util.*;
 

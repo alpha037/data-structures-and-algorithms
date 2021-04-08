@@ -12,7 +12,7 @@ Let's create free resources for anyone who wants to solve problems!
 
 ## Contents
 
-Topics include: [Arrays](https://www.geeksforgeeks.org/arrays-in-java/) (19), [Strings](https://www.geeksforgeeks.org/strings-in-java/) (12), [Linked Lists](https://www.geeksforgeeks.org/implementing-a-linked-list-in-java-using-class/) (8), [Stacks](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/) (5), [Searching (Binary Search mostly)](https://www.geeksforgeeks.org/binary-search/) (7), [Sorting](https://www.geeksforgeeks.org/sorting-algorithms/#algo) (6), [Greedy Algorithms](https://www.geeksforgeeks.org/greedy-algorithms/) (5), [Heaps](https://www.geeksforgeeks.org/binary-heap/) (4).
+Topics include: [Arrays](https://www.geeksforgeeks.org/arrays-in-java/) (19), [Strings](https://www.geeksforgeeks.org/strings-in-java/) (12), [Linked Lists](https://www.geeksforgeeks.org/implementing-a-linked-list-in-java-using-class/) (8), [Stacks](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/) (5), [Searching (Binary Search mostly)](https://www.geeksforgeeks.org/binary-search/) (7), [Sorting](https://www.geeksforgeeks.org/sorting-algorithms/#algo) (6), [Greedy Algorithms](https://www.geeksforgeeks.org/greedy-algorithms/) (5), [Heaps](https://www.geeksforgeeks.org/binary-heap/) (4), Famous Algorithms (3).
 
 | Problem Statement                     | Difficulty Level | Category          | Solution Link                                                        |
 | ------------------------------------- | ---------------- | ----------------- | -------------------------------------------------------------------- |
@@ -82,6 +82,9 @@ Topics include: [Arrays](https://www.geeksforgeeks.org/arrays-in-java/) (19), [S
 | Continuous Median                     | Hard             | Heaps             | [Program.java](Hard/ContinuousMedian/Program.java)                   |
 | Sort K-Sorted Array                   | Hard             | Heaps             | [Program.java](Hard/SortKSortedArray/Program.java)                   |
 | Laptop Rentals                        | Hard             | Heaps             | [Program.java](Hard/LaptopRentals/Program.java)                      |
+| Kadane's Algorithm                    | Medium           | Famous Algorithms | [Program.java](Medium/KadanesAlgorithm/Program.java)                 |
+| Dijkstra's Algorithm                  | Hard             | Famous Algorithms | [Program.java](Hard/DijkstrasAlgorithm/Program.java)                 |
+| Topological Sort                      | Hard             | Famous Algorithms | [Program.java](Hard/TopologicalSort/Program.java)                    |
 
 ## Please Note
 
