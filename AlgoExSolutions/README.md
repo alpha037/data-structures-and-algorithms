@@ -12,7 +12,7 @@ Let's create free resources for anyone who wants to solve problems!
 
 ## Contents
 
-Topics include: [Arrays](https://www.geeksforgeeks.org/arrays-in-java/) (19), [Strings](https://www.geeksforgeeks.org/strings-in-java/) (12), [Linked Lists](https://www.geeksforgeeks.org/implementing-a-linked-list-in-java-using-class/) (8), [Stacks](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/) (5), [Searching (Binary Search mostly)](https://www.geeksforgeeks.org/binary-search/) (7).
+Topics include: [Arrays](https://www.geeksforgeeks.org/arrays-in-java/) (19), [Strings](https://www.geeksforgeeks.org/strings-in-java/) (12), [Linked Lists](https://www.geeksforgeeks.org/implementing-a-linked-list-in-java-using-class/) (8), [Stacks](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/) (5), [Searching (Binary Search mostly)](https://www.geeksforgeeks.org/binary-search/) (7), [Sorting](https://www.geeksforgeeks.org/sorting-algorithms/#algo) (6).
 
 | Problem Statement                     | Difficulty Level | Category     | Solution Link                                                        |
 | ------------------------------------- | ---------------- | ------------ | -------------------------------------------------------------------- |
@@ -67,6 +67,12 @@ Topics include: [Arrays](https://www.geeksforgeeks.org/arrays-in-java/) (19), [S
 | Search For Range                      | Hard             | Searching    | [Program.java](Hard/SearchForRange/Program.java)                     |
 | Quickselect                           | Hard             | Searching    | [Program.java](Hard/Quickselect/Program.java)                        |
 | Index Equals Value                    | Hard             | Searching    | [Program.java](Hard/IndexEqualsValue/Program.java)                   |
+| Bubble Sort                           | Easy             | Sorting      | [Program.java](Easy/BubbleSort/Program.java)                         |
+| Insertion Sort                        | Easy             | Sorting      | [Program.java](Easy/InsertionSort/Program.java)                      |
+| Selection Sort                        | Easy             | Sorting      | [Program.java](Easy/SelectionSort/Program.java)                      |
+| Three Number Sort                     | Medium           | Sorting      | [Program.java](Medium/ThreeNumberSort/Program.java)                  |
+| Quick Sort                            | Hard             | Sorting      | [Program.java](Hard/QuickSort/Program.java)                          |
+| Heap Sort                             | Hard             | Sorting      | [Program.java](Hard/HeapSort/Program.java)                           |
 
 ## Please Note
 
