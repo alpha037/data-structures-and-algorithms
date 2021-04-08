@@ -12,7 +12,7 @@ Let's create free resources for anyone who wants to solve problems!
 
 ## Contents
 
-Topics include: [Arrays](https://www.geeksforgeeks.org/arrays-in-java/) (19), [Strings](https://www.geeksforgeeks.org/strings-in-java/) (12), [Linked Lists](https://www.geeksforgeeks.org/implementing-a-linked-list-in-java-using-class/) (8), [Stacks](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/) (5), [Searching (Binary Search mostly)](https://www.geeksforgeeks.org/binary-search/) (7), [Sorting](https://www.geeksforgeeks.org/sorting-algorithms/#algo) (6), [Greedy Algorithms](https://www.geeksforgeeks.org/greedy-algorithms/) (5).
+Topics include: [Arrays](https://www.geeksforgeeks.org/arrays-in-java/) (19), [Strings](https://www.geeksforgeeks.org/strings-in-java/) (12), [Linked Lists](https://www.geeksforgeeks.org/implementing-a-linked-list-in-java-using-class/) (8), [Stacks](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/) (5), [Searching (Binary Search mostly)](https://www.geeksforgeeks.org/binary-search/) (7), [Sorting](https://www.geeksforgeeks.org/sorting-algorithms/#algo) (6), [Greedy Algorithms](https://www.geeksforgeeks.org/greedy-algorithms/) (5), [Heaps](https://www.geeksforgeeks.org/binary-heap/) (4).
 
 | Problem Statement                     | Difficulty Level | Category          | Solution Link                                                        |
 | ------------------------------------- | ---------------- | ----------------- | -------------------------------------------------------------------- |
@@ -78,6 +78,10 @@ Topics include: [Arrays](https://www.geeksforgeeks.org/arrays-in-java/) (19), [S
 | Tandem Bicycle                        | Easy             | Greedy Algorithms | [Program.java](Easy/TandemBicycle/Program.java)                      |
 | Task Assignment                       | Medium           | Greedy Algorithms | [Program.java](Medium/TaskAssignment/Program.java)                   |
 | Valid Starting City                   | Medium           | Greedy Algorithms | [Program.java](Medium/ValidStartingCity/Program.java)                |
+| Min Heap Construction                 | Medium           | Heaps             | [Program.java](Medium/MinHeapConstruction/Program.java)              |
+| Continuous Median                     | Hard             | Heaps             | [Program.java](Hard/ContinuousMedian/Program.java)                   |
+| Sort K-Sorted Array                   | Hard             | Heaps             | [Program.java](Hard/SortKSortedArray/Program.java)                   |
+| Laptop Rentals                        | Hard             | Heaps             | [Program.java](Hard/LaptopRentals/Program.java)                      |
 
 ## Please Note
 
