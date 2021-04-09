@@ -12,7 +12,7 @@ Let's create free resources for anyone who wants to solve problems!
 
 ## Contents
 
-Topics include: [Arrays](https://www.geeksforgeeks.org/arrays-in-java/) (19), [Strings](https://www.geeksforgeeks.org/strings-in-java/) (12), [Linked Lists](https://www.geeksforgeeks.org/implementing-a-linked-list-in-java-using-class/) (8), [Stacks](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/) (5), [Searching (Binary Search mostly)](https://www.geeksforgeeks.org/binary-search/) (7), [Sorting](https://www.geeksforgeeks.org/sorting-algorithms/#algo) (6), [Greedy Algorithms](https://www.geeksforgeeks.org/greedy-algorithms/) (5), [Heaps](https://www.geeksforgeeks.org/binary-heap/) (4), Famous Algorithms (3).
+Topics include: [Arrays](https://www.geeksforgeeks.org/arrays-in-java/) (19), [Strings](https://www.geeksforgeeks.org/strings-in-java/) (12), [Linked Lists](https://www.geeksforgeeks.org/implementing-a-linked-list-in-java-using-class/) (8), [Stacks](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/) (5), [Searching (Binary Search mostly)](https://www.geeksforgeeks.org/binary-search/) (7), [Sorting](https://www.geeksforgeeks.org/sorting-algorithms/#algo) (6), [Greedy Algorithms](https://www.geeksforgeeks.org/greedy-algorithms/) (5), [Heaps](https://www.geeksforgeeks.org/binary-heap/) (4), Famous Algorithms (3), [Recursion](https://www.geeksforgeeks.org/recursion/) (11).
 
 | Problem Statement                     | Difficulty Level | Category          | Solution Link                                                        |
 | ------------------------------------- | ---------------- | ----------------- | -------------------------------------------------------------------- |
@@ -85,6 +85,17 @@ Topics include: [Arrays](https://www.geeksforgeeks.org/arrays-in-java/) (19), [S
 | Kadane's Algorithm                    | Medium           | Famous Algorithms | [Program.java](Medium/KadanesAlgorithm/Program.java)                 |
 | Dijkstra's Algorithm                  | Hard             | Famous Algorithms | [Program.java](Hard/DijkstrasAlgorithm/Program.java)                 |
 | Topological Sort                      | Hard             | Famous Algorithms | [Program.java](Hard/TopologicalSort/Program.java)                    |
+| Nth Fibonacci                         | Easy             | Recursion         | [Program.java](Easy/NthFibonacci/Program.java)                       |
+| Product Sum                           | Easy             | Recursion         | [Program.java](Easy/ProductSum/Program.java)                         |
+| Permutations                          | Medium           | Recursion         | [Program.java](Medium/Permutations/Program.java)                     |
+| Powerset                              | Medium           | Recursion         | [Program.java](Medium/PowerSet/Program.java)                         |
+| Phone Number Mnemonics                | Medium           | Recursion         | [Program.java](Medium/PhoneNumberMnemonics/Program.java)             |
+| Staircase Traversal                   | Medium           | Recursion         | [Program.java](Medium/StaircaseTraversal/Program.java)               |
+| Lowest Common Manager                 | Hard             | Recursion         | [Program.java](Hard/LowestCommonManager/Program.java)                |
+| Interweaving Strings                  | Hard             | Recursion         | [Program.java](Hard/InterweavingStrings/Program.java)                |
+| Solve Sudoku                          | Hard             | Recursion         | [Program.java](Hard/SolveSudoku/Program.java)                        |
+| Ambiguous Measurements                | Hard             | Recursion         | [Program.java](Hard/AmbiguousMeasurements/Program.java)              |
+| Generate Div Tags                     | Hard             | Recursion         | [Program.java](Hard/GenerateDivTags/Program.java)                    |
 
 ## Please Note
 
