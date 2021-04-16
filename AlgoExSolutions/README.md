@@ -12,7 +12,8 @@ Let's create free resources for anyone who wants to solve problems!
 
 ## Contents
 
-Topics include: [Arrays](https://www.geeksforgeeks.org/arrays-in-java/) (19), [Strings](https://www.geeksforgeeks.org/strings-in-java/) (12), [Linked Lists](https://www.geeksforgeeks.org/implementing-a-linked-list-in-java-using-class/) (8), [Stacks](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/) (5), [Searching (Binary Search mostly)](https://www.geeksforgeeks.org/binary-search/) (7), [Sorting](https://www.geeksforgeeks.org/sorting-algorithms/#algo) (6), [Greedy Algorithms](https://www.geeksforgeeks.org/greedy-algorithms/) (5), [Heaps](https://www.geeksforgeeks.org/binary-heap/) (4), Famous Algorithms (3), [Recursion](https://www.geeksforgeeks.org/recursion/) (11), [Binary Search Trees](https://www.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/) (9), [Binary Trees](https://www.geeksforgeeks.org/binary-tree-set-1-introduction/) (8), [Dynamic Programming](https://www.geeksforgeeks.org/dynamic-programming/) (5).
+Topics include: [Arrays](https://www.geeksforgeeks.org/arrays-in-java/) (19), [Strings](https://www.geeksforgeeks.org/strings-in-java/) (12), [Linked Lists](https://www.geeksforgeeks.org/implementing-a-linked-list-in-java-using-class/) (8), [Stacks](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/) (5), [Searching (Binary Search mostly)](https://www.geeksforgeeks.org/binary-search/) (7), [Sorting](https://www.geeksforgeeks.org/sorting-algorithms/#algo) (6), [Greedy Algorithms](https://www.geeksforgeeks.org/greedy-algorithms/) (5), [Heaps](https://www.geeksforgeeks.org/binary-heap/) (4), Famous Algorithms (3), [Recursion](https://www.geeksforgeeks.org/recursion/) (11), [Binary Search Trees](https://www.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/) (9), [Binary Trees](https://www.geeksforgeeks.org/binary-tree-set-1-introduction/) (8), [Dynamic Programming](https://www.geeksforgeeks.org/dynamic-programming/) (5), [Graphs](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/) (8).
+<br />
 
 | Problem Statement                     | Difficulty Level | Category            | Solution Link                                                        |
 | ------------------------------------- | ---------------- | ------------------- | -------------------------------------------------------------------- |
@@ -119,6 +120,14 @@ Topics include: [Arrays](https://www.geeksforgeeks.org/arrays-in-java/) (19), [S
 | Min Number Of Coins For Change        | Medium           | Dynamic Programming | [Program.java](Medium/MinNumberofCoinsForChange/Program.java)        |
 | Levenshtein Distance                  | Medium           | Dynamic Programming | [Program.java](Medium/LevenshteinDistance/Program.java)              |
 | Number Of Ways To Traverse Graph      | Medium           | Dynamic Programming | [Program.java](Medium/NumberofWaysToTraverseGraph/Program.java)      |
+| Depth-First Search                    | Easy             | Graphs              | [Program.java](Easy/DepthFirstSearch/Program.java)                   |
+| Single Cycle Check                    | Medium           | Graphs              | [Program.java](Medium/SingleCycleCheck/Program.java)                 |
+| Breadth-First Search                  | Medium           | Graphs              | [Program.java](Medium/BreadthFirstSearch/Program.java)               |
+| River Sizes                           | Medium           | Graphs              | [Program.java](Medium/RiverSizes/Program.java)                       |
+| Youngest Common Ancestor              | Medium           | Graphs              | [Program.java](Medium/YoungestCommonAncestor/Program.java)           |
+| Remove Islands                        | Medium           | Graphs              | [Program.java](Medium/RemoveIslands/Program.java)                    |
+| Cycle In Graph                        | Medium           | Graphs              | [Program.java](Medium/CycleInGraph/Program.java)                     |
+| Boggle Board                          | Hard             | Graphs              | [Program.java](Hard/BoggleBoard/Program.java)                        |
 
 ## Please Note
 
