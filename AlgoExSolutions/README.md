@@ -12,7 +12,7 @@ Let's create free resources for anyone who wants to solve problems!
 
 ## Contents
 
-Topics include: [Arrays](https://www.geeksforgeeks.org/arrays-in-java/) (19), [Strings](https://www.geeksforgeeks.org/strings-in-java/) (12), [Linked Lists](https://www.geeksforgeeks.org/implementing-a-linked-list-in-java-using-class/) (8), [Stacks](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/) (5), [Searching (Binary Search mostly)](https://www.geeksforgeeks.org/binary-search/) (7), [Sorting](https://www.geeksforgeeks.org/sorting-algorithms/#algo) (6), [Greedy Algorithms](https://www.geeksforgeeks.org/greedy-algorithms/) (5), [Heaps](https://www.geeksforgeeks.org/binary-heap/) (4), Famous Algorithms (3), [Recursion](https://www.geeksforgeeks.org/recursion/) (11), [Binary Search Trees](https://www.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/) (9), [Binary Trees](https://www.geeksforgeeks.org/binary-tree-set-1-introduction/) (8), [Dynamic Programming](https://www.geeksforgeeks.org/dynamic-programming/) (5), [Graphs](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/) (8).
+Topics include: [Arrays](https://www.geeksforgeeks.org/arrays-in-java/) (19), [Strings](https://www.geeksforgeeks.org/strings-in-java/) (12), [Linked Lists](https://www.geeksforgeeks.org/implementing-a-linked-list-in-java-using-class/) (8), [Stacks](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/) (6), [Searching (Binary Search mostly)](https://www.geeksforgeeks.org/binary-search/) (7), [Sorting](https://www.geeksforgeeks.org/sorting-algorithms/#algo) (6), [Greedy Algorithms](https://www.geeksforgeeks.org/greedy-algorithms/) (5), [Heaps](https://www.geeksforgeeks.org/binary-heap/) (4), Famous Algorithms (3), [Recursion](https://www.geeksforgeeks.org/recursion/) (11), [Binary Search Trees](https://www.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/) (9), [Binary Trees](https://www.geeksforgeeks.org/binary-tree-set-1-introduction/) (8), [Dynamic Programming](https://www.geeksforgeeks.org/dynamic-programming/) (5), [Graphs](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/) (8), [Tries](https://www.geeksforgeeks.org/trie-insert-and-search/) (1).
 <br />
 
 | Problem Statement                     | Difficulty Level | Category            | Solution Link                                                        |
@@ -128,6 +128,7 @@ Topics include: [Arrays](https://www.geeksforgeeks.org/arrays-in-java/) (19), [S
 | Remove Islands                        | Medium           | Graphs              | [Program.java](Medium/RemoveIslands/Program.java)                    |
 | Cycle In Graph                        | Medium           | Graphs              | [Program.java](Medium/CycleInGraph/Program.java)                     |
 | Boggle Board                          | Hard             | Graphs              | [Program.java](Hard/BoggleBoard/Program.java)                        |
+| Suffix Trie Construction              | Medium           | Tries               | [Program.java](Medium/SuffixTrieConstruction/Program.java)           |
 
 ## Please Note
 
