@@ -12,7 +12,7 @@ Let's create free resources for anyone who wants to solve problems!
 
 ## Contents
 
-Topics include: [Arrays](https://www.geeksforgeeks.org/arrays-in-java/) (19), [Strings](https://www.geeksforgeeks.org/strings-in-java/) (12), [Linked Lists](https://www.geeksforgeeks.org/implementing-a-linked-list-in-java-using-class/) (8), [Stacks](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/) (5), [Searching (Binary Search mostly)](https://www.geeksforgeeks.org/binary-search/) (7), [Sorting](https://www.geeksforgeeks.org/sorting-algorithms/#algo) (6), [Greedy Algorithms](https://www.geeksforgeeks.org/greedy-algorithms/) (5), [Heaps](https://www.geeksforgeeks.org/binary-heap/) (4), Famous Algorithms (3), [Recursion](https://www.geeksforgeeks.org/recursion/) (11), [Binary Search Trees](https://www.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/) (9), [Binary Trees](https://www.geeksforgeeks.org/binary-tree-set-1-introduction/) (8).
+Topics include: [Arrays](https://www.geeksforgeeks.org/arrays-in-java/) (19), [Strings](https://www.geeksforgeeks.org/strings-in-java/) (12), [Linked Lists](https://www.geeksforgeeks.org/implementing-a-linked-list-in-java-using-class/) (8), [Stacks](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/) (5), [Searching (Binary Search mostly)](https://www.geeksforgeeks.org/binary-search/) (7), [Sorting](https://www.geeksforgeeks.org/sorting-algorithms/#algo) (6), [Greedy Algorithms](https://www.geeksforgeeks.org/greedy-algorithms/) (5), [Heaps](https://www.geeksforgeeks.org/binary-heap/) (4), Famous Algorithms (3), [Recursion](https://www.geeksforgeeks.org/recursion/) (11), [Binary Search Trees](https://www.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/) (9), [Binary Trees](https://www.geeksforgeeks.org/binary-tree-set-1-introduction/) (8), [Dynamic Programming](https://www.geeksforgeeks.org/dynamic-programming/) (5).
 
 | Problem Statement                     | Difficulty Level | Category            | Solution Link                                                        |
 | ------------------------------------- | ---------------- | ------------------- | -------------------------------------------------------------------- |
@@ -114,6 +114,11 @@ Topics include: [Arrays](https://www.geeksforgeeks.org/arrays-in-java/) (19), [S
 | Height Balanced Binary Tree           | Medium           | Binary Trees        | [Program.java](Medium/HeightBalancedBinaryTree/Program.java)         |
 | Max Path Sum In Binary Tree           | Hard             | Binary Trees        | [Program.java](Hard/MaxPathSumInBinaryTree/Program.java)             |
 | Find Nodes Distance K                 | Hard             | Binary Trees        | [Program.java](Hard/FindNodesDistanceK/Program.java)                 |
+| Max Subset Sum No Adjacent            | Medium           | Dynamic Programming | [Program.java](Medium/MaximumSubsetSumNoAdjacent/Program.java)       |
+| Number Of Ways To Make Change         | Medium           | Dynamic Programming | [Program.java](Medium/NumberofWaysToMakeChange/Program.java)         |
+| Min Number Of Coins For Change        | Medium           | Dynamic Programming | [Program.java](Medium/MinNumberofCoinsForChange/Program.java)        |
+| Levenshtein Distance                  | Medium           | Dynamic Programming | [Program.java](Medium/LevenshteinDistance/Program.java)              |
+| Number Of Ways To Traverse Graph      | Medium           | Dynamic Programming | [Program.java](Medium/NumberofWaysToTraverseGraph/Program.java)      |
 
 ## Please Note
 
