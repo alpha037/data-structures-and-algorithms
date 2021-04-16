@@ -5,7 +5,6 @@ package AlgoExSolutions.Medium.HeightBalancedBinaryTree;
 /**
  * * Height Balanced Binary Tree
  */
-
 class Program {
   // This is an input class. Do not edit.
   static class BinaryTree {
@@ -17,29 +16,27 @@ class Program {
       this.value = value;
     }
   }
-  
+
   /**
    * * TC: O(n)
    * * SC: O(h)
    */
-	private int heightBalancedTreeHelper(BinaryTree root) {
-		if (root  == null) return 0;
-		
-		int leftTreeHeight = heightBalancedTreeHelper(root.left);
-		// if (leftTreeHeight == Integer.MIN_VALUE) return Integer.MIN_VALUE;
-		
-		int rightTreeHeight = heightBalancedTreeHelper(root.right);
-		// if (rightTreeHeight == Integer.MIN_VALUE) return Integer.MIN_VALUE;
-		
-		int difference = Math.abs(leftTreeHeight - rightTreeHeight);
-		if (difference > 1)
-        return Integer.MIN_VALUE;
-		else
-			return Math.max(leftTreeHeight, rightTreeHeight) + 1;
-	}
+  private int heightBalancedTreeHelper(BinaryTree root) {
+    if (root == null) return 0;
+
+    int leftTreeHeight = heightBalancedTreeHelper(root.left);
+    // if (leftTreeHeight == Integer.MIN_VALUE) return Integer.MIN_VALUE;
+
+    int rightTreeHeight = heightBalancedTreeHelper(root.right);
+    // if (rightTreeHeight == Integer.MIN_VALUE) return Integer.MIN_VALUE;
+
+    int difference = Math.abs(leftTreeHeight - rightTreeHeight);
+    if (difference > 1) return Integer.MIN_VALUE;
+    else return Math.max(leftTreeHeight, rightTreeHeight) + 1;
+  }
 
   public boolean heightBalancedBinaryTree(BinaryTree tree) {
     // Write your code here.
-		return heightBalancedTreeHelper(tree) != Integer.MIN_VALUE;
+    return heightBalancedTreeHelper(tree) != Integer.MIN_VALUE;
   }
 }
