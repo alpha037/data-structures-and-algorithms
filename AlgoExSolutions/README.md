@@ -12,7 +12,7 @@ Let's create free resources for anyone who wants to solve problems!
 
 ## Contents
 
-Topics include: [Arrays](https://www.geeksforgeeks.org/arrays-in-java/) (19), [Strings](https://www.geeksforgeeks.org/strings-in-java/) (12), [Linked Lists](https://www.geeksforgeeks.org/implementing-a-linked-list-in-java-using-class/) (8), [Stacks](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/) (5), [Searching (Binary Search mostly)](https://www.geeksforgeeks.org/binary-search/) (7), [Sorting](https://www.geeksforgeeks.org/sorting-algorithms/#algo) (6), [Greedy Algorithms](https://www.geeksforgeeks.org/greedy-algorithms/) (5), [Heaps](https://www.geeksforgeeks.org/binary-heap/) (4), Famous Algorithms (3), [Recursion](https://www.geeksforgeeks.org/recursion/) (11), [Binary Search Trees](https://www.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/) (9).
+Topics include: [Arrays](https://www.geeksforgeeks.org/arrays-in-java/) (19), [Strings](https://www.geeksforgeeks.org/strings-in-java/) (12), [Linked Lists](https://www.geeksforgeeks.org/implementing-a-linked-list-in-java-using-class/) (8), [Stacks](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/) (5), [Searching (Binary Search mostly)](https://www.geeksforgeeks.org/binary-search/) (7), [Sorting](https://www.geeksforgeeks.org/sorting-algorithms/#algo) (6), [Greedy Algorithms](https://www.geeksforgeeks.org/greedy-algorithms/) (5), [Heaps](https://www.geeksforgeeks.org/binary-heap/) (4), Famous Algorithms (3), [Recursion](https://www.geeksforgeeks.org/recursion/) (11), [Binary Search Trees](https://www.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/) (9), [Binary Trees](https://www.geeksforgeeks.org/binary-tree-set-1-introduction/) (8).
 
 | Problem Statement                     | Difficulty Level | Category            | Solution Link                                                        |
 | ------------------------------------- | ---------------- | ------------------- | -------------------------------------------------------------------- |
@@ -58,6 +58,7 @@ Topics include: [Arrays](https://www.geeksforgeeks.org/arrays-in-java/) (19), [S
 | Min Max Stack Construction            | Medium           | Stacks              | [Program.java](Medium/MinMaxStackConstruction/Program.java)          |
 | Balanced Brackets                     | Medium           | Stacks              | [Program.java](Medium/BalancedBrackets/Program.java)                 |
 | Sunset Views                          | Medium           | Stacks              | [Program.java](Medium/SunsetViews/Program.java)                      |
+| Sort Stack                            | Medium           | Stacks              | [Program.java](Medium/SortStack/Program.java)                        |
 | Shorten Path                          | Hard             | Stacks              | [Program.java](Hard/ShortenPath/Program.java)                        |
 | Largest Rectangle Under Skyline       | Hard             | Stacks              | [Program.java](Hard/LargestRectangleUnderSkyline/Program.java)       |
 | Binary Search                         | Easy             | Searching           | [Program.java](Easy/BinarySearch/Program.java)                       |
@@ -105,6 +106,14 @@ Topics include: [Arrays](https://www.geeksforgeeks.org/arrays-in-java/) (19), [S
 | Reconstruct BST                       | Medium           | Binary Search Trees | [Program.java](Medium/ReconstructBST/Program.java)                   |
 | Validate Three Nodes                  | Hard             | Binary Search Trees | [Program.java](Hard/ValidateThreeNodes/Program.java)                 |
 | Same BSTs                             | Hard             | Binary Search Trees | [Program.java](Hard/SameBSTs/Program.java)                           |
+| Branch Sums                           | Easy             | Binary Trees        | [Program.java](Easy/BranchSums/Program.java)                         |
+| Node Depths                           | Easy             | Binary Trees        | [Program.java](Easy/NodeDepths/Program.java)                         |
+| Invert Binary Tree                    | Medium           | Binary Trees        | [Program.java](Medium/InvertBinaryTree/Program.java)                 |
+| Binary Tree Diameter                  | Medium           | Binary Trees        | [Program.java](Medium/BinaryTreeDiameter/Program.java)               |
+| Find Successor                        | Medium           | Binary Trees        | [Program.java](Medium/FindSuccessor/Program.java)                    |
+| Height Balanced Binary Tree           | Medium           | Binary Trees        | [Program.java](Medium/HeightBalancedBinaryTree/Program.java)         |
+| Max Path Sum In Binary Tree           | Hard             | Binary Trees        | [Program.java](Hard/MaxPathSumInBinaryTree/Program.java)             |
+| Find Nodes Distance K                 | Hard             | Binary Trees        | [Program.java](Hard/FindNodesDistanceK/Program.java)                 |
 
 ## Please Note
 
