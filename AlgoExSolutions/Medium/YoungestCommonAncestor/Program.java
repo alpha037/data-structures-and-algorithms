@@ -1,4 +1,4 @@
-package AlgoExSolutions.Medium.YoungestCommonManager;
+package AlgoExSolutions.Medium.YoungestCommonAncestor;
 
 // import java.util.*;
 
