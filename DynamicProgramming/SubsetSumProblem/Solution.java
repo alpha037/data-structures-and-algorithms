@@ -27,13 +27,11 @@ public class Solution {
 
     // If the sum is 0, then every
     // element can make that target
-    for (int i = 0; i < len + 1; i++)
-      dp[i][0] = true;
+    for (int i = 0; i < len + 1; i++) dp[i][0] = true;
 
     // If there is no element, then it won't
     // make any of the sums, except 0
-    for (int j = 1; j < sum + 1; j++)
-      dp[0][j] = false;
+    for (int j = 1; j < sum + 1; j++) dp[0][j] = false;
 
     for (int i = 1; i < len + 1; i++) {
       for (int j = 1; j < sum + 1; j++) {
@@ -41,12 +39,10 @@ public class Solution {
         boolean isSubsetWithoutCurrentItem = dp[i - 1][currentSum];
 
         if (array[i - 1] <= currentSum) {
-          boolean isSubsetWithCurrentItem = 
-            dp[i - 1][currentSum - array[i - 1]];
+          boolean isSubsetWithCurrentItem = dp[i - 1][currentSum - array[i - 1]];
 
           dp[i][j] = isSubsetWithCurrentItem || isSubsetWithoutCurrentItem;
-        }
-        else dp[i][j] = isSubsetWithoutCurrentItem;
+        } else dp[i][j] = isSubsetWithoutCurrentItem;
       }
     }
 
