@@ -3,7 +3,7 @@ package DynamicProgramming.SubsetSumProblem;
 // import java.util.*;
 
 /**
- * * Subset Sum Problem
+ * * Subset Sum Problem (Variation of 0/1 Knapsack)
  */
 public class Solution {
   public boolean hasSubsetSum(int[] array, int sum) {
@@ -72,7 +72,8 @@ public class Solution {
    * * SC: O(ns)
    */
   // private boolean hasSubsetSumMem(int index, int[] array, int sum, boolean[][] cache) {
-  //   if (index == 0) return sum == 0;
+  //   if (sum == 0) return true;
+  //   if (index == 0) return false;
 
   //   if (cache[index][sum]) return true;
 
@@ -91,7 +92,8 @@ public class Solution {
    * * SC: Exponential time
    */
   // private boolean hasSubsetSumRec(int index, int[] array, int sum) {
-  //   if (index == 0) return sum == 0;
+  //   if (sum == 0) return true;
+  //   if (index == 0) return false;
 
   //   if (array[index] <= sum)
   //     return hasSubsetSumRec(index - 1, array, sum - array[index])
