@@ -5,7 +5,6 @@ import java.util.Arrays;
 /**
  * * Equal Sum Partition Problem (Variation of 0/1 Knapsack)
  */
-
 public class Solution {
   public boolean canPartition(int[] nums) {
     int sum = Arrays.stream(nums).sum();
@@ -22,7 +21,7 @@ public class Solution {
 
   /**
    * * Dynamic Programming Approach
-   * 
+   *
    * * TC: O(ns)
    * * SC: O(ns)
    */
@@ -30,13 +29,11 @@ public class Solution {
     int len = array.length;
     boolean[][] dp = new boolean[len + 1][sum + 1];
 
-    for (int i = 0; i < len + 1; i++)
-      dp[i][0] = true;
+    for (int i = 0; i < len + 1; i++) dp[i][0] = true;
 
     for (int i = 1; i < len + 1; i++) {
       for (int j = 1; j < sum + 1; j++) {
-        if (array[i - 1] <= j)
-          dp[i][j] = dp[i - 1][j] || dp[i - 1][j - array[i - 1]];
+        if (array[i - 1] <= j) dp[i][j] = dp[i - 1][j] || dp[i - 1][j - array[i - 1]];
         else dp[i][j] = dp[i - 1][j];
       }
     }
@@ -46,7 +43,7 @@ public class Solution {
 
   /**
    * * Memoization Approach
-   * 
+   *
    * * TC: O(ns)
    * * SC: O(ns)
    */
@@ -66,7 +63,7 @@ public class Solution {
 
   /**
    * * Recursive Approach
-   * 
+   *
    * * TC: O(2^n) approximately
    * * SC: O(2^n) approximately
    */
@@ -75,7 +72,7 @@ public class Solution {
   //   if (index == 0) return false;
 
   //   if (array[index - 1] <= sum)
-  //     return 
+  //     return
   //       canPartitionRec(index - 1, array, sum - array[index - 1]) ||
   //       canPartitionRec(index - 1, array, sum);
 
