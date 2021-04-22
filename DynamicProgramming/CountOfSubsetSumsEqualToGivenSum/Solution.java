@@ -3,7 +3,6 @@ package DynamicProgramming.CountOfSubsetSumsEqualToGivenSum;
 /**
  * * Count of Subsets Equal To A Given Sum (Variation of 0/1 Knapsack)
  */
-
 public class Solution {
   public int countOfSubsets(int[] array, int sum) {
     // return countOfSubset(array.length, array, sum);
@@ -16,7 +15,7 @@ public class Solution {
 
   /**
    * * Dynamic Programming Approach
-   * 
+   *
    * * TC: O(ns)
    * * SC: O(ns)
    */
@@ -24,28 +23,24 @@ public class Solution {
     int len = array.length;
     int[][] dp = new int[len + 1][sum + 1];
 
-    for (int i = 0; i < len + 1; i++)
-      dp[i][0] = 1;
+    for (int i = 0; i < len + 1; i++) dp[i][0] = 1;
 
-    for (int j = 1; j < sum + 1; j++)
-      dp[0][j] = 0;
+    for (int j = 1; j < sum + 1; j++) dp[0][j] = 0;
 
-    for (int i = 1;i < len + 1; i++) {
+    for (int i = 1; i < len + 1; i++) {
       for (int j = 1; j < sum + 1; j++) {
         // If the current item is less than
         // or equal to the current sum, then we
         // need to consider both the scenarios
         // where we include this current item and
         // where we don't include this current item
-        if (array[i - 1] <= j)
-          dp[i][j] = dp[i - 1][j] + dp[i - 1][j - array[i - 1]];
+        if (array[i - 1] <= j) dp[i][j] = dp[i - 1][j] + dp[i - 1][j - array[i - 1]];
 
         // If the current item is greater
         // than our current sum, then there's
         // only one scenario where we don't
         // include this current item
-        else
-          dp[i][j] = dp[i - 1][j];
+        else dp[i][j] = dp[i - 1][j];
       }
     }
 
@@ -54,7 +49,7 @@ public class Solution {
 
   /**
    * * Memoization Approach
-   * 
+   *
    * * TC: O(ns)
    * * SC: O(ns)
    */
@@ -63,14 +58,15 @@ public class Solution {
   //   if (index == 0) return 0;
 
   //   if (array[index - 1] <= sum)
-  //     return cache[index][sum] = countOfSubsetsMem(index - 1, array, sum - array[index - 1], cache) + countOfSubsetsMem(index - 1, array, sum, cache);
+  //     return cache[index][sum] = countOfSubsetsMem(index - 1, array, sum - array[index - 1],
+  // cache) + countOfSubsetsMem(index - 1, array, sum, cache);
 
   //   return cache[index][sum] = countOfSubsetsMem(index - 1, array, sum, cache);
   // }
 
   /**
    * * Recursive Approach
-   * 
+   *
    * * TC: O(2^n) approximately
    * * SC: O(2^n) approximately
    */
@@ -79,7 +75,8 @@ public class Solution {
   //   if (index == 0) return 0;
 
   //   if (array[index - 1] <= sum)
-  //     return countOfSubset(index - 1, array, sum - array[index - 1]) + countOfSubset(index - 1, array, sum);
+  //     return countOfSubset(index - 1, array, sum - array[index - 1]) + countOfSubset(index - 1,
+  // array, sum);
 
   //   return countOfSubset(index - 1, array, sum);
   // }
