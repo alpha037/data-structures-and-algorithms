@@ -4,10 +4,9 @@ import java.util.Arrays;
 
 /**
  * * Target Sum (Variation of 0/1 Knapsack)
- * 
+ *
  * LeetCode Problem: https://leetcode.com/problems/target-sum/
  */
-
 public class Solution {
   public int findTargetSumWays(int[] array, int target) {
     int sum = Arrays.stream(array).sum();
@@ -17,7 +16,7 @@ public class Solution {
 
   /**
    * * Dynamic Programming Approach
-   * 
+   *
    * * TC: O(ns)
    * * SC: O(ns)
    */
@@ -27,12 +26,12 @@ public class Solution {
     /**
      * Equation I: S1 - S2 = difference
      * Equation II: S1 + S2 = sum(array)
-     * 
+     *
      * Adding I and II,
-     * 
+     *
      * 2S1 = sum(array) + difference
      * so, S1 = (sum(array) + difference) / 2
-     * 
+     *
      * Now, we need to find the count of
      * subsets equal to a given sum, which
      * is S1
