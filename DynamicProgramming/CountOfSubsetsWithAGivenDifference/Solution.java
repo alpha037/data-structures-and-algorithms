@@ -43,10 +43,8 @@ public class Solution {
 
     for (int i = 0; i < len + 1; i++) dp[i][0] = 1;
 
-    for (int j = 1; j < sum + 1; j++) dp[0][j] = 0;
-
     for (int i = 1; i < len + 1; i++) {
-      for (int j = 1; j < sum + 1; j++) {
+      for (int j = 0; j < sum + 1; j++) {
         // If the current item is less than
         // or equal to the current sum, then we
         // need to consider both the scenarios
@@ -68,6 +66,7 @@ public class Solution {
   public static void main(String[] args) {
     Solution solution = new Solution();
 
+    // should be 3
     System.out.println(solution.countOfSubsets(new int[] {1, 1, 2, 3}, 1));
   }
 }
