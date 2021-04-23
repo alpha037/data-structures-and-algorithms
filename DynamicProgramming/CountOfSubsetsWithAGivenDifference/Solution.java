@@ -5,7 +5,6 @@ import java.util.Arrays;
 /**
  * * Count of Subsets With A Given Difference (Variation of 0/1 Knapsack)
  */
-
 public class Solution {
   public int countOfSubsets(int[] array, int difference) {
     int sum = Arrays.stream(array).sum();
@@ -15,7 +14,7 @@ public class Solution {
 
   /**
    * * Dynamic Programming Approach
-   * 
+   *
    * * TC: O(ns)
    * * SC: O(ns)
    */
@@ -23,12 +22,12 @@ public class Solution {
     /**
      * Equation I: S1 - S2 = difference
      * Equation II: S1 + S2 = sum(array)
-     * 
+     *
      * Adding I and II,
-     * 
+     *
      * 2S1 = sum(array) + difference
      * so, S1 = (sum(array) + difference) / 2
-     * 
+     *
      * Now, we need to find the count of
      * subsets equal to a given sum, which
      * is S1
