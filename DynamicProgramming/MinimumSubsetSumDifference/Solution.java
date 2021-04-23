@@ -5,7 +5,6 @@ import java.util.Arrays;
 /**
  * * Minimum Subset Sum Difference (Extension of 0/1 Knapsack)
  */
-
 public class Solution {
   public int minimumSubsetSumDifference(int[] array) {
     int sum = Arrays.stream(array).sum();
@@ -22,7 +21,7 @@ public class Solution {
 
   /**
    * * Dynamic Programming Approach
-   * 
+   *
    * * TC: O(ns)
    * * SC: O(ns)
    */
@@ -66,11 +65,12 @@ public class Solution {
 
   /**
    * * Memoization Approach
-   * 
+   *
    * * TC: O(ns)
    * * SC: O(ns)
    */
-  // private int minimumSubsetSumDifferenceMem(int index, int[] array, int sumOne, int sumTwo, int[][] cache) {
+  // private int minimumSubsetSumDifferenceMem(int index, int[] array, int sumOne, int sumTwo,
+  // int[][] cache) {
   //   if (index == 0)
   //     return Math.abs(sumOne - sumTwo);
 
@@ -87,19 +87,19 @@ public class Solution {
 
   /**
    * * Recursive Approach
-   * 
+   *
    * * TC: O(2^n) approximately
    * * SC: O(2^n) approximately
    */
   // private int minimumSubsetSumDifferenceRec(int index, int[] array, int sumOne, int sumTwo) {
   //   if (index == 0) return Math.abs(sumOne - sumTwo);
 
-    // return Math.min(
-    //   minimumSubsetSumDifferenceRec(
-    //     index - 1, array, sumOne - array[index - 1], sumTwo + array[index - 1]
-    //   ),
-    //   minimumSubsetSumDifferenceRec(index - 1, array, sumOne, sumTwo)
-    // );
+  // return Math.min(
+  //   minimumSubsetSumDifferenceRec(
+  //     index - 1, array, sumOne - array[index - 1], sumTwo + array[index - 1]
+  //   ),
+  //   minimumSubsetSumDifferenceRec(index - 1, array, sumOne, sumTwo)
+  // );
   // }
 
   public static void main(String[] args) {
@@ -109,6 +109,6 @@ public class Solution {
     System.out.println(solution.minimumSubsetSumDifference(new int[] {1, 6, 5, 11}));
 
     // should be 1
-    System.out.println(solution.minimumSubsetSumDifference(new int[] {2,7,4,1,8,1}));
+    System.out.println(solution.minimumSubsetSumDifference(new int[] {2, 7, 4, 1, 8, 1}));
   }
 }
