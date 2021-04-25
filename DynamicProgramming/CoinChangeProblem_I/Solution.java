@@ -4,10 +4,9 @@ package DynamicProgramming.CoinChangeProblem_I;
 
 /**
  * * Coin Change Problem I (Variation of Unbounded Knapsack Problem)
- * 
+ *
  * Problem: https://www.geeksforgeeks.org/coin-change-dp-7/
  */
-
 public class Solution {
   public int numberOfWays(int[] coins, int target) {
     // return numberOfWaysRec(coins.length, coins, target);
@@ -24,7 +23,7 @@ public class Solution {
 
   /**
    * * Dynamic Programming Approach (Space optimized)
-   * 
+   *
    * * TC: O(nt)
    * * SC: O(t)
    */
@@ -34,9 +33,7 @@ public class Solution {
     dp[0] = 1;
 
     for (int i = 1; i < coins.length + 1; i++) {
-      for (int j = 1; j < target + 1; j++)
-        if (coins[i - 1] <= j)
-          dp[j] += dp[j - coins[i - 1]];
+      for (int j = 1; j < target + 1; j++) if (coins[i - 1] <= j) dp[j] += dp[j - coins[i - 1]];
     }
 
     return dp[target];
@@ -44,7 +41,7 @@ public class Solution {
 
   /**
    * * Dynamic Programming Approach
-   * 
+   *
    * * TC: O(nt)
    * * SC: O(nt)
    */
@@ -68,7 +65,7 @@ public class Solution {
 
   /**
    * * Memoization Approach
-   * 
+   *
    * * TC: O(nt)
    * * SC: O(nt)
    */
@@ -89,7 +86,7 @@ public class Solution {
 
   /**
    * * Recursive Approach
-   * 
+   *
    * * TC: O(2^n) approximately
    * * SC: O(2^n) approximately
    */

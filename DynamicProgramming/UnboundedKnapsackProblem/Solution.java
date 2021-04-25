@@ -5,7 +5,6 @@ package DynamicProgramming.UnboundedKnapsackProblem;
 /**
  * * Unbounded Knapsack Problem
  */
-
 public class Solution {
   public int unboundedKnapsackProblem(int[][] items, int capacity) {
     // return unboundedKnapsackProblemRec(items.length, items, capacity);
@@ -22,7 +21,7 @@ public class Solution {
 
   /**
    * * Dynamic Programming Approach (Space Optimized)
-   * 
+   *
    * * TC: O(nc)
    * * SC: O(c)
    */
@@ -32,10 +31,7 @@ public class Solution {
     for (int i = 0; i < capacity + 1; i++) {
       for (int j = 0; j < items.length; j++) {
         if (items[j][1] <= i)
-          knapsack[i] = Math.max(
-            knapsack[i],
-            items[j][0] + knapsack[i - items[j][1]]
-          );
+          knapsack[i] = Math.max(knapsack[i], items[j][0] + knapsack[i - items[j][1]]);
       }
     }
 
@@ -44,7 +40,7 @@ public class Solution {
 
   /**
    * * Dynamic Programming Approach
-   * 
+   *
    * * TC: O(nc)
    * * SC: O(nc)
    */
@@ -58,7 +54,8 @@ public class Solution {
   //       int valWithoutCurrentItem = knapsack[i - 1][currentCapacity];
 
   //       if (items[i - 1][1] <= currentCapacity) {
-  //         int valWithCurrentItem = items[i - 1][0] + knapsack[i][currentCapacity - items[i - 1][1]];
+  //         int valWithCurrentItem = items[i - 1][0] + knapsack[i][currentCapacity - items[i -
+  // 1][1]];
   //         knapsack[i][j] = Math.max(valWithCurrentItem, knapsack[i][j]);
   //       }
   //       else knapsack[i][j] = valWithoutCurrentItem;
@@ -70,11 +67,12 @@ public class Solution {
 
   /**
    * * Memoization Approach
-   * 
+   *
    * * TC: O(nc)
    * * SC: O(nc)
    */
-  // private int unboundedKnapsackProblemMem(int index, int[][] items, int capacity, int[][] cache) {
+  // private int unboundedKnapsackProblemMem(int index, int[][] items, int capacity, int[][] cache)
+  // {
   //   if (index == 0 || capacity == 0) return 0;
 
   //   if (cache[index][capacity] != Integer.MIN_VALUE)
@@ -82,17 +80,19 @@ public class Solution {
 
   //   if (items[index - 1][1] <= capacity) {
   //     return cache[index][capacity] = Math.max(
-  //       items[index - 1][0] + unboundedKnapsackProblemMem(index, items, capacity - items[index - 1][1], cache),
+  //       items[index - 1][0] + unboundedKnapsackProblemMem(index, items, capacity - items[index -
+  // 1][1], cache),
   //       unboundedKnapsackProblemMem(index - 1, items, capacity, cache)
   //     );
   //   }
 
-  //   return cache[index][capacity] = unboundedKnapsackProblemMem(index - 1, items, capacity, cache);
+  //   return cache[index][capacity] = unboundedKnapsackProblemMem(index - 1, items, capacity,
+  // cache);
   // }
 
   /**
    * * Recursive Approach
-   * 
+   *
    * * TC: O(2^n) approximately
    * * SC: O(2^n) approximately
    */
@@ -101,7 +101,8 @@ public class Solution {
 
   //   if (items[index - 1][1] <= capacity) {
   //     return Math.max(
-  //       items[index - 1][0] + unboundedKnapsackProblemRec(index, items, capacity - items[index - 1][1]),
+  //       items[index - 1][0] + unboundedKnapsackProblemRec(index, items, capacity - items[index -
+  // 1][1]),
   //       unboundedKnapsackProblemRec(index - 1, items, capacity)
   //     );
   //   }
@@ -112,10 +113,11 @@ public class Solution {
   public static void main(String[] args) {
     Solution solution = new Solution();
 
-    int[][] items = new int[][] {
-      {1, 1},
-      {30, 50}
-    };
+    int[][] items =
+        new int[][] {
+          {1, 1},
+          {30, 50}
+        };
 
     // should be 100
     System.out.println(solution.unboundedKnapsackProblem(items, 100));

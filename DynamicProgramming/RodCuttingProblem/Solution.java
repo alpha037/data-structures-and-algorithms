@@ -5,7 +5,6 @@ package DynamicProgramming.RodCuttingProblem;
 /**
  * * Rod Cutting Problem (Variation of Unbounded Knapsack)
  */
-
 public class Solution {
   public int cutRod(int[] prices, int length) {
     // return cutRodRec(length, prices, length, length);
@@ -20,7 +19,7 @@ public class Solution {
 
   /**
    * * Bottom-Up Approach
-   * 
+   *
    * * TC: O(n^2)
    * * SC: O(n)
    */
@@ -31,11 +30,8 @@ public class Solution {
       int maxProfit = Integer.MIN_VALUE;
 
       for (int j = 0; j < rodLength; j++)
-        maxProfit = Math.max(
-          maxProfit,
-          prices[j] + dp[rodLength - j - 1]
-        );
-      
+        maxProfit = Math.max(maxProfit, prices[j] + dp[rodLength - j - 1]);
+
       dp[rodLength] = maxProfit;
     }
 
@@ -44,7 +40,7 @@ public class Solution {
 
   /**
    * * Memoization Approach
-   * 
+   *
    * * TC: O(n^2)
    * * SC: O(n^2)
    */
@@ -65,7 +61,7 @@ public class Solution {
 
   /**
    * * Recursive Approach
-   * 
+   *
    * * TC: O(2^n) approximately
    * * SC: O(2^n) approximately
    */
@@ -77,7 +73,7 @@ public class Solution {
   //       prices[index - 1] + cutRodRec(index, prices, length, capacity - length),
   //       cutRodRec(index - 1, prices, length - 1, capacity)
   //     );
-    
+
   //   return cutRodRec(index - 1, prices, length - 1, capacity);
   // }
 
@@ -85,9 +81,9 @@ public class Solution {
     Solution solution = new Solution();
 
     // should be 22
-    System.out.println(solution.cutRod(new int[] {1,5,8,9,10,17,17,20}, 8));
+    System.out.println(solution.cutRod(new int[] {1, 5, 8, 9, 10, 17, 17, 20}, 8));
 
     // should be 24
-    System.out.println(solution.cutRod(new int[] {3,5,8,9,10,17,17,20}, 8));
+    System.out.println(solution.cutRod(new int[] {3, 5, 8, 9, 10, 17, 17, 20}, 8));
   }
 }
