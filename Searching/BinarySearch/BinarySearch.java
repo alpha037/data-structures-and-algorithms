@@ -7,7 +7,7 @@ public class BinarySearch {
 
   /**
    * * Iterative Approach
-   * 
+   *
    * * TC: O(log n)
    * * SC: O(1)
    */
@@ -16,14 +16,9 @@ public class BinarySearch {
     while (low < high) {
       int mid = low + high - low / 2;
 
-      if (arr[mid] == value)
-        return mid;
-
-      else if (arr[mid] < value)
-        low = mid + 1;
-
-      else
-        high = mid - 1;
+      if (arr[mid] == value) return mid;
+      else if (arr[mid] < value) low = mid + 1;
+      else high = mid - 1;
     }
 
     return -1;
@@ -31,7 +26,7 @@ public class BinarySearch {
 
   /**
    * * Recursive Approach
-   * 
+   *
    * * TC: O(log n)
    * * SC: O(log n)
    */
