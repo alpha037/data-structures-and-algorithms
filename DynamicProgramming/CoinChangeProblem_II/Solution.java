@@ -4,10 +4,9 @@ package DynamicProgramming.CoinChangeProblem_II;
 
 /**
  * * Coin Change Problem II (Variation of Unbounded Knapsack Problem)
- * 
+ *
  * Problem: https://www.geeksforgeeks.org/find-minimum-number-of-coins-that-make-a-change/
  */
-
 public class Solution {
   public int minimumNumberOfCoins(int[] coins, int target) {
     // return minimumNumberOfCoinsRec(coins.length, coins, target);
@@ -22,7 +21,7 @@ public class Solution {
 
   /**
    * * Dynamic Programming Approach
-   * 
+   *
    * * TC: O(nt)
    * * SC: O(nt)
    */
@@ -30,21 +29,14 @@ public class Solution {
     int len = coins.length;
     int[][] dp = new int[len + 1][target + 1];
 
-    for (int i = 0; i < len + 1; i++)
-      dp[i][0] = 0;
+    for (int i = 0; i < len + 1; i++) dp[i][0] = 0;
 
-    for (int j = 1; j < target + 1; j++)
-      dp[0][j] = Integer.MAX_VALUE - 1;
+    for (int j = 1; j < target + 1; j++) dp[0][j] = Integer.MAX_VALUE - 1;
 
     for (int i = 1; i < len + 1; i++) {
       for (int j = 1; j < target + 1; j++) {
-        if (coins[i - 1] <= j)
-          dp[i][j] = Math.min(
-            1 + dp[i][j - coins[i - 1]],
-            dp[i - 1][j]
-          );
-        else
-          dp[i][j] = dp[i - 1][j];
+        if (coins[i - 1] <= j) dp[i][j] = Math.min(1 + dp[i][j - coins[i - 1]], dp[i - 1][j]);
+        else dp[i][j] = dp[i - 1][j];
       }
     }
 
@@ -53,7 +45,7 @@ public class Solution {
 
   /**
    * * Memoization Approach
-   * 
+   *
    * * TC: O(nt)
    * * SC: O(nt)
    */
@@ -75,7 +67,7 @@ public class Solution {
 
   /**
    * * Recursive Approach
-   * 
+   *
    * * TC: O(2^n) approximately
    * * SC: O(2^n) approximately
    */
