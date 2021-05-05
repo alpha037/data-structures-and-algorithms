@@ -1,5 +1,8 @@
 package DynamicProgramming.LongestCommonSubstring;
 
+import java.util.ArrayList;
+import java.util.List;
+
 // import java.util.Arrays;
 
 /**
@@ -21,19 +24,39 @@ public class Solution {
    * * SC: O(mn)
    */
   private int longestCommonSubstringDP(String s1, String s2) {
-    int m = s1.length(), n = s2.length(), maxLen = 0;
+    int m = s1.length(), n = s2.length(), maxLen = 0, row = 0, col = 0;
     int[][] dp = new int[m + 1][n + 1];
 
     for (int i = 1; i < m + 1; i++) {
       for (int j = 1; j < n + 1; j++) {
-        if (s1.charAt(i - 1) == s2.charAt(j - 1)) dp[i][j] = 1 + dp[i - 1][j - 1];
+        if (s1.charAt(i - 1) == s2.charAt(j - 1)) {
+          dp[i][j] = 1 + dp[i - 1][j - 1];
+          if (maxLen < dp[i][j]) {
+            maxLen = dp[i][j];
+            row = i;
+            col = j;
+          }
+        }
         else dp[i][j] = 0;
-
-        maxLen = max(maxLen, dp[i][j]);
       }
     }
 
+    System.out.println(buildSequence(s1, row, col, dp));
+
     return maxLen;
+  }
+
+  private String buildSequence(String s1, int row, int col, int[][] dp) {
+    StringBuilder seq = new StringBuilder();
+
+    while (dp[row][col] != 0) {
+      seq.append(String.valueOf(s1.charAt(row - 1)));
+
+      --row;
+      --col;
+    }
+
+    return seq.reverse().toString();
   }
 
   /**
