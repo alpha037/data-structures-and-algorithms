@@ -5,7 +5,6 @@ package DynamicProgramming.LongestCommonSubstring;
 /**
  * * Longest Common Substring (Variation of LCS Problem)
  */
-
 public class Solution {
   public int longestCommonSubstring(String s1, String s2) {
     // return longestCommonSubstringRec(
@@ -17,7 +16,7 @@ public class Solution {
 
   /**
    * * Dynamic Programming Approach
-   * 
+   *
    * * TC: O(mn)
    * * SC: O(mn)
    */
@@ -27,10 +26,8 @@ public class Solution {
 
     for (int i = 1; i < m + 1; i++) {
       for (int j = 1; j < n + 1; j++) {
-        if (s1.charAt(i - 1) == s2.charAt(j - 1))
-          dp[i][j] = 1 + dp[i - 1][j - 1];
-        else
-          dp[i][j] = 0;
+        if (s1.charAt(i - 1) == s2.charAt(j - 1)) dp[i][j] = 1 + dp[i - 1][j - 1];
+        else dp[i][j] = 0;
 
         maxLen = max(maxLen, dp[i][j]);
       }
@@ -41,7 +38,7 @@ public class Solution {
 
   /**
    * * Recursive Approach
-   * 
+   *
    * * TC: O(3^(m + n)) approximately
    * * SC: O(3^(m + n)) approximately
    */
