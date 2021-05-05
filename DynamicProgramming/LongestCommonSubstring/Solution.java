@@ -1,7 +1,7 @@
 package DynamicProgramming.LongestCommonSubstring;
 
-import java.util.ArrayList;
-import java.util.List;
+// import java.util.ArrayList;
+// import java.util.List;
 
 // import java.util.Arrays;
 
@@ -80,11 +80,11 @@ public class Solution {
   //   return length;
   // }
 
-  private int max(int... a) {
-    int maxValue = Integer.MIN_VALUE;
-    for (int val : a) maxValue = Math.max(maxValue, val);
-    return maxValue;
-  }
+  // private int max(int... a) {
+  //   int maxValue = Integer.MIN_VALUE;
+  //   for (int val : a) maxValue = Math.max(maxValue, val);
+  //   return maxValue;
+  // }
 
   public static void main(String[] args) {
     Solution solution = new Solution();
