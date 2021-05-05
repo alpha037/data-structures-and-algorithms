@@ -36,8 +36,7 @@ public class Solution {
             row = i;
             col = j;
           }
-        }
-        else dp[i][j] = 0;
+        } else dp[i][j] = 0;
       }
     }
 

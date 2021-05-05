@@ -8,20 +8,20 @@ package DynamicProgramming.ShortestCommonSupersequence;
 /**
  * * Shortest Common Supersequence (Variation of LCS Problem)
  */
-
 public class Solution {
   public int shortestCommonSupersequence(String s1, String s2) {
     int lcsLength;
 
-    // lcsLength = longestCommonSubsequenceRec(s1.length(), s2.length(), s1.toCharArray(), s2.toCharArray());
+    // lcsLength = longestCommonSubsequenceRec(s1.length(), s2.length(), s1.toCharArray(),
+    // s2.toCharArray());
 
     // lcsLength = longestCommonSubsequenceDP(s1, s2);
 
     lcsLength = longestCommonSubsequenceDPSpaceOpt(s1, s2);
 
     /**
-     * ? Length of the shortest supersequence = 
-     *    Sum of lengths of given two strings - 
+     * ? Length of the shortest supersequence =
+     *    Sum of lengths of given two strings -
      *    Length of LCS of two given strings
      */
     return s1.length() + s2.length() - lcsLength;
@@ -42,13 +42,8 @@ public class Solution {
       // current row is even/odd.
       idx = i & 1;
       for (int j = 1; j < n + 1; j++) {
-        if (s1.charAt(i - 1) == s2.charAt(j - 1))
-          dp[idx][j] = 1 + dp[1 - idx][j - 1];
-        else
-          dp[idx][j] = Math.max(
-            dp[1 - idx][j],
-            dp[idx][j - 1]
-          );
+        if (s1.charAt(i - 1) == s2.charAt(j - 1)) dp[idx][j] = 1 + dp[1 - idx][j - 1];
+        else dp[idx][j] = Math.max(dp[1 - idx][j], dp[idx][j - 1]);
       }
     }
 
