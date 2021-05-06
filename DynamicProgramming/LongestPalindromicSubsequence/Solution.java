@@ -5,19 +5,17 @@ package DynamicProgramming.LongestPalindromicSubsequence;
 /**
  * * Longest Palindromic Subsequence (Variation of LCS Problem)
  */
-
 public class Solution {
   public int longestPalindromicSubsequence(String str) {
     String reversed = new StringBuilder(str).reverse().toString();
 
     /**
-     * * Length of Longest Palindromic Subsequence = 
+     * * Length of Longest Palindromic Subsequence =
      * *  Length of LCS between the given string
      * *  and the reversed string
-     * 
+     *
      * * LPS(s) = LCS(s, reverse(s))
      */
-
     return longestCommonSubsequenceDP(str, reversed);
 
     // return longestCommonSubsequenceDPSpaceOpt(str, reversed);
