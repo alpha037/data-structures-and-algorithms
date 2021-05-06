@@ -64,16 +64,16 @@ public class Solution {
    * * TC: O(3^(m + n)) approximately
    * * SC: O(3^(m + n)) approximately
    */
-  // private int longestCommonSubstringRec(char[] s1, char[] s2, int m, int n, int length) {
+  // private int longestCommonSubstringRec(char[] c1, char[] c2, int m, int n, int length) {
   //   if (m == 0 || n == 0) return length;
 
-  //   if (s1[m - 1] == s2[n - 1])
-  //     length = longestCommonSubstringRec(s1, s2, m - 1, n - 1, length + 1);
+  //   if (c1[m - 1] == c2[n - 1])
+  //     length = longestCommonSubstringRec(c1, c2, m - 1, n - 1, length + 1);
 
   //   length = max(
   //     length,
-  //     longestCommonSubstringRec(s1, s2, m - 1, n, 0),
-  //     longestCommonSubstringRec(s1, s2, m, n - 1, 0)
+  //     longestCommonSubstringRec(c1, c2, m - 1, n, 0),
+  //     longestCommonSubstringRec(c1, c2, m, n - 1, 0)
   //   );
 
   //   return length;
