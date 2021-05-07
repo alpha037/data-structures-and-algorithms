@@ -95,8 +95,7 @@ public class Solution {
       else if (dp[i - 1][j] > dp[i][j - 1]) {
         seq.append(String.valueOf(s1.charAt(i - 1)));
         --i;
-      }
-      else {
+      } else {
         seq.append(String.valueOf(s2.charAt(j - 1)));
         --j;
       }
@@ -104,13 +103,11 @@ public class Solution {
 
     // Add any remaining characters
     // from the first string
-    while (i > 0)
-      seq.append(String.valueOf(s1.charAt(--i)));
+    while (i > 0) seq.append(String.valueOf(s1.charAt(--i)));
 
     // Add any remaining characters
     // from the second string
-    while (j > 0)
-      seq.append(String.valueOf(s2.charAt(--j)));
+    while (j > 0) seq.append(String.valueOf(s2.charAt(--j)));
 
     return seq.reverse().toString();
   }
