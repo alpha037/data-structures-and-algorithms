@@ -5,23 +5,24 @@ package DynamicProgramming.LongestRepeatingSubsequence;
 /**
  * * Longest Repeating Subsequence (Variation of LCS problem)
  */
-
 public class Solution {
   public int longestRepeatingSubsequence(String str) {
 
     /**
-     * This problem is just the modification of Longest Common 
-     * problem. The idea is to find the LCS(str, str) where str is the 
-     * string with the restriction that when both the characters are same, 
+     * This problem is just the modification of Longest Common
+     * problem. The idea is to find the LCS(str, str) where str is the
+     * string with the restriction that when both the characters are same,
      * shouldn’t be on the same index in the two strings.
      */
 
-    // return longestCommonSubsequenceRec(str.length(), str.length(), str.toCharArray(), str.toCharArray());
+    // return longestCommonSubsequenceRec(str.length(), str.length(), str.toCharArray(),
+    // str.toCharArray());
 
     // int[][] cache = new int[str.length() + 1][str.length() + 1];
     // for (int[] row : cache) Arrays.fill(row, -1);
 
-    // return longestCommonSubsequenceMem(str.length(), str.length(), str.toCharArray(), str.toCharArray(), cache);
+    // return longestCommonSubsequenceMem(str.length(), str.length(), str.toCharArray(),
+    // str.toCharArray(), cache);
 
     return longestCommonSubsequenceDP(str, str);
 
@@ -84,9 +85,9 @@ public class Solution {
 
     while (i > 0 && j > 0) {
       // If this cell is same as diagonally
-      // adjacent cell just above it, then 
-      // same characters are present at 
-      // str[i - 1] and str[j - 1]. Append any 
+      // adjacent cell just above it, then
+      // same characters are present at
+      // str[i - 1] and str[j - 1]. Append any
       // of them to result.
       if (dp[i][j] == 1 + dp[i - 1][j - 1]) {
         seq.append(String.valueOf(str.charAt(i - 1)));
