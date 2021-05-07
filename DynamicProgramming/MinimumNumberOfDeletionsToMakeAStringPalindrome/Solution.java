@@ -8,13 +8,12 @@ package DynamicProgramming.MinimumNumberOfDeletionsToMakeAStringPalindrome;
  * * Minimum Number of Deletions to Make a String Palindrome
  * * (Variation of LCS problem)
  */
-
 public class Solution {
   public int minimumNumberOfDeletions(String str) {
     String reversed = new StringBuilder(str).reverse().toString();
 
     /**
-     * * Minimum number of deletions to make a string palindrome = 
+     * * Minimum number of deletions to make a string palindrome =
      * *  Length of string - LPS(string)
      */
     return str.length() - longestCommonSubsequenceDP(str, reversed);
