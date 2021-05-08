@@ -8,7 +8,6 @@ package DynamicProgramming.MinimumNumberOfInsertionsToMakeAStringPalindrome;
  * * Minimum Number of Insertions to Make a String Palindrome
  * * (Variation of LCS problem)
  */
-
 public class Solution {
   public int minimumNumberOfInsertions(String str) {
     String reversed = new StringBuilder(str).reverse().toString();
@@ -34,13 +33,8 @@ public class Solution {
     for (int i = 1; i < m + 1; i++) {
       idx = i & 1;
       for (int j = 1; j < n + 1; j++) {
-        if (s1.charAt(i - 1) == s2.charAt(j - 1))
-          dp[idx][j] = 1 + dp[1 - idx][j - 1];
-        else
-          dp[idx][j] = Math.max(
-            dp[1 - idx][j],
-            dp[idx][j - 1]
-          );
+        if (s1.charAt(i - 1) == s2.charAt(j - 1)) dp[idx][j] = 1 + dp[1 - idx][j - 1];
+        else dp[idx][j] = Math.max(dp[1 - idx][j], dp[idx][j - 1]);
       }
     }
 

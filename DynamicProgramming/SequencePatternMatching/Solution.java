@@ -5,7 +5,6 @@ package DynamicProgramming.SequencePatternMatching;
  * * (Variation of LCS Problem but can be efficiently
  * * solved using Two pointers approach)
  */
-
 public class Solution {
   public boolean isSubsequence(String str, String probableSeq) {
     // return probableSeq.length() == longestCommonSubsequenceDPSpaceOpt(str, probableSeq);
@@ -15,7 +14,7 @@ public class Solution {
 
   /**
    * * Two Pointers Approach
-   * 
+   *
    * * TC: O(m + n)
    * * SC: O(1)
    */
@@ -40,7 +39,7 @@ public class Solution {
 
   /**
    * * Dynamic Programming Approach
-   * 
+   *
    * * TC: O(mn)
    * * SC: O(n)
    */
