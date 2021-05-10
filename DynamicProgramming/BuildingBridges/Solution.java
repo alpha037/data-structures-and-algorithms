@@ -6,7 +6,6 @@ import java.util.Arrays;
  * * Building Bridges (Variation of LIS problem)
  * Problem Statement: https://www.geeksforgeeks.org/dynamic-programming-building-bridges/
  */
-
 public class Solution {
   public int buildingBridges(int[][] cityPairs) {
     // Sort the pairs according to
@@ -25,7 +24,7 @@ public class Solution {
 
   /**
    * * Dynamic Programming Approach
-   * 
+   *
    * * TC: O(n^2)
    * * SC: O(n)
    */
@@ -50,20 +49,23 @@ public class Solution {
 
   /**
    * * Memoization Approach
-   * 
+   *
    * * TC: O(n^2)
    * * SC: O(n^2)
    */
-  // private int longestIncreasingSubsequenceMem(int prev, int curr, int[][] cityPairs, int[][] cache) {
+  // private int longestIncreasingSubsequenceMem(int prev, int curr, int[][] cityPairs, int[][]
+  // cache) {
   //   if (curr == cityPairs.length) return 0;
 
   //   if (prev != -1 && cache[prev][curr] != -1) return cache[prev][curr];
 
   //   int lengthWithCurrentItem = 0;
   //   if (prev == -1 || cityPairs[curr][0] > cityPairs[prev][0])
-  //     lengthWithCurrentItem = 1 + longestIncreasingSubsequenceMem(curr, curr + 1, cityPairs, cache);
+  //     lengthWithCurrentItem = 1 + longestIncreasingSubsequenceMem(curr, curr + 1, cityPairs,
+  // cache);
 
-  //   int lengthWithoutCurrentItem = longestIncreasingSubsequenceMem(prev, curr + 1, cityPairs, cache);
+  //   int lengthWithoutCurrentItem = longestIncreasingSubsequenceMem(prev, curr + 1, cityPairs,
+  // cache);
 
   //   return prev != -1 ?
   //     cache[prev][curr] = max(lengthWithCurrentItem, lengthWithoutCurrentItem) :
@@ -72,7 +74,7 @@ public class Solution {
 
   /**
    * * Recursive Approach
-   * 
+   *
    * * TC: O(2^n) approximately
    * * SC: O(2^n) approximately
    */
@@ -98,23 +100,27 @@ public class Solution {
     Solution solution = new Solution();
 
     // should be 2
-    System.out.println(solution.buildingBridges(new int[][] {
-      {6, 2},
-      {4, 3},
-      {2, 6},
-      {1, 5}
-    }));
+    System.out.println(
+        solution.buildingBridges(
+            new int[][] {
+              {6, 2},
+              {4, 3},
+              {2, 6},
+              {1, 5}
+            }));
 
     // should be 5
-    System.out.println(solution.buildingBridges(new int[][] {
-      {8, 1},
-      {1, 2},
-      {4, 3},
-      {3, 4},
-      {5, 5},
-      {2, 6},
-      {6, 7},
-      {7, 8}
-    }));
+    System.out.println(
+        solution.buildingBridges(
+            new int[][] {
+              {8, 1},
+              {1, 2},
+              {4, 3},
+              {3, 4},
+              {5, 5},
+              {2, 6},
+              {6, 7},
+              {7, 8}
+            }));
   }
 }

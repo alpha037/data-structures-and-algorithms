@@ -5,7 +5,6 @@ import java.util.Arrays;
 /**
  * * Longest Increasing Subsequence
  */
-
 public class Solution {
   public int longestIncreasingSubsequence(int[] items) {
     // return longestIncreasingSubsequenceRec(-1, 0, items);
@@ -20,7 +19,7 @@ public class Solution {
 
   /**
    * * Dynamic Programming Approach
-   * 
+   *
    * * TC: O(n^2)
    * * SC: O(n)
    */
@@ -43,7 +42,7 @@ public class Solution {
 
   /**
    * * Memoization Approach
-   * 
+   *
    * * TC: O(n^2)
    * * SC: O(n)
    */
@@ -65,7 +64,7 @@ public class Solution {
 
   /**
    * * Recursive Approach
-   * 
+   *
    * * TC: O(2^n) approximately
    * * SC: O(2^n) approximately
    */
@@ -91,9 +90,12 @@ public class Solution {
     Solution solution = new Solution();
 
     // should be 6
-    System.out.println(solution.longestIncreasingSubsequence(new int[] {10, 22, 9, 33, 21, 50, 41, 60, 80}));
+    System.out.println(
+        solution.longestIncreasingSubsequence(new int[] {10, 22, 9, 33, 21, 50, 41, 60, 80}));
 
     // should be 6
-    System.out.println(solution.longestIncreasingSubsequence(new int[] {0,8,4,12,2,10,6,14,1,9,5,13,3,11,7,15}));
+    System.out.println(
+        solution.longestIncreasingSubsequence(
+            new int[] {0, 8, 4, 12, 2, 10, 6, 14, 1, 9, 5, 13, 3, 11, 7, 15}));
   }
 }
