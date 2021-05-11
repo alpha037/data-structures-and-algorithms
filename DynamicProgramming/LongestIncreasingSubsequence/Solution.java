@@ -1,6 +1,8 @@
 package DynamicProgramming.LongestIncreasingSubsequence;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 /**
  * * Longest Increasing Subsequence
@@ -24,7 +26,7 @@ public class Solution {
    * * SC: O(n)
    */
   private int longestIncreasingSubsequenceDP(int[] items) {
-    int len = items.length, maxLen = Integer.MIN_VALUE;
+    int len = items.length, maxLen = Integer.MIN_VALUE, end = 0;
     int[] dp = new int[len];
     Arrays.fill(dp, 1);
 
@@ -32,12 +34,34 @@ public class Solution {
       for (int j = 0; j < i; j++) {
         if (items[i] > items[j] && dp[i] <= dp[j]) {
           dp[i] = 1 + dp[j];
-          maxLen = max(maxLen, dp[i]);
+          if (maxLen < dp[i]) {
+            maxLen =  dp[i];
+            end = i;
+          }
         }
       }
     }
 
+    System.out.println(buildSequence(items, dp, end));
+
     return maxLen;
+  }
+
+  private List<Integer> buildSequence(int[] items, int[] dp, int end) {
+    List<Integer> seq = new ArrayList<>();
+    int currentLen = dp[end] - 1;
+    seq.add(items[end]);
+
+    while (end >= 0) {
+      if (currentLen == dp[end]) {
+        seq.add(0, items[end]);
+        currentLen = dp[end] - 1;
+      }
+
+      --end;
+    }
+
+    return seq;
   }
 
   /**
@@ -80,11 +104,11 @@ public class Solution {
   //   return max(lengthWithCurrentItem, lengthWithoutCurrentItem);
   // }
 
-  private int max(int... a) {
-    int maxValue = Integer.MIN_VALUE;
-    for (int val : a) maxValue = Math.max(maxValue, val);
-    return maxValue;
-  }
+  // private int max(int... a) {
+  //   int maxValue = Integer.MIN_VALUE;
+  //   for (int val : a) maxValue = Math.max(maxValue, val);
+  //   return maxValue;
+  // }
 
   public static void main(String[] args) {
     Solution solution = new Solution();
