@@ -29,7 +29,7 @@ public class Solution {
    * * SC: O(n)
    */
   private int longestIncreasingSubsequenceDP(int[][] cityPairs) {
-    int len = cityPairs.length, maxLen = Integer.MIN_VALUE;
+    int len = cityPairs.length, maxLen = 1;
     int[] dp = new int[len];
     Arrays.fill(dp, 1);
 
@@ -44,7 +44,7 @@ public class Solution {
       }
     }
 
-    return dp[len - 1];
+    return maxLen;
   }
 
   /**

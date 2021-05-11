@@ -26,7 +26,7 @@ public class Solution {
    * * SC: O(n)
    */
   private int longestIncreasingSubsequenceDP(int[] items) {
-    int len = items.length, maxLen = Integer.MIN_VALUE, end = 0;
+    int len = items.length, maxLen = 1, end = 0;
     int[] dp = new int[len];
     Arrays.fill(dp, 1);
 
