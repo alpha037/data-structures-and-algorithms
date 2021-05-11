@@ -5,11 +5,10 @@ import java.util.Arrays;
 /**
  * * Maximum Length Chain of Pairs (Variation of LIS problem)
  * Problem Statement: https://www.geeksforgeeks.org/maximum-length-chain-of-pairs-dp-20/
- * 
+ *
  * ? Can also be solved using Greedy Approach
  * ? (Activity Selection Problem - TC: O(n log(n)))
  */
-
 public class Solution {
   public int maximumLengthChainOfPairs(Pair[] pairs) {
     // Sort the array based on
@@ -21,7 +20,7 @@ public class Solution {
 
   /**
    * * Dynamic Programming Approach
-   * 
+   *
    * * TC: O(n^2)
    * * SC: O(n)
    */
@@ -32,8 +31,7 @@ public class Solution {
 
     for (int i = 1; i < len; i++) {
       for (int j = 0; j < i; j++) {
-        if (items[i].a > items[j].b && dp[i] <= dp[j])
-        dp[i] = 1 + dp[j];
+        if (items[i].a > items[j].b && dp[i] <= dp[j]) dp[i] = 1 + dp[j];
         maxLen = Math.max(maxLen, dp[i]);
         // if (maxLen < dp[i]) {
         //   maxLen = Math.max(maxLen, dp[i]);
@@ -65,7 +63,7 @@ public class Solution {
   static class Pair {
     int a;
     int b;
-  
+
     public Pair(int a, int b) {
       this.a = a;
       this.b = b;
@@ -81,18 +79,18 @@ public class Solution {
     Solution solution = new Solution();
 
     // should be 3
-    System.out.println(solution.maximumLengthChainOfPairs(new Pair[] {
-      new Pair(5, 24),
-      new Pair(39, 60),
-      new Pair(15, 28),
-      new Pair(27, 40),
-      new Pair(50, 90),
-    }));
+    System.out.println(
+        solution.maximumLengthChainOfPairs(
+            new Pair[] {
+              new Pair(5, 24),
+              new Pair(39, 60),
+              new Pair(15, 28),
+              new Pair(27, 40),
+              new Pair(50, 90),
+            }));
 
     // should be 2
-    System.out.println(solution.maximumLengthChainOfPairs(new Pair[] {
-      new Pair(6, 8),
-      new Pair(3, 4)
-    }));
+    System.out.println(
+        solution.maximumLengthChainOfPairs(new Pair[] {new Pair(6, 8), new Pair(3, 4)}));
   }
 }

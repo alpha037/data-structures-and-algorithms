@@ -35,7 +35,7 @@ public class Solution {
         if (items[i] > items[j] && dp[i] <= dp[j]) {
           dp[i] = 1 + dp[j];
           if (maxLen < dp[i]) {
-            maxLen =  dp[i];
+            maxLen = dp[i];
             end = i;
           }
         }

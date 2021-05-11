@@ -1,11 +1,9 @@
 package DynamicProgramming.MaximumSumIncreasingSubsequence;
 
-
 /**
  * * Maximum Increasing Sum Subsequence (Variation of LIS problem)
  * Problem Statement: https://www.geeksforgeeks.org/maximum-sum-increasing-subsequence-dp-14/
  */
-
 public class Solution {
   public int maximumSumIncreasingSubsequence(int[] nums) {
     return longestIncreasingSubsequence(nums);
@@ -13,7 +11,7 @@ public class Solution {
 
   /**
    * * Dynamic Programming Approach
-   * 
+   *
    * * TC: O(n^2)
    * * SC: O(n)
    */
@@ -45,7 +43,8 @@ public class Solution {
     Solution solution = new Solution();
 
     // should be 106
-    System.out.println(solution.maximumSumIncreasingSubsequence(new int[] {1, 101, 2, 3, 100, 4, 5}));
+    System.out.println(
+        solution.maximumSumIncreasingSubsequence(new int[] {1, 101, 2, 3, 100, 4, 5}));
 
     // should be 22
     System.out.println(solution.maximumSumIncreasingSubsequence(new int[] {3, 4, 5, 10}));
