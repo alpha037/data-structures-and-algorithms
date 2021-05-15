@@ -12,4 +12,4 @@ form a subsequence of the array `[1, 2, 3, 4]`, , and so do the numbers `[2, 4]`
 
 #### Solution
 
-Check out the [Java Solution](../Easy/ValidateSubsequence/Program.java) here.
+Check out the [Java Solution](../Easy/ValidateSubSequence/Program.java) here.
