@@ -23,7 +23,7 @@ Topics include: [Arrays](https://www.geeksforgeeks.org/arrays-in-java/) (19), [S
 | Non-Constructible Change                                 | Easy             | Arrays              | [Program.java](Easy/NonConstructibleChange/Program.java)             |
 | Sorted Squared Array                                     | Easy             | Arrays              | [Program.java](Easy/SortedSquaredArray/Program.java)                 |
 | [Three Number Sum](Questions/ThreeNumberSum.md)          | Medium           | Arrays              | [Program.java](Medium/ThreeNumberSum/Program.java)                   |
-| Smallest Difference                                      | Medium           | Arrays              | [Program.java](Medium/SmallestDifference/Program.java)               |
+| [Smallest Difference](Questions/SmallestDifference.md)   | Medium           | Arrays              | [Program.java](Medium/SmallestDifference/Program.java)               |
 | Move Element To End                                      | Medium           | Arrays              | [Program.java](Medium/MoveElementToEnd/Program.java)                 |
 | Monotonic Array                                          | Medium           | Arrays              | [Program.java](Medium/MonotonicArray/Program.java)                   |
 | Spiral Traverse                                          | Medium           | Arrays              | [Program.java](Medium/SpiralTraverse/Program.java)                   |
