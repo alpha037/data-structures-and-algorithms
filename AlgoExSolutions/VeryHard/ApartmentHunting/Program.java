@@ -64,7 +64,7 @@ class Program {
    * * Brute Force Approach
    *
    * * TC: O(b^2 * r)
-   * * SC: O(br)
+   * * SC: O(b)
    */
   // public static int apartmentHunting(
   // 	List<Map<String, Boolean>> blocks, String[] reqs
