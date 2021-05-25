@@ -20,9 +20,7 @@ class Program {
 		
 		for (int i = 0; i < points.length; i++) {
 			int p1x = points[i][0], p1y = points[i][1];
-			for (int j = 0; j < points.length; j++) {
-				if (i == j) continue;
-				
+			for (int j = 0; j < i; j++) {				
 				int p2x = points[j][0], p2y = points[j][1];
 				boolean areInvalidPoints = p1x == p2x || p1y == p2y;
 				
@@ -71,7 +69,7 @@ class Program {
 	// 			int y2 = yPoints.get(i);
 	// 			for (int j = 0; j < i; j++) {
 	// 				int y1 = yPoints.get(j);
-	// 				String pointString = y1 + ":" + y2;
+	// 				String pointString = y1 + "," + y2;
 					
 	// 				if (pointsParallelToYAxis.containsKey(pointString)) {
 	// 					int x2 = pointsParallelToYAxis.get(pointString);
