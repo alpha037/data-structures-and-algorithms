@@ -12,8 +12,8 @@ import java.util.*;
 class Program {
   static class LRUCache {
     int maxSize;
-		Map<String, Node> map = new HashMap<>();
-		DoublyLinkedList linkedList = new DoublyLinkedList();
+    Map<String, Node> map = new HashMap<>();
+    DoublyLinkedList linkedList = new DoublyLinkedList();
 
     public LRUCache(int maxSize) {
       this.maxSize = maxSize > 1 ? maxSize : 1;
@@ -22,27 +22,26 @@ class Program {
     // * TC: O(1), SC: O(1)
     public void insertKeyValuePair(String key, int value) {
       // Write your code here.
-			if (map.containsKey(key)) {
-				updateMostRecentKey(key);
-				map.get(key).value = value;
-			}
-			else {
-				Node node = new Node(key, value);
-				linkedList.setHead(node);
-				map.put(key, node);
-				
-				if (map.size() > maxSize) updateLeastRecentKey();
-			}
+      if (map.containsKey(key)) {
+        updateMostRecentKey(key);
+        map.get(key).value = value;
+      } else {
+        Node node = new Node(key, value);
+        linkedList.setHead(node);
+        map.put(key, node);
+
+        if (map.size() > maxSize) updateLeastRecentKey();
+      }
     }
 
     // * TC: O(1), SC: O(1)
     public LRUResult getValueFromKey(String key) {
       // Write your code here.
-			LRUResult res = null;
-			if (map.containsKey(key)) {
-				updateMostRecentKey(key);
-				res = new LRUResult(true, map.get(key).value);
-			}
+      LRUResult res = null;
+      if (map.containsKey(key)) {
+        updateMostRecentKey(key);
+        res = new LRUResult(true, map.get(key).value);
+      }
       return res;
     }
 
@@ -51,18 +50,18 @@ class Program {
       // Write your code here.
       return linkedList.head.key;
     }
-		
-		private void updateMostRecentKey(String key) {
-			Node node = map.get(key);
-			linkedList.remove(node);
-			linkedList.setHead(node);
-		}
-		
-		private void updateLeastRecentKey() {
-			String leastRecentKey = linkedList.tail.key;
-			linkedList.remove(linkedList.tail);
-			map.remove(leastRecentKey);
-		}
+
+    private void updateMostRecentKey(String key) {
+      Node node = map.get(key);
+      linkedList.remove(node);
+      linkedList.setHead(node);
+    }
+
+    private void updateLeastRecentKey() {
+      String leastRecentKey = linkedList.tail.key;
+      linkedList.remove(linkedList.tail);
+      map.remove(leastRecentKey);
+    }
   }
 
   static class LRUResult {
@@ -74,8 +73,8 @@ class Program {
       this.value = value;
     }
   }
-	
-	static class DoublyLinkedList {
+
+  static class DoublyLinkedList {
     Node head = null, tail = null;
 
     public void setHead(Node node) {
@@ -121,12 +120,12 @@ class Program {
   }
 
   static class Node {
-		String key;
+    String key;
     int value;
     Node prev = null, next = null;
 
     public Node(String key, int value) {
-			this.key = key;
+      this.key = key;
       this.value = value;
     }
   }
