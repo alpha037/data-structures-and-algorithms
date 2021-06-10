@@ -5,7 +5,6 @@ import java.util.*;
 /**
  * * Right Sibling Tree
  */
-
 class Program {
   /**
    * * TC: O(n)
@@ -16,13 +15,11 @@ class Program {
     return root;
   }
 
-  private static void rightSiblingTree(
-    BinaryTree node, BinaryTree parent, boolean isLeftChild
-  ) {
+  private static void rightSiblingTree(BinaryTree node, BinaryTree parent, boolean isLeftChild) {
     if (node == null) return;
 
     BinaryTree left = node.left, right = node.right;
-    
+
     rightSiblingTree(left, node, true);
 
     if (parent == null) node.right = null;
