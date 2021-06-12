@@ -113,11 +113,11 @@ class Program {
   // 			allKindsOfNodeDepths(root.left) + allKindsOfNodeDepths(root.right);
   // 	}
 
-  private static int nodeDepths(BinaryTree node, int depth) {
-    if (node == null) return 0;
+  // private static int nodeDepths(BinaryTree node, int depth) {
+  //   if (node == null) return 0;
 
-    return depth + nodeDepths(node.left, depth + 1) + nodeDepths(node.right, depth + 1);
-  }
+  //   return depth + nodeDepths(node.left, depth + 1) + nodeDepths(node.right, depth + 1);
+  // }
 
   static class BinaryTree {
     int value;

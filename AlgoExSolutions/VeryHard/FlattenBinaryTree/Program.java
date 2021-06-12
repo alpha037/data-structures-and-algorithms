@@ -1,6 +1,6 @@
 package AlgoExSolutions.VeryHard.FlattenBinaryTree;
 
-import java.util.*;
+// import java.util.*;
 
 /**
  * * Flatten Binary Tree
