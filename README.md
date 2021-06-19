@@ -73,6 +73,6 @@ Distributed under the MIT License. See [LICENSE](https://github.com/alpha037/Dat
 
 ## Contact
 
-Shubhranil Dutta - subhronil.dutta@gmail.com
+Shubhranil Dutta - contact@shubhranil.com
 
 Project Link: [https://github.com/alpha037/Data-Structures-and-Algorithms](https://github.com/alpha037/Data-Structures-and-Algorithms)
