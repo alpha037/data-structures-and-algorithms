@@ -1,3 +1,7 @@
+<a href="https://atlas.shubhranil.com" target="\_blank">
+<img src="https://img.shields.io/badge/Developed%20and%20Maintained%20by-Atlas%20Inc-brightgreen">
+</a>
+
 <h1 align="center">Data Structures and Algorithms</h1>
 
   <p align="center">
