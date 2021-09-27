@@ -11,6 +11,7 @@ This folder contains solutions to the [AlgoExpert](https://algoexpert.io) proble
 Let's create free resources for anyone who wants to solve problems!
 
 ## Questions
+
 All the questions are available in [das-jishu's repo](https://github.com/das-jishu/algoexpert-data-structures-algorithms/tree/master/Questions). Feel free to star/fork his repo. While you're at it, don't forget to star mine!
 
 ## Contents
@@ -25,10 +26,10 @@ Topics include: [Arrays](https://www.geeksforgeeks.org/arrays-in-java/) (24), [S
 - 🔴 : Hard
 - ⚫ : Very Hard
 
-| Problem Statement                     | Difficulty Level | Category            | Solution Link                                                        |
-| ------------------------------------- | ---------------- | ------------------- | -------------------------------------------------------------------- |
-| Two Number Sum                        | 🟢               | Arrays              | [Program.java](Easy/TwoNumberSum/Program.java)                       |
-| Validate Subsequence                  | 🟢               | Arrays              | [Program.java](Easy/ValidateSubSequence/Program.java)                |
+| Problem Statement                     | Difficulty Level | Category            | Solution Link                                                        | LeetCode Link                                         |
+| ------------------------------------- | ---------------- | ------------------- | -------------------------------------------------------------------- | ----------------------------------------------------- |
+| Two Number Sum                        | 🟢               | Arrays              | [Program.java](Easy/TwoNumberSum/Program.java)                       | [Link](https://leetcode.com/problems/two-sum/)        |
+| Validate Subsequence                  | 🟢               | Arrays              | [Program.java](Easy/ValidateSubSequence/Program.java)                | [Link](https://leetcode.com/problems/is-subsequence/) |
 | Tournament Winner                     | 🟢               | Arrays              | [Program.java](Easy/TournamentWinner/Program.java)                   |
 | Non-Constructible Change              | 🟢               | Arrays              | [Program.java](Easy/NonConstructibleChange/Program.java)             |
 | Sorted Squared Array                  | 🟢               | Arrays              | [Program.java](Easy/SortedSquaredArray/Program.java)                 |
