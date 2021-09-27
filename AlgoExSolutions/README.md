@@ -10,10 +10,6 @@ This folder contains solutions to the [AlgoExpert](https://algoexpert.io) proble
 
 Let's create free resources for anyone who wants to solve problems!
 
-## Questions
-
-All the questions are available in [das-jishu's repo](https://github.com/das-jishu/algoexpert-data-structures-algorithms/tree/master/Questions). Feel free to star/fork his repo. While you're at it, don't forget to star mine!
-
 ## Contents
 
 Topics include: [Arrays](https://www.geeksforgeeks.org/arrays-in-java/) (24), [Strings](https://www.geeksforgeeks.org/strings-in-java/) (15), [Linked Lists](https://www.geeksforgeeks.org/implementing-a-linked-list-in-java-using-class/) (13), [Stacks](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/) (6), [Searching (Binary Search mostly)](https://www.geeksforgeeks.org/binary-search/) (7), [Sorting](https://www.geeksforgeeks.org/sorting-algorithms/#algo) (8), [Greedy Algorithms](https://www.geeksforgeeks.org/greedy-algorithms/) (5), [Heaps](https://www.geeksforgeeks.org/binary-heap/) (5), Famous Algorithms (5), [Recursion](https://www.geeksforgeeks.org/recursion/) (13), [Binary Search Trees](https://www.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/) (10), [Binary Trees](https://www.geeksforgeeks.org/binary-tree-set-1-introduction/) (13), [Dynamic Programming](https://www.geeksforgeeks.org/dynamic-programming/) (19), [Graphs](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/) (13), [Tries](https://www.geeksforgeeks.org/trie-insert-and-search/) (2).
