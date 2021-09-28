@@ -22,12 +22,12 @@ Topics include: [Arrays](https://www.geeksforgeeks.org/arrays-in-java/) (24), [S
 - 🔴 : Hard
 - ⚫ : Very Hard
 
-| Problem Statement                     | Difficulty Level | Category            | Solution Link                                                        | LeetCode Link                                         |
-| ------------------------------------- | ---------------- | ------------------- | -------------------------------------------------------------------- | ----------------------------------------------------- |
-| Two Number Sum                        | 🟢               | Arrays              | [Program.java](Easy/TwoNumberSum/Program.java)                       | [Link](https://leetcode.com/problems/two-sum/)        |
-| Validate Subsequence                  | 🟢               | Arrays              | [Program.java](Easy/ValidateSubSequence/Program.java)                | [Link](https://leetcode.com/problems/is-subsequence/) |
+| Problem Statement                     | Difficulty Level | Category            | Solution Link                                                        | LeetCode Link                                           |
+| ------------------------------------- | ---------------- | ------------------- | -------------------------------------------------------------------- | ------------------------------------------------------- |
+| Two Number Sum                        | 🟢               | Arrays              | [Program.java](Easy/TwoNumberSum/Program.java)                       | [Link](https://leetcode.com/problems/two-sum/)          |
+| Validate Subsequence                  | 🟢               | Arrays              | [Program.java](Easy/ValidateSubSequence/Program.java)                | [Link](https://leetcode.com/problems/is-subsequence/)   |
 | Tournament Winner                     | 🟢               | Arrays              | [Program.java](Easy/TournamentWinner/Program.java)                   |
-| Non-Constructible Change              | 🟢               | Arrays              | [Program.java](Easy/NonConstructibleChange/Program.java)             |
+| Non-Constructible Change              | 🟢               | Arrays              | [Program.java](Easy/NonConstructibleChange/Program.java)             | [Link](https://abheist.com/5-non-constructible-change/) |
 | Sorted Squared Array                  | 🟢               | Arrays              | [Program.java](Easy/SortedSquaredArray/Program.java)                 |
 | Three Number Sum                      | 🔵               | Arrays              | [Program.java](Medium/ThreeNumberSum/Program.java)                   |
 | Smallest Difference                   | 🔵               | Arrays              | [Program.java](Medium/SmallestDifference/Program.java)               |
