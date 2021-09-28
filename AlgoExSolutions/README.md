@@ -29,7 +29,7 @@ Topics include: [Arrays](https://www.geeksforgeeks.org/arrays-in-java/) (24), [S
 | Tournament Winner                     | 🟢               | Arrays              | [Program.java](Easy/TournamentWinner/Program.java)                   |
 | Non-Constructible Change              | 🟢               | Arrays              | [Program.java](Easy/NonConstructibleChange/Program.java)             | [Link](https://abheist.com/5-non-constructible-change/)          |
 | Sorted Squared Array                  | 🟢               | Arrays              | [Program.java](Easy/SortedSquaredArray/Program.java)                 | [Link](https://leetcode.com/problems/squares-of-a-sorted-array/) |
-| Three Number Sum                      | 🔵               | Arrays              | [Program.java](Medium/ThreeNumberSum/Program.java)                   |
+| Three Number Sum                      | 🔵               | Arrays              | [Program.java](Medium/ThreeNumberSum/Program.java)                   | [Link](https://leetcode.com/problems/3sum/)                      |
 | Smallest Difference                   | 🔵               | Arrays              | [Program.java](Medium/SmallestDifference/Program.java)               |
 | Move Element To End                   | 🔵               | Arrays              | [Program.java](Medium/MoveElementToEnd/Program.java)                 |
 | Monotonic Array                       | 🔵               | Arrays              | [Program.java](Medium/MonotonicArray/Program.java)                   |
