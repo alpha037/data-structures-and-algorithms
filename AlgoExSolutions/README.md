@@ -38,7 +38,7 @@ Topics include: [Arrays](https://www.geeksforgeeks.org/arrays-in-java/) (24), [S
 | Array Of Products                     | 🔵               | Arrays              | [Program.java](Medium/ArrayofProducts/Program.java)                  | [Link](https://leetcode.com/problems/product-of-array-except-self/)                |
 | First Duplicate Value                 | 🔵               | Arrays              | [Program.java](Medium/FirstDuplicateValue/Program.java)              | [Link](https://www.geeksforgeeks.org/find-first-repeating-element-array-integers/) |
 | Merge Overlapping Intervals           | 🔵               | Arrays              | [Program.java](Medium/MergeOverlappingIntervals/Program.java)        | [Link](https://leetcode.com/problems/merge-intervals/)                             |
-| Four Number Sum                       | 🔴               | Arrays              | [Program.java](Hard/FourNumberSum/Program.java)                      |
+| Four Number Sum                       | 🔴               | Arrays              | [Program.java](Hard/FourNumberSum/Program.java)                      | [Link](https://leetcode.com/problems/4sum/)                                        |
 | Subarray Sort                         | 🔴               | Arrays              | [Program.java](Hard/SubarraySort/Program.java)                       |
 | Largest Range                         | 🔴               | Arrays              | [Program.java](Hard/LargestRange/Program.java)                       |
 | Min Rewards                           | 🔴               | Arrays              | [Program.java](Hard/MinRewards/Program.java)                         |
