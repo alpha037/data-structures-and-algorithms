@@ -33,7 +33,7 @@ Topics include: [Arrays](https://www.geeksforgeeks.org/arrays-in-java/) (24), [S
 | Smallest Difference                   | 🔵               | Arrays              | [Program.java](Medium/SmallestDifference/Program.java)               | [Link](https://leetcode.com/problems/minimum-absolute-difference/) |
 | Move Element To End                   | 🔵               | Arrays              | [Program.java](Medium/MoveElementToEnd/Program.java)                 | [Link](https://leetcode.com/problems/move-zeroes/)                 |
 | Monotonic Array                       | 🔵               | Arrays              | [Program.java](Medium/MonotonicArray/Program.java)                   | [Link](https://leetcode.com/problems/monotonic-array/)             |
-| Spiral Traverse                       | 🔵               | Arrays              | [Program.java](Medium/SpiralTraverse/Program.java)                   |
+| Spiral Traverse                       | 🔵               | Arrays              | [Program.java](Medium/SpiralTraverse/Program.java)                   | [Link](https://leetcode.com/problems/spiral-matrix/)               |
 | Longest Peak                          | 🔵               | Arrays              | [Program.java](Medium/LongestPeak/Program.java)                      |
 | Array Of Products                     | 🔵               | Arrays              | [Program.java](Medium/ArrayofProducts/Program.java)                  |
 | First Duplicate Value                 | 🔵               | Arrays              | [Program.java](Medium/FirstDuplicateValue/Program.java)              |
