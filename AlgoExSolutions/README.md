@@ -41,7 +41,7 @@ Topics include: [Arrays](https://www.geeksforgeeks.org/arrays-in-java/) (24), [S
 | Four Number Sum                       | 🔴               | Arrays              | [Program.java](Hard/FourNumberSum/Program.java)                      | [Link](https://leetcode.com/problems/4sum/)                                        |
 | Subarray Sort                         | 🔴               | Arrays              | [Program.java](Hard/SubarraySort/Program.java)                       | [Link](https://leetcode.com/problems/shortest-unsorted-continuous-subarray/)       |
 | Largest Range                         | 🔴               | Arrays              | [Program.java](Hard/LargestRange/Program.java)                       | [Link](https://leetcode.com/problems/longest-consecutive-sequence/)                |
-| Min Rewards                           | 🔴               | Arrays              | [Program.java](Hard/MinRewards/Program.java)                         |
+| Min Rewards                           | 🔴               | Arrays              | [Program.java](Hard/MinRewards/Program.java)                         | [Link](https://leetcode.com/problems/candy/)                                       |
 | Zigzag Traverse                       | 🔴               | Arrays              | [Program.java](Hard/ZigzagTraverse/Program.java)                     |
 | Apartment Hunting                     | ⚫               | Arrays              | [Program.java](VeryHard/ApartmentHunting/Program.java)               |
 | Calendar Matching                     | ⚫               | Arrays              | [Program.java](VeryHard/CalendarMatching/Program.java)               |
