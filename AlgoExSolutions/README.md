@@ -40,7 +40,7 @@ Topics include: [Arrays](https://www.geeksforgeeks.org/arrays-in-java/) (24), [S
 | Merge Overlapping Intervals           | 🔵               | Arrays              | [Program.java](Medium/MergeOverlappingIntervals/Program.java)        | [Link](https://leetcode.com/problems/merge-intervals/)                             |
 | Four Number Sum                       | 🔴               | Arrays              | [Program.java](Hard/FourNumberSum/Program.java)                      | [Link](https://leetcode.com/problems/4sum/)                                        |
 | Subarray Sort                         | 🔴               | Arrays              | [Program.java](Hard/SubarraySort/Program.java)                       | [Link](https://leetcode.com/problems/shortest-unsorted-continuous-subarray/)       |
-| Largest Range                         | 🔴               | Arrays              | [Program.java](Hard/LargestRange/Program.java)                       |
+| Largest Range                         | 🔴               | Arrays              | [Program.java](Hard/LargestRange/Program.java)                       | [Link](https://leetcode.com/problems/longest-consecutive-sequence/)                |
 | Min Rewards                           | 🔴               | Arrays              | [Program.java](Hard/MinRewards/Program.java)                         |
 | Zigzag Traverse                       | 🔴               | Arrays              | [Program.java](Hard/ZigzagTraverse/Program.java)                     |
 | Apartment Hunting                     | ⚫               | Arrays              | [Program.java](VeryHard/ApartmentHunting/Program.java)               |
