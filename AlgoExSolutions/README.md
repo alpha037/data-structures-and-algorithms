@@ -43,7 +43,7 @@ Topics include: [Arrays](https://www.geeksforgeeks.org/arrays-in-java/) (24), [S
 | Largest Range                         | 🔴               | Arrays              | [Program.java](Hard/LargestRange/Program.java)                       | [Link](https://leetcode.com/problems/longest-consecutive-sequence/)                |
 | Min Rewards                           | 🔴               | Arrays              | [Program.java](Hard/MinRewards/Program.java)                         | [Link](https://leetcode.com/problems/candy/)                                       |
 | Zigzag Traverse                       | 🔴               | Arrays              | [Program.java](Hard/ZigzagTraverse/Program.java)                     |
-| Apartment Hunting                     | ⚫               | Arrays              | [Program.java](VeryHard/ApartmentHunting/Program.java)               |
+| Apartment Hunting                     | ⚫               | Arrays              | [Program.java](VeryHard/ApartmentHunting/Program.java)               | [Link](https://medium.com/@pandeyroshan556/apartment-hunting-problem-85c6acee8741) |
 | Calendar Matching                     | ⚫               | Arrays              | [Program.java](VeryHard/CalendarMatching/Program.java)               | [Link](https://leetcode.com/problems/my-calendar-i/)                               |
 | Waterfall Streams                     | ⚫               | Arrays              | [Program.java](VeryHard/WaterfallStreams/Program.java)               |
 | Minimum Area Rectangle                | ⚫               | Arrays              | [Program.java](VeryHard/MinimumAreaRectangle/Program.java)           |
