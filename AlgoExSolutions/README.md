@@ -46,7 +46,7 @@ Topics include: [Arrays](https://www.geeksforgeeks.org/arrays-in-java/) (24), [S
 | Apartment Hunting                     | ⚫               | Arrays              | [Program.java](VeryHard/ApartmentHunting/Program.java)               | [Link](https://medium.com/@pandeyroshan556/apartment-hunting-problem-85c6acee8741) |
 | Calendar Matching                     | ⚫               | Arrays              | [Program.java](VeryHard/CalendarMatching/Program.java)               | [Link](https://leetcode.com/problems/my-calendar-i/)                               |
 | Waterfall Streams                     | ⚫               | Arrays              | [Program.java](VeryHard/WaterfallStreams/Program.java)               | [Link](https://leetcode.com/problems/trapping-rain-water/)                         |
-| Minimum Area Rectangle                | ⚫               | Arrays              | [Program.java](VeryHard/MinimumAreaRectangle/Program.java)           |
+| Minimum Area Rectangle                | ⚫               | Arrays              | [Program.java](VeryHard/MinimumAreaRectangle/Program.java)           | [Link](https://leetcode.com/problems/minimum-area-rectangle/)                      |
 | Line Through Points                   | ⚫               | Arrays              | [Program.java](VeryHard/LineThroughPoints/Program.java)              |
 | Palindrome Check                      | 🟢               | Strings             | [Program.java](Easy/PalindromeCheck/Program.java)                    |
 | Caesar Cypher Encryptor               | 🟢               | Strings             | [Program.java](Easy/CaesarCipherEncryptor/Program.java)              |
