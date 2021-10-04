@@ -45,7 +45,7 @@ Topics include: [Arrays](https://www.geeksforgeeks.org/arrays-in-java/) (24), [S
 | Zigzag Traverse                       | 🔴               | Arrays              | [Program.java](Hard/ZigzagTraverse/Program.java)                     |
 | Apartment Hunting                     | ⚫               | Arrays              | [Program.java](VeryHard/ApartmentHunting/Program.java)               | [Link](https://medium.com/@pandeyroshan556/apartment-hunting-problem-85c6acee8741) |
 | Calendar Matching                     | ⚫               | Arrays              | [Program.java](VeryHard/CalendarMatching/Program.java)               | [Link](https://leetcode.com/problems/my-calendar-i/)                               |
-| Waterfall Streams                     | ⚫               | Arrays              | [Program.java](VeryHard/WaterfallStreams/Program.java)               |
+| Waterfall Streams                     | ⚫               | Arrays              | [Program.java](VeryHard/WaterfallStreams/Program.java)               | [Link](https://leetcode.com/problems/trapping-rain-water/)                         |
 | Minimum Area Rectangle                | ⚫               | Arrays              | [Program.java](VeryHard/MinimumAreaRectangle/Program.java)           |
 | Line Through Points                   | ⚫               | Arrays              | [Program.java](VeryHard/LineThroughPoints/Program.java)              |
 | Palindrome Check                      | 🟢               | Strings             | [Program.java](Easy/PalindromeCheck/Program.java)                    |
