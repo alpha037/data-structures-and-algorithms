@@ -50,7 +50,7 @@ Topics include: [Arrays](https://www.geeksforgeeks.org/arrays-in-java/) (24), [S
 | Line Through Points                   | ⚫               | Arrays              | [Program.java](VeryHard/LineThroughPoints/Program.java)              | [Link](https://leetcode.com/problems/max-points-on-a-line/)                        |
 | Palindrome Check                      | 🟢               | Strings             | [Program.java](Easy/PalindromeCheck/Program.java)                    | [Link](https://leetcode.com/problems/valid-palindrome/)                            |
 | Caesar Cypher Encryptor               | 🟢               | Strings             | [Program.java](Easy/CaesarCipherEncryptor/Program.java)              | [Link](https://www.hackerrank.com/challenges/caesar-cipher-1/problem)              |
-| Run-Length Encoding                   | 🟢               | Strings             | [Program.java](Easy/RunLengthEncoding/Program.java)                  |
+| Run-Length Encoding                   | 🟢               | Strings             | [Program.java](Easy/RunLengthEncoding/Program.java)                  | [Link](https://leetcode.com/problems/string-compression/)                          |
 | Generate Document                     | 🟢               | Strings             | [Program.java](Easy/GenerateDocument/Program.java)                   |
 | First Non-Repeating Character         | 🟢               | Strings             | [Program.java](Easy/FirstNonRepeatingCharacter/Program.java)         |
 | Longest Palindromic Substring         | 🔵               | Strings             | [Program.java](Medium/LongestPalindromicSubstring/Program.java)      |
