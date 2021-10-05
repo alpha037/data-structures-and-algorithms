@@ -48,7 +48,7 @@ Topics include: [Arrays](https://www.geeksforgeeks.org/arrays-in-java/) (24), [S
 | Waterfall Streams                     | ⚫               | Arrays              | [Program.java](VeryHard/WaterfallStreams/Program.java)               | [Link](https://leetcode.com/problems/trapping-rain-water/)                         |
 | Minimum Area Rectangle                | ⚫               | Arrays              | [Program.java](VeryHard/MinimumAreaRectangle/Program.java)           | [Link](https://leetcode.com/problems/minimum-area-rectangle/)                      |
 | Line Through Points                   | ⚫               | Arrays              | [Program.java](VeryHard/LineThroughPoints/Program.java)              | [Link](https://leetcode.com/problems/max-points-on-a-line/)                        |
-| Palindrome Check                      | 🟢               | Strings             | [Program.java](Easy/PalindromeCheck/Program.java)                    |
+| Palindrome Check                      | 🟢               | Strings             | [Program.java](Easy/PalindromeCheck/Program.java)                    | [Link](https://leetcode.com/problems/valid-palindrome/)                            |
 | Caesar Cypher Encryptor               | 🟢               | Strings             | [Program.java](Easy/CaesarCipherEncryptor/Program.java)              |
 | Run-Length Encoding                   | 🟢               | Strings             | [Program.java](Easy/RunLengthEncoding/Program.java)                  |
 | Generate Document                     | 🟢               | Strings             | [Program.java](Easy/GenerateDocument/Program.java)                   |
